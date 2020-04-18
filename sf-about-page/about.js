@@ -7,7 +7,7 @@
 
 var DEVELOPMENT = [
     {label: qsTr("Programming"), values: ["Jane Doe", "John Doe"]},
-    {label: qsTr("Icon Desing"), values: ["Some Body", "Bodhi Sam"]}
+    {label: qsTr("Icon Design"), values: ["Some Body", "Bodhi Sam"]}
 ]
 
 var TRANSLATIONS = [
