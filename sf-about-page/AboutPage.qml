@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with sf-about-page.  If not, see <http://www.gnu.org/licenses/>.
  *
- * FILE VERSION: 1.0 (2020-04-17)
+ * FILE VERSION: 1.1 (2020-04-18)
  *
  */
 
@@ -28,7 +28,7 @@ Page {
 
     property string appName: "this app"  // the name of your app
     property string iconPath: ""         // e.g. "/usr/share/icons/hicolor/172x172/apps/harbour-jammy.png"
-    property string versionNumber: "1.0" // e.g. 'VERSION_NUMBER' if you configured it via C++
+    property string versionNumber: "??"  // e.g. 'VERSION_NUMBER' if you configured it via C++
     property string description: ""      // a rich text description of your app
     property string author: ""           // the main author(s) or maintainer(s)
     property string dataInformation: ""  // if your app uses data from an external provider, add e.g. copyright
