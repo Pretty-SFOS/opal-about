@@ -19,12 +19,14 @@ var APPINFO = {
     iconPath: "",         // e.g. "/usr/share/icons/hicolor/172x172/apps/harbour-jammy.png"
     description: "",      // a rich text description of your app
     author: "",           // the main author(s) or maintainer(s)
-    dataInformation: "",  // if your app uses data from an external provider, add e.g. copyright
-                          // info here
-    dataLink: "",         // a link to the website of an external provider
-    dataLinkText: "",     // custom button text
     sourcesLink: "",      // where users can get your app's source code
     sourcesText: "",      // custom button text, e.g. qsTr("Sources on GitHub")
+
+    extraInfoTitle: "",   // section to show extra info
+                          // e.g. use qsTr("Data"), if your app uses data from an external provider
+    extraInfoText: "",    // add e.g. copyright info here, if your app uses data from an external provider
+    extraInfoLink: "",    // e.g. a link to the website of an external provider
+    extraInfoLinkText: "", // custom button text
 
     enableContributorsPage: false, // whether to enable 'ContributorsPage.qml'
     contribDevelopment: DEVELOPMENT,
