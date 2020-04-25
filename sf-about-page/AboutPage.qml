@@ -15,7 +15,20 @@
  * You should have received a copy of the GNU General Public License
  * along with sf-about-page.  If not, see <http://www.gnu.org/licenses/>.
  *
- * FILE VERSION: 2.0 (2020-04-24)
+ * *** CHANGELOG: ***
+ *
+ * 2020-04-25:
+ * - remove version numbers, use changelog instead
+ * - backwards-incompatible changes are marked with "[breaking]"
+ *
+ * 2020-04-24 [breaking]:
+ * - make 'data' fields more usable as 'extra info' fields
+ *
+ * 2020-04-18:
+ * - highlight missing version number
+ *
+ * 2020-04-17:
+ * - initial release
  *
  */
 
