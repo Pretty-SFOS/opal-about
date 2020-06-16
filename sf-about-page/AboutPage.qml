@@ -17,6 +17,9 @@
  *
  * *** CHANGELOG: ***
  *
+ * 2020-06-16:
+ * - make author section title and about page title configurable
+ *
  * 2020-05-09:
  * - remove appName property (makes translations easier)
  *
@@ -59,6 +62,8 @@ Page {
     property var contribDevelopment: []
     property var contribTranslations: []
 
+    // variables that can be tweaked in special cases
+    property string _aboutPageTitle: qsTr("About this app")
     property string _authorSectionTitle: qsTr("Author")
 
     // don't change this unless you change license.html
@@ -73,9 +78,7 @@ Page {
         Column {
             id: column
 
-            PageHeader {
-                title: qsTr("About this app")
-            }
+            PageHeader { title: _aboutPageTitle }
 
             width: parent.width
             spacing: Theme.paddingLarge
