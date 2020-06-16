@@ -59,6 +59,8 @@ Page {
     property var contribDevelopment: []
     property var contribTranslations: []
 
+    property string _authorSectionTitle: qsTr("Author")
+
     // don't change this unless you change license.html
     property string shortLicenseText: "GNU GPL version 3 or later.\n" +
                                       "This is free software: you are free to change and redistribute it." +
@@ -120,7 +122,7 @@ Page {
 
                     Label {
                         anchors.horizontalCenter: parent.horizontalCenter
-                        text: enableContributorsPage ? qsTr("Development") : qsTr("Author")
+                        text: enableContributorsPage ? qsTr("Development") : _authorSectionTitle
                         color: Theme.secondaryHighlightColor
                         font.pixelSize: Theme.fontSizeLarge
                     }
