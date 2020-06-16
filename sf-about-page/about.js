@@ -1,17 +1,32 @@
 .pragma library
-
 // This script is a library. This improves performance, but it means that no
 // variables from the outside can be accessed.
 
+
+// -- TRANSLATORS
+// Please add yourself to the list of contributors. If your language is already
+// in the list, add your name to the 'values' field:
+//     example: {label: qsTr("Your language"), values: ["Existing contributor", "YOUR NAME HERE"]},
+//
+// If you added a new translation, create a new section at the top of the list:
+//     example:
+//          var TRANSLATIONS = [
+//              {label: qsTr("Your language"), values: ["YOUR NAME HERE"]},
+//          [...]
+//
+var TRANSLATIONS = [
+    {label: qsTr("English"), values: ["Jane Doe"]},
+    {label: qsTr("Atlantean"), values: ["At Lanta"]}
+]
+
+
+// -- OTHER CONTRIBUTORS
+// Please add yourself the the list of contributors.
 var DEVELOPMENT = [
     {label: qsTr("Programming"), values: ["Jane Doe", "John Doe"]},
     {label: qsTr("Icon Design"), values: ["Some Body", "Bodhi Sam"]}
 ]
 
-var TRANSLATIONS = [
-    {label: qsTr("English"), values: ["Jane Doe"]},
-    {label: qsTr("Atlantean"), values: ["At Lanta"]}
-]
 
 var VERSION_NUMBER = "1.0" // set in main.qml's Component.onCompleted
 var APPINFO = {
@@ -25,8 +40,8 @@ var APPINFO = {
     extraInfoTitle: "",   // section to show extra info
                           // e.g. use qsTr("Data"), if your app uses data from an external provider
     extraInfoText: "",    // add e.g. copyright info here, if your app uses data from an external provider
-    extraInfoLink: "",    // e.g. a link to the website of an external provider
     extraInfoLinkText: "", // custom button text
+    extraInfoLink: "",     // e.g. a link to the website of an external provider
 
     enableContributorsPage: false, // whether to enable 'ContributorsPage.qml'
     contribDevelopment: DEVELOPMENT,
