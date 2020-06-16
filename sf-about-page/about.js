@@ -30,7 +30,6 @@ var DEVELOPMENT = [
 
 var VERSION_NUMBER = "1.0" // set in main.qml's Component.onCompleted
 var APPINFO = {
-    appName: "this app",  // the name of your app
     iconPath: "",         // e.g. "/usr/share/icons/hicolor/172x172/apps/harbour-jammy.png"
     description: "",      // a rich text description of your app
     author: "",           // the main author(s) or maintainer(s)

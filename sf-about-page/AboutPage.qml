@@ -17,6 +17,9 @@
  *
  * *** CHANGELOG: ***
  *
+ * 2020-05-09:
+ * - remove appName property (makes translations easier)
+ *
  * 2020-04-25:
  * - remove version numbers, use changelog instead
  * - backwards-incompatible changes are marked with "[breaking]"
@@ -39,7 +42,6 @@ Page {
     id: page
     allowedOrientations: Orientation.All
 
-    property string appName: "this app"   // the name of your app
     property string iconPath: ""          // e.g. "/usr/share/icons/hicolor/172x172/apps/harbour-jammy.png"
     property string versionNumber: "??"   // e.g. 'VERSION_NUMBER' if you configured it via C++
     property string description: ""       // a rich text description of your app
@@ -70,7 +72,7 @@ Page {
             id: column
 
             PageHeader {
-                title: qsTr("About %1").arg(appName)
+                title: qsTr("About this app")
             }
 
             width: parent.width
