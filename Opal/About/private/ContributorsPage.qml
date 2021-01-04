@@ -1,6 +1,6 @@
 /*
  * This file is part of opal-about.
- * Copyright (C) 2020  Mirian Margiani
+ * Copyright (C) 2020-2021  Mirian Margiani
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
@@ -54,7 +54,7 @@ Page {
             width: parent.width
             spacing: Theme.paddingMedium
 
-            PageHeader { title: qsTr("Contributors") }
+            PageHeader { title: qsTranslate("Opal.About", "Contributors") }
 
             Repeater {
                 model: sections

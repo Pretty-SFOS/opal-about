@@ -1,6 +1,6 @@
 /*
  * This file is part of opal-about.
- * Copyright (C) 2020  Mirian Margiani
+ * Copyright (C) 2020-2021  Mirian Margiani
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
@@ -58,7 +58,7 @@ Page {
         Column {
             id: column
             width: parent.width
-            PageHeader { title: qsTr("License(s)", "", licenses.length) }
+            PageHeader { title: qsTranslate("Opal.About", "License(s)", "", licenses.length) }
 
             Repeater {
                 model: licenses
@@ -111,7 +111,7 @@ Page {
 
                         text: error ? '<style type="text/css">A { color: "' +
                                       String(Theme.primaryColor) +
-                                      '"; }</style>' + qsTr("Please refer to <a href='%1'>%1</a>").arg(
+                                      '"; }</style>' + qsTranslate("Opal.About", "Please refer to <a href='%1'>%1</a>").arg(
                                           "https://spdx.org/licenses/%1.html".arg(modelData.spdxId))
                                     : modelData.fullText
                         onLinkActivated: Qt.openUrlExternally(link)

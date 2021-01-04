@@ -1,6 +1,6 @@
 /*
  * This file is part of opal-about.
- * Copyright (C) 2020  Mirian Margiani
+ * Copyright (C) 2020-2021  Mirian Margiani
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
@@ -35,7 +35,7 @@ Column {
 
     property alias title: _titleLabel.text
     property string text: ""
-    property string showMoreLabel: qsTr("show details")
+    property string showMoreLabel: qsTranslate("Opal.About", "show details")
     property alias button: _button
     property alias backgroundItem: _bgItem
     property alias enabled: _bgItem.enabled
