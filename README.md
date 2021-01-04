@@ -7,29 +7,28 @@ contributors information in your Sailfish app.
 
 ### Setup
 
-Install Opal components from https://github.com/Pretty-SFOS/opal.
+Follow the main documentation for installing Opal modules
+[in the Wiki](https://github.com/Pretty-SFOS/opal).
 
 ## Configuration
 
-See `qml/module-pages/About.qml` in the Opal repository for an example.
+See [`qml/module-pages/About.qml`](https://github.com/Pretty-SFOS/opal-gallery/blob/master/qml/module-pages/About.qml)
+in the [Opal gallery repository](https://github.com/Pretty-SFOS/opal-gallery)
+for an example. Copy the file to get started.
 
 ## License
 
-Currently, `opal-about` is released under the GNU GPL v3 or later.
+Copyright (C) 2020-2021  Mirian Margiani
 
-```
-Copyright (C) 2020  Mirian Margiani
-
-opal-about is free software: you can redistribute it and/or modify
+`opal-about` is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-opal-about is distributed in the hope that it will be useful,
+`opal-about` is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with opal-about.  If not, see <http://www.gnu.org/licenses/>.
-```
+along with `opal-about`.  If not, see <http://www.gnu.org/licenses/>.
