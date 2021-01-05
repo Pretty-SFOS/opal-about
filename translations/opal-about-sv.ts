@@ -2,7 +2,7 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="sv" sourcelanguage="en_US">
 <context>
-    <name>Opal.About</name>
+    <name>AboutPageBase</name>
     <message>
         <source>About</source>
         <translation>Om</translation>
@@ -42,28 +42,16 @@
         <source>Source Code</source>
         <translation>Källkod</translation>
     </message>
-    <message>
-        <source>show details</source>
-        <translation>visa detaljer</translation>
-    </message>
+</context>
+<context>
+    <name>ContributorsPage</name>
     <message>
         <source>Contributors</source>
         <translation>Deltagare</translation>
     </message>
-    <message numerus="yes">
-        <source>License(s)</source>
-        <translation>
-            <numerusform>Licens</numerusform>
-            <numerusform>Licenser</numerusform>
-        </translation>
-    </message>
-    <message>
-        <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
-    <name>Opal.About.i18n</name>
+    <name>ExtraTranslations</name>
     <message>
         <source>Development</source>
         <translation>Utveckling</translation>
@@ -119,6 +107,27 @@
     <message>
         <source>Norwegian</source>
         <translation>Norska</translation>
+    </message>
+</context>
+<context>
+    <name>InfoSection</name>
+    <message>
+        <source>show details</source>
+        <translation>visa detaljer</translation>
+    </message>
+</context>
+<context>
+    <name>LicensePage</name>
+    <message numerus="yes">
+        <source>License(s)</source>
+        <translation>
+            <numerusform>Licens</numerusform>
+            <numerusform>Licenser</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

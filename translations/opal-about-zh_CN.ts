@@ -2,7 +2,7 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN" sourcelanguage="en_US">
 <context>
-    <name>Opal.About</name>
+    <name>AboutPageBase</name>
     <message>
         <source>About</source>
         <translation>关于</translation>
@@ -29,7 +29,7 @@
     </message>
     <message>
         <source>This is proprietary software. All rights reserved.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <source>show license(s)</source>
@@ -41,27 +41,16 @@
         <source>Source Code</source>
         <translation>源代码</translation>
     </message>
-    <message>
-        <source>show details</source>
-        <translation type="unfinished"></translation>
-    </message>
+</context>
+<context>
+    <name>ContributorsPage</name>
     <message>
         <source>Contributors</source>
         <translation>贡献</translation>
     </message>
-    <message numerus="yes">
-        <source>License(s)</source>
-        <translation>
-            <numerusform>许可协议</numerusform>
-        </translation>
-    </message>
-    <message>
-        <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
-    <name>Opal.About.i18n</name>
+    <name>ExtraTranslations</name>
     <message>
         <source>Development</source>
         <translation>开发</translation>
@@ -116,6 +105,26 @@
     </message>
     <message>
         <source>Norwegian</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>InfoSection</name>
+    <message>
+        <source>show details</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>LicensePage</name>
+    <message numerus="yes">
+        <source>License(s)</source>
+        <translation>
+            <numerusform>许可协议</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -2,7 +2,7 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="pl_PL" sourcelanguage="en_US">
 <context>
-    <name>Opal.About</name>
+    <name>AboutPageBase</name>
     <message>
         <source>About</source>
         <translation>O tej aplikacji</translation>
@@ -43,29 +43,16 @@
         <source>Source Code</source>
         <translation>Kod źródłowy</translation>
     </message>
-    <message>
-        <source>show details</source>
-        <translation>pokaż szczegóły</translation>
-    </message>
+</context>
+<context>
+    <name>ContributorsPage</name>
     <message>
         <source>Contributors</source>
         <translation>Współtwórcy</translation>
     </message>
-    <message numerus="yes">
-        <source>License(s)</source>
-        <translation type="unfinished">
-            <numerusform>Licencja</numerusform>
-            <numerusform></numerusform>
-            <numerusform>Licencje</numerusform>
-        </translation>
-    </message>
-    <message>
-        <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
-    <name>Opal.About.i18n</name>
+    <name>ExtraTranslations</name>
     <message>
         <source>Development</source>
         <translation>Rozwój</translation>
@@ -121,6 +108,28 @@
     <message>
         <source>Norwegian</source>
         <translation>norweski</translation>
+    </message>
+</context>
+<context>
+    <name>InfoSection</name>
+    <message>
+        <source>show details</source>
+        <translation>pokaż szczegóły</translation>
+    </message>
+</context>
+<context>
+    <name>LicensePage</name>
+    <message numerus="yes">
+        <source>License(s)</source>
+        <translation type="unfinished">
+            <numerusform>Licencja</numerusform>
+            <numerusform></numerusform>
+            <numerusform>Licencje</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

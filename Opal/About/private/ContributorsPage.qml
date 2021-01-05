@@ -54,7 +54,7 @@ Page {
             width: parent.width
             spacing: Theme.paddingMedium
 
-            PageHeader { title: qsTranslate("Opal.About", "Contributors") }
+            PageHeader { title: qsTr("Contributors") }
 
             Repeater {
                 model: sections

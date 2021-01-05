@@ -81,7 +81,7 @@ Page {
 
             PageHeader {
                 id: _pageHeader
-                title: qsTranslate("Opal.About", "About")
+                title: qsTr("About")
             }
 
             width: parent.width
@@ -105,7 +105,7 @@ Page {
                 Label {
                     width: parent.width
                     visible: String(appName) !== ""
-                    text: qsTranslate("Opal.About", appName)
+                    text: qsTr(appName)
                     color: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeLarge
                     horizontalAlignment: Text.AlignHCenter
@@ -114,7 +114,7 @@ Page {
                 Label {
                     width: parent.width
                     visible: String(versionNumber !== "")
-                    text: qsTranslate("Opal.About", "Version %1").arg(
+                    text: qsTr("Version %1").arg(
                               String(releaseNumber === "1") ?
                                   versionNumber :
                                   versionNumber+"-"+releaseNumber)
@@ -139,10 +139,10 @@ Page {
             InfoSection {
                 id: _develInfo
                 width: parent.width
-                title: enabled ? qsTranslate("Opal.About", "Development") : qsTranslate("Opal.About", "Author")
+                title: enabled ? qsTr("Development") : qsTr("Author")
                 enabled: contributionSections.length > 0
                 text: author
-                showMoreLabel: qsTranslate("Opal.About", "show contributors")
+                showMoreLabel: qsTr("show contributors")
                 backgroundItem.onClicked: {
                     pageStack.animatorPush("Opal.About.private.ContributorsPage", {
                                                sections: contributionSections
@@ -159,20 +159,20 @@ Page {
             InfoSection {
                 id: _contribInfo
                 width: parent.width
-                title: qsTranslate("Opal.About", "License")
+                title: qsTr("License")
                 enabled: licenses.length > 0
                 backgroundItem.onClicked: pageStack.animatorPush(
                                               "Opal.About.private.LicensePage",
                                               { licenses: licenses })
                 text: enabled === false ?
-                          qsTranslate("Opal.About", "This is proprietary software. All rights reserved.") :
+                          qsTr("This is proprietary software. All rights reserved.") :
                           ((licenses[0].name !== "" && licenses[0].error !== true) ?
                                licenses[0].name + (licenses[0].customShortText === "" ?
                                                        "" :
                                                        "<br>"+licenses[0].customShortText) :
                                licenses[0].spdxId)
-                showMoreLabel: qsTranslate("Opal.About", "show license(s)", "", licenses.length)
-                button.text: qsTranslate("Opal.About", "Source Code")
+                showMoreLabel: qsTr("show license(s)", "", licenses.length)
+                button.text: qsTr("Source Code")
                 button.onClicked: Qt.openUrlExternally(sourcesUrl)
             }
 
