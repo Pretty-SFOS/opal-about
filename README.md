@@ -10,11 +10,20 @@ contributors information in your Sailfish app.
 Follow the main documentation for installing Opal modules
 [in the Wiki](https://github.com/Pretty-SFOS/opal).
 
-## Configuration
+### Configuration
 
 See [`qml/module-pages/About.qml`](https://github.com/Pretty-SFOS/opal-gallery/blob/master/qml/module-pages/About.qml)
 in the [Opal gallery repository](https://github.com/Pretty-SFOS/opal-gallery)
 for an example. Copy the file to get started.
+
+## Development
+
+You do not need to clone this repository if you only intend to use the module in
+another project. Simply download the
+[latest release bundle](https://github.com/Pretty-SFOS/opal-about/releases/latest).
+
+Follow the main documentation for developing modules
+[in the Wiki](https://github.com/Pretty-SFOS/opal).
 
 ## License
 
