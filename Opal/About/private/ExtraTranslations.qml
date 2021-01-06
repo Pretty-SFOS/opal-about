@@ -17,6 +17,9 @@ Item {
     readonly property string c: qsTr("Translations")
     readonly property string c: qsTr("Icon Design")
     readonly property string d: qsTr("Third-party libraries")
+    readonly property string e: qsTr("Data")
+    readonly property string f: qsTr("Data License")
+    readonly property string f: qsTr("Data License(s)", "", 5)
 
     // some languages (to be expanded!)
     readonly property string lb: qsTr("Swedish")
