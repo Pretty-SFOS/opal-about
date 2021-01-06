@@ -68,10 +68,6 @@
         <translation>图标设计</translation>
     </message>
     <message>
-        <source>Third party libraries</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Swedish</source>
         <translation>瑞典语</translation>
     </message>
@@ -105,6 +101,24 @@
     </message>
     <message>
         <source>Norwegian</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>数据</translation>
+    </message>
+    <message numerus="yes">
+        <source>Data License(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Third-party libraries</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Data License</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

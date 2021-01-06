@@ -69,10 +69,6 @@
         <translation>Ikondesign</translation>
     </message>
     <message>
-        <source>Third party libraries</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Swedish</source>
         <translation>Svenska</translation>
     </message>
@@ -107,6 +103,25 @@
     <message>
         <source>Norwegian</source>
         <translation>Norska</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>Data License(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Third-party libraries</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Data License</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
