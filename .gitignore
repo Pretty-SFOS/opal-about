@@ -1,2 +1,9 @@
 .directory
-build
+build*
+*.pro.user
+*.spec.*
+*~
+*.~*
+*.qm
+dist*
+TODO*
