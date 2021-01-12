@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: 2021 Mirian Margiani
 #
-# See https://github.com/Pretty-SFOS/opal/blob/master/snippets/opal-release-module.md
+# See https://github.com/Pretty-SFOS/opal/blob/master/opal-development/opal-release-module.md
 # for documentation.
 
 # Run this script from the module's root directory.
@@ -14,7 +14,9 @@ source ../opal/opal-development/opal-release-module.sh
 # Note: modules requiring extra build steps (Qt plugins) are not yet supported.
 
 # the module's name
-cNAME=opal-about
+cNAME=about
+cNAME_STYLED=About
+cVERSION=0.1.0
 
 # which files and directories to translate
 cTRANSLATE=(Opal)
@@ -30,5 +32,8 @@ function copy_files() {
     cp -r Opal "$QML_BASE/Opal" || return 1
 }
 
-# finally build the bundle
-build_bundle
+# build the bundle
+# build_bundle
+
+# build documentation
+build_doc
