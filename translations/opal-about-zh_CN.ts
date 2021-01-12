@@ -2,7 +2,7 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN" sourcelanguage="en_US">
 <context>
-    <name>AboutPageBase</name>
+    <name>Opal.About</name>
     <message>
         <source>About</source>
         <translation>关于</translation>
@@ -41,16 +41,27 @@
         <source>Source Code</source>
         <translation>源代码</translation>
     </message>
-</context>
-<context>
-    <name>ContributorsPage</name>
     <message>
         <source>Contributors</source>
         <translation>贡献</translation>
     </message>
+    <message>
+        <source>show details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>License(s)</source>
+        <translation>
+            <numerusform>许可协议</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>ExtraTranslations</name>
+    <name>Opal.About.Common</name>
     <message>
         <source>Development</source>
         <translation>开发</translation>
@@ -119,26 +130,6 @@
     </message>
     <message>
         <source>Data License</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>InfoSection</name>
-    <message>
-        <source>show details</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>LicensePage</name>
-    <message numerus="yes">
-        <source>License(s)</source>
-        <translation>
-            <numerusform>许可协议</numerusform>
-        </translation>
-    </message>
-    <message>
-        <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

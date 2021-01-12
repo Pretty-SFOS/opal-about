@@ -2,7 +2,7 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="de_CH">
 <context>
-    <name>AboutPageBase</name>
+    <name>Opal.About</name>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="84"/>
         <source>About</source>
@@ -51,17 +51,32 @@
         <source>Source Code</source>
         <translation>Quellcode</translation>
     </message>
-</context>
-<context>
-    <name>ContributorsPage</name>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="57"/>
         <source>Contributors</source>
         <translation>Mitwirkende</translation>
     </message>
+    <message>
+        <location filename="../Opal/About/InfoSection.qml" line="38"/>
+        <source>show details</source>
+        <translation>Details zeigen</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../Opal/About/private/LicensePage.qml" line="61"/>
+        <source>License(s)</source>
+        <translation>
+            <numerusform>Lizenz</numerusform>
+            <numerusform>Lizenzen</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/private/LicensePage.qml" line="114"/>
+        <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
+        <translation>Bitte beachten Sie &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</translation>
+    </message>
 </context>
 <context>
-    <name>ExtraTranslations</name>
+    <name>Opal.About.Common</name>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="15"/>
         <source>Development</source>
@@ -149,30 +164,6 @@
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="33"/>
         <source>Norwegian</source>
         <translation>Norwegisch</translation>
-    </message>
-</context>
-<context>
-    <name>InfoSection</name>
-    <message>
-        <location filename="../Opal/About/InfoSection.qml" line="38"/>
-        <source>show details</source>
-        <translation>Details zeigen</translation>
-    </message>
-</context>
-<context>
-    <name>LicensePage</name>
-    <message numerus="yes">
-        <location filename="../Opal/About/private/LicensePage.qml" line="61"/>
-        <source>License(s)</source>
-        <translation>
-            <numerusform>Lizenz</numerusform>
-            <numerusform>Lizenzen</numerusform>
-        </translation>
-    </message>
-    <message>
-        <location filename="../Opal/About/private/LicensePage.qml" line="114"/>
-        <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
-        <translation>Bitte beachten Sie &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</translation>
     </message>
 </context>
 </TS>
