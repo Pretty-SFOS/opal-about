@@ -47,7 +47,6 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import Opal.About.private 1.0 as Private
 
 Page {
     id: page
@@ -144,7 +143,7 @@ Page {
                 text: author
                 showMoreLabel: qsTranslate("Opal.About", "show contributors")
                 backgroundItem.onClicked: {
-                    pageStack.animatorPush("Opal.About.private.ContributorsPage", {
+                    pageStack.animatorPush("private/ContributorsPage.qml", {
                                                sections: contributionSections
                                            })
                 }
@@ -161,8 +160,7 @@ Page {
                 width: parent.width
                 title: qsTranslate("Opal.About", "License")
                 enabled: licenses.length > 0
-                backgroundItem.onClicked: pageStack.animatorPush(
-                                              "Opal.About.private.LicensePage",
+                backgroundItem.onClicked: pageStack.animatorPush("private/LicensePage.qml",
                                               { licenses: licenses })
                 text: enabled === false ?
                           qsTranslate("Opal.About", "This is proprietary software. All rights reserved.") :
