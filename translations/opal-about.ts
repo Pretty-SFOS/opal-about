@@ -4,49 +4,49 @@
 <context>
     <name>Opal.About</name>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="84"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="83"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="117"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="116"/>
         <source>Version %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="142"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="141"/>
         <source>Development</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="142"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="141"/>
         <source>Author</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="145"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="144"/>
         <source>show contributors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="162"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="161"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="168"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="166"/>
         <source>This is proprietary software. All rights reserved.</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../Opal/About/AboutPageBase.qml" line="174"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="172"/>
         <source>show license(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="175"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="173"/>
         <source>Source Code</source>
         <translation type="unfinished"></translation>
     </message>

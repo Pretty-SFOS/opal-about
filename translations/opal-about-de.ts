@@ -4,42 +4,42 @@
 <context>
     <name>Opal.About</name>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="84"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="83"/>
         <source>About</source>
         <translation>Über</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="117"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="116"/>
         <source>Version %1</source>
         <translation>Version %1</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="142"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="141"/>
         <source>Development</source>
         <translation>Entwicklung</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="142"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="141"/>
         <source>Author</source>
         <translation>Autor</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="145"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="144"/>
         <source>show contributors</source>
         <translation>Mitwirkende zeigen</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="162"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="161"/>
         <source>License</source>
         <translation>Lizenz</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="168"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="166"/>
         <source>This is proprietary software. All rights reserved.</source>
         <translation>Dies ist geschützte Software. Alle Rechte vorbehalten.</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Opal/About/AboutPageBase.qml" line="174"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="172"/>
         <source>show license(s)</source>
         <translation>
             <numerusform>Lizenz zeigen</numerusform>
@@ -47,7 +47,7 @@
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="175"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="173"/>
         <source>Source Code</source>
         <translation>Quellcode</translation>
     </message>
