@@ -94,7 +94,7 @@ Page {
                         wrapMode: Text.Wrap
                         font.pixelSize: Theme.fontSizeExtraSmall
                         textFormat: Text.PlainText
-                        color: Theme.secondaryColor
+                        color: Theme.secondaryHighlightColor
                         text: modelData.spdxId
                         visible: modelData.name !== ""
                     }
@@ -107,7 +107,7 @@ Page {
                         wrapMode: Text.Wrap
                         font.pixelSize: Theme.fontSizeExtraSmall
                         textFormat: error ? Text.RichText : Text.PlainText
-                        color: Theme.primaryColor
+                        color: Theme.highlightColor
 
                         text: error ? '<style type="text/css">A { color: "' +
                                       String(Theme.primaryColor) +
