@@ -19,6 +19,9 @@
  *
  * *** CHANGELOG: ***
  *
+ * 2021-01-01:
+ * - improved loading time by loading license texts in a worker thread
+ *
  * 2020-08-23:
  * - initial release
  *
@@ -41,9 +44,26 @@ QtObject {
     property string __name: ""
     property string __fullText: ""
     property bool __error: false
+    property bool __initialized: false
 
-    onSpdxIdChanged: _load(true)
-    Component.onCompleted: _load()
+    property WorkerScript __worker: WorkerScript {
+        source: "private/worker.js"
+        onMessage: {
+            if (messageObject.spdxId !== spdxId) return;
+            __name = messageObject.name;
+            __fullText = messageObject.fullText;
+            __error = messageObject.error;
+        }
+
+        Component.onCompleted: {
+            _load();
+            __initialized = true;
+        }
+    }
+
+    onSpdxIdChanged: {
+        if (__initialized) _load(true)
+    }
 
     function _load(force) {
         if (fullText !== "" && force !== true) return;
@@ -53,68 +73,8 @@ QtObject {
             return;
         }
 
-        __name = "";
-        __fullText = "";
-        __error = false;
-
-        __request("GET", __localUrl, function(xhr) {
-            try {
-                var o = JSON.parse(xhr.responseText);
-                if (!o || typeof o !== "object") throw 1;
-                __fullText = o['licenseText'];
-                __name = o['name'];
-                console.log("license loaded locally from", __localUrl);
-            }
-            catch (e) {
-                _loadRemote();
-            }
-        }, function(xhr) {
-           _loadRemote();
-        });
-    }
-
-    function _loadRemote() {
-        __request("GET", __remoteUrl, function(xhr) {
-            try {
-                var o = JSON.parse(xhr.responseText);
-                if (!o || typeof o !== "object") throw 1;
-                __fullText = o['licenseText'];
-                __name = o['name'];
-                console.log("license loaded remotely from", __remoteUrl);
-
-                __request("PUT", __localUrl, function(x){
-                    console.log("saved license with status", x.status, "to", __localUrl);
-                }, function(x){}, xhr.responseText);
-            }
-            catch (e) {
-                console.log("failed to load license remotely from", __remoteUrl);
-                __error = true;
-            }
-        }, function(xhr) {
-            console.log("failed to load license remotely from", __remoteUrl);
-            __error = true;
-        });
-    }
-
-    function __request(type, url, onSuccess, onFailure, postData) {
-        var xhr = new XMLHttpRequest;
-        xhr.open(type, url);
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                var response = xhr.responseText;
-
-                if (response === "") {
-                    onFailure(xhr);
-                } else {
-                    onSuccess(xhr);
-                }
-            }
-        };
-
-        if (postData !== undefined && type === "PUT") {
-            xhr.send(postData);
-        } else {
-            xhr.send();
-        }
+        __name = ""; __fullText = ""; __error = false;
+        __worker.sendMessage({
+            spdxId: spdxId, localUrl: __localUrl, remoteUrl: __remoteUrl });
     }
 }
