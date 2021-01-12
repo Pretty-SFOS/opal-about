@@ -1,7 +1,7 @@
 /*
  * This file is part of opal-about.
- * Copyright (C) 2021  Mirian Margiani
  *
+ * SPDX-FileCopyrightText: 2021 Mirian Margiani
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  * This file should not be used anywhere. It contains a list of some commonly

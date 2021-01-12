@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2020-2021 Mirian Margiani
+SPDX-License-Identifier: GFDL-1.3-or-later
+-->
+
 # 'About' page for Sailfish apps
 
 This repo provides files to include a simple 'About' page with license and

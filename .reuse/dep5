@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Opal.About
+Upstream-Contact: Mirian Margiani <mixosaurus+ichthyo@pm.me>
+Source: https://github.com/Pretty-SFOS/opal-about
+
+Files: translations/*
+Copyright: 2020-2021 Opal.About translations contributors
+License: GPL-3.0-or-later

@@ -1,3 +1,7 @@
+# This file is part of Opal.About.
+# SPDX-FileCopyrightText: 2020-2021 Mirian Margiani
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 module Opal.About.private
 ContributorsPage 1.0 ContributorsPage.qml
 LicensePage 1.0 LicensePage.qml
