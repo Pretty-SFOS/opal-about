@@ -9,14 +9,11 @@
 
 # Run this script from the module's root directory.
 source ../opal/opal-development/opal-release-module.sh
+parse_arguments "$@"
 
 # Copy and edit this template file for new Opal modules.
+# Module metadata will be read from doc/module.opal.
 # Note: modules requiring extra build steps (Qt plugins) are not yet supported.
-
-# the module's name
-cNAME=about
-cNAME_STYLED=About
-cVERSION=0.1.0
 
 # which files and directories to translate
 cTRANSLATE=(Opal)
@@ -33,7 +30,7 @@ function copy_files() {
 }
 
 # build the bundle
-# build_bundle
+build_bundle
 
 # build documentation
 build_doc

@@ -17,9 +17,10 @@ Follow the main documentation for installing Opal modules
 
 ### Configuration
 
-See [`qml/module-pages/About.qml`](https://github.com/Pretty-SFOS/opal-gallery/blob/master/qml/module-pages/About.qml)
-in the [Opal gallery repository](https://github.com/Pretty-SFOS/opal-gallery)
-for an example. Copy the file to get started.
+See [`doc/gallery.qml`](doc/gallery.qml) for an example. Copy the file to get
+started. You can run [`release-module.sh`](release-module.sh) to generate QCH
+documentation. You can then add the documentation to QtCreator via
+Extras → Settings → Help → Documentation → Add.
 
 ## Development
 
