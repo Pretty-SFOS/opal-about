@@ -36,7 +36,7 @@ mainLicenseSpdx: GPL-3.0-or-later
 # The field contains a space separated list of file names without path. Names
 # must not contain spaces. The main example file will be renamed <nameStyled>.qml
 # and placed in a directory together with all extra pages of this module.
-# Use "../../pages/EmptyDummyPage.qml" as placeholder in examples (provided by Opal Gallery).
+# Use "EmptyDummyPage.qml" as placeholder in examples (provided by Opal Gallery).
 #
 # Example:
 # extraGalleryPages: page1.qml page2.qml
