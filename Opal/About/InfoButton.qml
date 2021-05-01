@@ -8,6 +8,6 @@ import QtQuick 2.0
 
 QtObject {
     property string text: ""
-    property var onClicked: null
     property bool enabled: true
+    signal clicked
 }

@@ -475,12 +475,12 @@ Page {
                 buttons: [
                     InfoButton {
                         text: qsTranslate("Opal.About", "Translations")
-                        onClicked: function() { Qt.openUrlExternally(translationsUrl) }
+                        onClicked: Qt.openUrlExternally(translationsUrl)
                         enabled: translationsUrl !== ''
                     },
                     InfoButton {
                         text: qsTranslate("Opal.About", "Source Code")
-                        onClicked: function() { Qt.openUrlExternally(sourcesUrl) }
+                        onClicked: Qt.openUrlExternally(sourcesUrl)
                         enabled: sourcesUrl !== ''
                     }
                 ]

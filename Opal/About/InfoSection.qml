@@ -120,7 +120,7 @@ Column {
 
                 visible: modelData.text !== '' && modelData.enabled === true
                 text: modelData.text
-                onClicked: if (modelData.onClicked !== null) modelData.onClicked()
+                onClicked: modelData.clicked()
             }
         }
 
