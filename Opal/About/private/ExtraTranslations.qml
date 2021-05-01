@@ -22,6 +22,7 @@ Item {
     readonly property string g: qsTranslate("Opal.About.Common", "Data")
     readonly property string h: qsTranslate("Opal.About.Common", "Data License")
     readonly property string i: qsTranslate("Opal.About.Common", "Data License(s)", "", 5)
+    readonly property string j: qsTranslate("Opal.About.Common", "Terms of Use")
 
     // some languages (to be expanded!)
     readonly property string la: qsTranslate("Opal.About.Common", "Swedish")
