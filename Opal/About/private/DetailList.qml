@@ -34,14 +34,18 @@
 import QtQuick 2.2
 import Sailfish.Silica 1.0
 
-Repeater {
-    id: base
+Column {
+    id: root
     property string label
     property var values
+    width: parent.width
+    spacing: 0
 
-    model: values.length
-    delegate: DetailItem {
-        label: index === 0 ? base.label : ""
-        value: base.values[index]
+    Repeater {
+        model: values.length
+        delegate: DetailItem {
+            label: index === 0 ? root.label : ""
+            value: root.values[index]
+        }
     }
 }
