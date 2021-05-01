@@ -44,12 +44,12 @@ Column {
             Label {
                 id: _titleLabel
                 width: parent.width
-                horizontalAlignment: Text.AlignHCenter
+                horizontalAlignment: Text.AlignRight
                 wrapMode: Text.Wrap
-                color: Theme.secondaryHighlightColor
-                font.pixelSize: Theme.fontSizeLarge
+                font.pixelSize: Theme.fontSizeMedium
                 visible: text !== ""
                 height: visible ? implicitHeight + Theme.paddingSmall : 0
+                color: Theme.highlightColor
             }
 
             Item {
@@ -66,12 +66,13 @@ Column {
                 Label {
                     id: _textLabel
                     width: parent.width
-                    horizontalAlignment: Text.AlignHCenter
+                    horizontalAlignment: Text.AlignLeft
                     wrapMode: Text.Wrap
                     text: '<style type="text/css">A { color: "' +
-                          String(Theme.primaryColor) +
+                          String(palette.secondaryColor) +
                           '"; }</style>' + root.text
                     textFormat: Text.RichText
+                    palette.primaryColor: Theme.highlightColor
                 }
 
                 Row {

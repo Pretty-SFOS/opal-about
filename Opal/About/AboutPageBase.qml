@@ -417,12 +417,13 @@ Page {
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: parent.width - 2*Theme.horizontalPageMargin
                 text: '<style type="text/css">A { color: "' +
-                      String(Theme.primaryColor) +
+                      String(palette.secondaryColor) +
                       '"; }</style>' + description
                 onLinkActivated: Qt.openUrlExternally(link)
                 wrapMode: Text.Wrap
                 textFormat: Text.RichText
                 horizontalAlignment: Text.AlignHCenter
+                palette.primaryColor: Theme.highlightColor
             }
 
             InfoSection {
