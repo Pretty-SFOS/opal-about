@@ -64,7 +64,7 @@ A.AboutPageBase {
             url: "https://liberapay.com/"
         },
         A.DonationService {
-            name: "OtherService"
+            name: "Other Service"
             url: "https://example.org/"
         }
     ]
