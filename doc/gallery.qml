@@ -5,15 +5,15 @@
  */
 
 import QtQuick 2.0
-import Sailfish.Silica 1.0
-import Opal.About 1.0
+import Sailfish.Silica 1.0 as S
+import Opal.About 1.0 as A
 
-AboutPageBase {
+A.AboutPageBase {
     id: page
-    allowedOrientations: Orientation.All
+    allowedOrientations: S.Orientation.All
 
     appName: "Opal.About Example"
-    iconSource: Qt.resolvedUrl("../images/harbour-opal.png")
+    iconSource: Qt.resolvedUrl("../../images/harbour-opal.png")
     versionNumber: APP_VERSION
     releaseNumber: APP_RELEASE
     description: qsTr("This is a short description of the app which can use <i>styled</i> " +
@@ -21,33 +21,63 @@ AboutPageBase {
                       "<a href='https://example.org'>links</a>.")
 
     // note: don't use qsTr() for names in real applications
-    author: qsTr("the main author or maintainer")
-    licenses: [
-        License {
-            spdxId: "GPL-3.0-or-later"
-            customShortText: "This is free software: you are free to change and redistribute it. " +
-                             "There is NO WARRANTY, to the extent permitted by law."
-            forComponents: ["Opal.About"]
+    maintainer: qsTr("the main author or maintainer")
+    sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
+    translationsUrl: "https://weblate.com/"
+
+    // "Please check the source code for most accurate information."
+    licenses: A.License {
+        spdxId: "GPL-3.0-or-later"
+        customShortText: "This is free software: you are free to change and redistribute it. " +
+                         "There is NO WARRANTY, to the extent permitted by law."
+    }
+    attributions: [
+        A.Attribution {
+            name: "My.Extra.Component"
+            entries: ["2020-2021 At Lanta"]
+            licenses: A.License { spdxId: "WTFPL" }
         },
-        License {
-            spdxId: "WTFPL"
-            forComponents: ["My.Extra.Component", "The Other Library", "Yet Another Lib"]
+        A.Attribution {
+            name: "The Other Library"
+            // entries: []
+            licenses: A.License { spdxId: "WTFPL" }
         },
-        License {
-            spdxId: "MIT"
-            forComponents: ["Other Imaginary Components"]
+        A.Attribution {
+            name: "Yet Another Lib"
+            entries: ["1984 Jane Doe"]
+            licenses: A.License { spdxId: "WTFPL" }
+        },
+        A.Attribution {
+            name: "Other Imaginary Components"
+            entries: ["2000 Components Community"]
+            licenses: A.License { spdxId: "MIT" }
         }
     ]
 
-    sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
+    donations.text: qsTr("If you want to support my work, you can buy me a cup of coffee.")
+    donations.services: [
+        A.DonationService {
+            name: "LiberaPay"
+            url: "https://liberapay.com/"
+        },
+        A.DonationService {
+            name: "OtherService"
+            url: "https://example.org/"
+        }
+    ]
+
     extraSections: [
-        InfoSection {
+        A.InfoSection {
             title: qsTr("Data")
             text: qsTr("Lorem ipsum dolor sit amet et cetera ad libitum plurum sid alum.")
-            button.text: qsTr("Data License")
-            button.onClicked: Qt.openUrlExternally("https://example.org")
+            buttons: [
+                A.InfoButton {
+                    text: qsTr("Data License")
+                    onClicked: function() { Qt.openUrlExternally("https://example.org") }
+                }
+            ]
         },
-        InfoSection {
+        A.InfoSection {
             title: qsTr("Extra info")
             text: qsTr("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
                        "Aenean commodo ligula eget dolorus.")
@@ -55,50 +85,37 @@ AboutPageBase {
     ]
 
     contributionSections: [
-        ContributionSection {
+        A.ContributionSection {
             title: qsTr("Development")
             groups: [
-                ContributionGroup {
+                A.ContributionGroup {
                     title: qsTr("Programming")
                     entries: ["ichthyosaurus", "At Lanta", "Jane Doe"]
                 },
-                ContributionGroup {
+                A.ContributionGroup {
                     title: qsTr("Icon Design")
                     entries: ["Sailfish", "Jolla", "John Doe"]
                 }
             ]
         },
-        ContributionSection {
+        A.ContributionSection {
             title: qsTr("Translations")
             groups: [
-                ContributionGroup {
+                A.ContributionGroup {
                     title: qsTr("English")
                     entries: ["Some Body", "Bodhi Sam", "Sam B. Dy"]
                 },
-                ContributionGroup {
+                A.ContributionGroup {
                     title: qsTr("German")
                     entries: [] // an empty section will be invisible
-                }
-            ]
-        },
-        ContributionSection {
-            title: qsTr("Third-party libraries")
-            groups: [
-                ContributionGroup {
-                    title: qsTr("Some Software")
-                    entries: ["Someone", "The original author", "Maintainer and tame aimer"]
-                },
-                ContributionGroup {
-                    title: qsTr("Other Library")
-                    entries: ["Sailfish", "Fish sail"]
                 }
             ]
         }
     ]
 
-    PullDownMenu {
+    S.PullDownMenu {
         parent: page.flickable
-        MenuItem {
+        S.MenuItem {
             text: qsTr("Open another page")
             onClicked: pageStack.push(Qt.resolvedUrl("EmptyDummyPage.qml"))
         }
