@@ -35,17 +35,16 @@ A.AboutPageBase {
         A.Attribution {
             name: "My.Extra.Component"
             entries: ["2020-2021 At Lanta"]
-            licenses: A.License { spdxId: "WTFPL" }
+            licenses: A.License { spdxId: "CC0-1.0" }
         },
         A.Attribution {
             name: "The Other Library"
-            // entries: []
-            licenses: A.License { spdxId: "WTFPL" }
+            licenses: [ A.License { spdxId: "MIT" }, A.License { spdxId: "MPL-2.0" } ]
         },
         A.Attribution {
             name: "Yet Another Lib"
             entries: ["1984 Jane Doe"]
-            licenses: A.License { spdxId: "WTFPL" }
+            licenses: A.License { spdxId: "GPL-3.0-or-later" }
         },
         A.Attribution {
             name: "Other Imaginary Components"
