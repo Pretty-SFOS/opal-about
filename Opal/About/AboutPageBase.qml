@@ -434,8 +434,8 @@ Page {
 
                 Label {
                     width: parent.width
-                    visible: String(appName) !== ""
-                    text: qsTranslate("Opal.About", appName)
+                    visible: appName !== ""
+                    text: appName
                     color: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeLarge
                     horizontalAlignment: Text.AlignHCenter
