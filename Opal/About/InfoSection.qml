@@ -102,7 +102,7 @@ Column {
 
     Item {
         width: 1
-        height: (buttons.length > 0 || __donationButtons.lenght > 0)
+        height: (buttons.length > 0 || __donationButtons.length > 0)
                 ? Theme.paddingMedium : 0
     }
 
