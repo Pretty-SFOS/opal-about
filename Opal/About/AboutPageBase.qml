@@ -302,13 +302,13 @@ Page {
       Licenses are specified by their \l {https://spdx.org/licenses/}
       {SPDX identifiers}. You don't have to include any license
       texts manually. They will be automatically downloaded and cached
-      locally. It a license text is not available locally and downloading
+      locally. If a license text is not available locally and downloading
       is not possible, a short notice including a link to the full
       license text will be shown.
 
       \todo example
 
-      \sa Licenses
+      \sa License
     */
     property list<License> licenses
 
