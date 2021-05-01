@@ -100,7 +100,7 @@ import Sailfish.Silica 1.0
             description: qsTr("This is a short description of the app.")
             sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
 
-            author: "Au Thor"
+            maintainer: "Au Thor"
             licenses: License {
                 spdxId: "GPL-3.0-or-later"
                 forComponents: ["MyApp"]
@@ -246,7 +246,7 @@ Page {
       \note People's names should not be translated.
       \required
     */
-    property string author: ""
+    property string maintainer: ""
 
     /*!
       This property specifys where users can get the app's source code.
@@ -426,7 +426,7 @@ Page {
                 width: parent.width
                 title: enabled ? qsTranslate("Opal.About", "Development") : qsTranslate("Opal.About", "Author")
                 enabled: contributionSections.length > 0
-                text: author
+                text: maintainer
                 showMoreLabel: qsTranslate("Opal.About", "show contributors")
                 backgroundItem.onClicked: {
                     pageStack.animatorPush("private/ContributorsPage.qml", {
