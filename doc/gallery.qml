@@ -25,7 +25,6 @@ A.AboutPageBase {
     sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
     translationsUrl: "https://weblate.com/"
 
-    // "Please check the source code for most accurate information."
     licenses: A.License {
         spdxId: "GPL-3.0-or-later"
         customShortText: "This is free software: you are free to change and redistribute it. " +
