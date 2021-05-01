@@ -64,7 +64,7 @@ import "private"
             licenses: License {
                 spdxId: "GPL-3.0-or-later"
                 forComponents: ["MyApp"]
-            ]
+            }
 
             contributionSections: [
                 ContributionSection {
