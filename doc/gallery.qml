@@ -51,7 +51,13 @@ A.AboutPageBase {
             name: "Other Imaginary Components"
             entries: ["2000 Components Community"]
             licenses: A.License { spdxId: "MIT" }
+        },
+        A.Attribution {
+            // no entries and no licenses: adds a "thank you!"
+            // entry on the contributors page
+            name: "Some person"
         }
+
     ]
 
     donations.text: qsTr("If you want to support my work, you can buy me a cup of coffee.")
