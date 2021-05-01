@@ -16,9 +16,8 @@ A.AboutPageBase {
     iconSource: Qt.resolvedUrl("../../images/harbour-opal.png")
     versionNumber: APP_VERSION
     releaseNumber: APP_RELEASE
-    description: qsTr("This is a short description of the app which can use <i>styled</i> " +
-                      "<i><b>and</b></i> <u>rich</u> text or " +
-                      "<a href='https://example.org'>links</a>.")
+    description: qsTr("This is a short description of the app. It can use styled " +
+                      "and rich text or <a href='https://example.org'>links</a>.")
 
     // note: don't use qsTr() for names in real applications
     maintainer: qsTr("the main author or maintainer")
