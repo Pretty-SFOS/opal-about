@@ -28,16 +28,17 @@
  */
 
 import QtQuick 2.0
-import Sailfish.Silica 1.0
+import Sailfish.Silica 1.0 // for StandardPaths
 
 QtObject {
     property string spdxId
-    property var forComponents: []
     property string customShortText: ""
 
     readonly property bool error: __error
     readonly property string name: __name
     readonly property string fullText: __fullText
+
+    property var __forComponents: [] // used for deduplication
 
     property string __localUrl: "%1/%2.json".arg(StandardPaths.temporary).arg(spdxId)
     property string __remoteUrl: "https://spdx.org/licenses/%1.json".arg(spdxId)
@@ -47,7 +48,7 @@ QtObject {
     property bool __initialized: false
 
     property WorkerScript __worker: WorkerScript {
-        source: "private/worker.js"
+        source: "private/worker_spdx.js"
         onMessage: {
             if (messageObject.spdxId !== spdxId) return;
             __name = messageObject.name;

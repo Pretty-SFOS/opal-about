@@ -44,6 +44,7 @@ import ".."
 Page {
     allowedOrientations: Orientation.All
     property list<ContributionSection> sections
+    property list<Attribution> attributions
 
     SilicaFlickable {
         anchors.fill: parent

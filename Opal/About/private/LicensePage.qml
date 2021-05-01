@@ -40,6 +40,7 @@ import ".."
 Page {
     allowedOrientations: Orientation.All
     property list<License> licenses
+    property list<Attribution> attributions
     property bool enableSourceHint: true
 
     SilicaFlickable {
@@ -88,8 +89,8 @@ Page {
                         font.pixelSize: Theme.fontSizeExtraSmall
                         textFormat: Text.PlainText
                         color: Theme.secondaryHighlightColor
-                        text: modelData.forComponents.join(', ')
-                        visible: modelData.forComponents.length > 0
+                        text: modelData.__forComponents.join(', ')
+                        visible: modelData.__forComponents.length > 0
                     }
 
                     Label {

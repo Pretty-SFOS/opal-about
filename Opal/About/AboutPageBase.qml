@@ -47,6 +47,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "private"
 
 /*!
     \qmltype AboutPageBase
@@ -267,28 +268,17 @@ Page {
     property string sourcesUrl: ""
 
     /*!
-      This property holds a list of additional custom info sections.
-      \todo {Where will they be shown?}
-      \todo example
-      \sa InfoSection
+      This property specifys where users can contribute to the app's translations.
+
+      Helping with translations is a good way for non-technical users to contribute
+      to open source projects they enjoy. Giving them the chance to do so gives
+      warm and fuzzy feelings to everyone involved.
+
+      \note \l {https://weblate.com} {Weblate} is an open source tool for
+      translations. The community behind it provides a free service for
+      applicable open source projects.
     */
-    property list<InfoSection> extraSections
-
-    /*!
-      This property holds the definition of your apps contributors.
-
-      You can leave this property empty if you are the only contributor.
-      When this list is not empty, a page showing all contributions can
-      be openend by clicking on the default author section.
-
-      The contributors page component is configured through this property
-      and should not be used directly.
-
-      \todo example
-
-      \sa ContributionSection, ContributionGroup
-    */
-    property list<ContributionSection> contributionSections
+    property string translationsUrl: ""
 
     /*!
       This property holds a list of relevant licenses.
@@ -311,6 +301,48 @@ Page {
       \sa License
     */
     property list<License> licenses
+
+    /*!
+      This property holds a list of attributions, e.g. to third-party libraries.
+
+      \todo example
+
+      \sa Attribution
+    */
+    property list<Attribution> attributions
+
+    /*!
+      This property group holds a list of possible ways to donate to the project.
+
+      \todo example
+
+      \sa DonationService
+    */
+    readonly property DonationsGroup donations: DonationsGroup { }
+
+    /*!
+      This property holds a list of additional custom info sections.
+      \todo {Where will they be shown?}
+      \todo example
+      \sa InfoSection
+    */
+    property list<InfoSection> extraSections
+
+    /*!
+      This property holds the definition of your apps contributors.
+
+      You can leave this property empty if you are the only contributor.
+      When this list is not empty, a page showing all contributions can
+      be openend by clicking on the default author/maintainer section.
+
+      The contributors page component is configured through this property
+      and should not be used directly.
+
+      \todo example
+
+      \sa ContributionSection, ContributionGroup
+    */
+    property list<ContributionSection> contributionSections
 
     /*!
       This property references the page's main flickable.
@@ -361,6 +393,13 @@ Page {
       \internal
     */
     property alias _contribInfoSection: _contribInfo
+
+    /*!
+      This property references the donations info section.
+      \sa InfoSection
+      \internal
+    */
+    property alias _donationsInfoSection: _donationsInfo
 
     SilicaFlickable {
         id: _flickable
@@ -431,12 +470,13 @@ Page {
                 id: _develInfo
                 width: parent.width
                 title: enabled ? qsTranslate("Opal.About", "Development") : qsTranslate("Opal.About", "Author")
-                enabled: contributionSections.length > 0
+                enabled: contributionSections.length > 0 || attributions.length > 0
                 text: maintainer
                 showMoreLabel: qsTranslate("Opal.About", "show contributors")
                 backgroundItem.onClicked: {
                     pageStack.animatorPush("private/ContributorsPage.qml", {
-                                               sections: contributionSections
+                                               'sections': contributionSections,
+                                               'attributions': attributions
                                            })
                 }
             }
@@ -448,12 +488,23 @@ Page {
             }
 
             InfoSection {
+                id: _donationsInfo
+                visible: donations.services.length > 0 || donations.text !== ''
+                width: parent.width
+                title: qsTranslate("Opal.About", "Donations")
+                enabled: false
+                text: donations.text === '' ? donations.defaultTextGeneral :
+                                              donations.text
+                __donationButtons: donations.services
+            }
+
+            InfoSection {
                 id: _contribInfo
                 width: parent.width
                 title: qsTranslate("Opal.About", "License")
                 enabled: licenses.length > 0
                 backgroundItem.onClicked: pageStack.animatorPush("private/LicensePage.qml",
-                                              { licenses: licenses })
+                                              { 'licenses': licenses, 'attributions': attributions })
                 text: enabled === false ?
                           qsTranslate("Opal.About", "This is proprietary software. All rights reserved.") :
                           ((licenses[0].name !== "" && licenses[0].error !== true) ?
@@ -462,8 +513,19 @@ Page {
                                                        "<br>"+licenses[0].customShortText) :
                                licenses[0].spdxId)
                 showMoreLabel: qsTranslate("Opal.About", "show license(s)", "", licenses.length)
-                button.text: qsTranslate("Opal.About", "Source Code")
-                button.onClicked: Qt.openUrlExternally(sourcesUrl)
+                buttons: [
+                    InfoButton {
+                        text: qsTranslate("Opal.About", "Translations")
+                        onClicked: function() { Qt.openUrlExternally(translationsUrl) }
+                        enabled: translationsUrl !== ''
+                    },
+                    InfoButton {
+                        text: qsTranslate("Opal.About", "Source Code")
+                        onClicked: function() { Qt.openUrlExternally(sourcesUrl) }
+                        enabled: sourcesUrl !== ''
+                    }
+                ]
+
             }
 
             Item {
