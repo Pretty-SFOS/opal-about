@@ -38,8 +38,6 @@ QtObject {
     readonly property string name: __name
     readonly property string fullText: __fullText
 
-    property var __forComponents: [] // used for deduplication
-
     property string __localUrl: "%1/%2.json".arg(StandardPaths.temporary).arg(spdxId)
     property string __remoteUrl: "https://spdx.org/licenses/%1.json".arg(spdxId)
     property string __name: ""
