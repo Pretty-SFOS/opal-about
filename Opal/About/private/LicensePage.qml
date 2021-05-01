@@ -37,15 +37,6 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import ".."
 
-/*
- * This page is automatically made available through AboutPage.qml.
- *
- * You don't have to configure this file. It will load the Rich Text
- * formatted license text from the file 'license.html'. The example
- * license included in the opal-about repository is the GNU GPL v3.
- * You can simply replace the 'license.html' file to use a different license.
- *
- */
 Page {
     allowedOrientations: Orientation.All
     property list<License> licenses
