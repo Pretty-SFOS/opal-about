@@ -472,7 +472,7 @@ Page {
                                                        "" :
                                                        "<br>"+licenses[0].customShortText) :
                                licenses[0].spdxId)
-                showMoreLabel: qsTranslate("Opal.About", "show license(s)", "", licenses.length)
+                showMoreLabel: qsTranslate("Opal.About", "show license(s)", "", licenses.length+attributions.length)
                 buttons: [
                     InfoButton {
                         text: qsTranslate("Opal.About", "Translations")
