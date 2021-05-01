@@ -503,8 +503,8 @@ Page {
                 width: parent.width
                 title: qsTranslate("Opal.About", "License")
                 enabled: licenses.length > 0
-                backgroundItem.onClicked: pageStack.animatorPush("private/LicensePage.qml",
-                                              { 'licenses': licenses, 'attributions': attributions })
+                backgroundItem.onClicked: pageStack.animatorPush("private/LicensePage.qml", {
+                    'appName': appName, 'licenses': licenses, 'attributions': attributions })
                 text: enabled === false ?
                           qsTranslate("Opal.About", "This is proprietary software. All rights reserved.") :
                           ((licenses[0].name !== "" && licenses[0].error !== true) ?
