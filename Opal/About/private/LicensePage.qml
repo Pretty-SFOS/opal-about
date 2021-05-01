@@ -35,7 +35,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import Opal.About 1.0
+import ".."
 
 /*
  * This page is automatically made available through AboutPage.qml.

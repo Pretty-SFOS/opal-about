@@ -39,7 +39,7 @@
 
 import QtQuick 2.2
 import Sailfish.Silica 1.0
-import Opal.About 1.0
+import ".."
 
 Page {
     allowedOrientations: Orientation.All
