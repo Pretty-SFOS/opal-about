@@ -102,13 +102,14 @@ Column {
 
     Item {
         width: 1
-        height: buttons.length > 0 ? Theme.paddingMedium : 0
+        height: (buttons.length > 0 || __donationButtons.lenght > 0)
+                ? Theme.paddingMedium : 0
     }
 
     Column {
         width: parent.width
         height: childrenRect.height
-        spacing: Theme.paddingSmall
+        spacing: Theme.paddingMedium
 
         Repeater {
             model: buttons
