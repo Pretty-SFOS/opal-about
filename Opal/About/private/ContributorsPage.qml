@@ -77,6 +77,38 @@ Page {
                     }
                 }
             }
+
+            Column {
+                width: parent.width
+                spacing: column.spacing
+
+                SectionHeader {
+                    text: qsTranslate("Opal.About", "Acknowledgements")
+                    visible: attributions.length > 0
+                }
+
+                Repeater {
+                    model: attributions
+                    delegate: DetailList {
+                        property string spdxString: modelData._getSpdxString(" \u2022 \u2022 \u2022")
+                        activeLastValue: spdxString !== ''
+                        label: modelData.name
+                        values: {
+                            if (modelData.entries.length > 0 && spdxString !== '') modelData.entries.concat([spdxString])
+                            else if (modelData.entries.length > 0) modelData.entries
+                            else if (spdxString !== '') [spdxString]
+                            else [qsTranslate("Opal.About", "Thank you!")]
+                        }
+                        onClicked: {
+                            pageStack.animatorPush("LicensePage.qml", {
+                                                       'attributions': [modelData],
+                                                       'enableSourceHint': true,
+                                                       'pageDescription': modelData.name
+                                                   })
+                        }
+                    }
+                }
+            }
         }
     }
 }
