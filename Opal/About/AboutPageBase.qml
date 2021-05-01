@@ -194,8 +194,8 @@ Page {
       You can specify a full path to shared system files alternatively.
 
       \qml
-      appName: Qt.resolvedUrl("../images/harbour-myapp.png")
-      appName: "/usr/share/icons/hicolor/172x172/apps/harbour-myapp.png"
+      iconSource: Qt.resolvedUrl("../images/harbour-myapp.png")
+      iconSource: "/usr/share/icons/hicolor/172x172/apps/harbour-myapp.png"
       \endqml
 
       Setting this property is not strictly required but highly recommended.
