@@ -243,7 +243,13 @@ Page {
 
     /*!
       This property holds the app's main author(s) or maintainer(s).
+
+      The default heading for this section may have to follow the gender of the
+      person listed below in some languages. In this case, the default shipped
+      translations should be used with caution and adapted if necessary.
+
       \note People's names should not be translated.
+
       \required
     */
     property string maintainer: ""
