@@ -6,18 +6,16 @@
 
 .pragma library
 
-function updateSpdxList(licenses, spdxTarget, /*namesTarget,*/ force) {
-    if (spdxTarget !== null /*&& namesTarget !== null*/ && force !== true) {
+function updateSpdxList(licenses, spdxTarget, force) {
+    if (spdxTarget !== null && force !== true) {
         return null
     }
 
     var spdx = []
-    // var names = []
 
     for (var i in licenses) {
         spdx.push(licenses[i].spdxId)
-        // names.push(licenses[i].name)
     }
 
-    return { spdx: spdx/*, names: names*/ }
+    return { spdx: spdx }
 }

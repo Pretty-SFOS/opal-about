@@ -13,13 +13,11 @@ QtObject {
     property list<License> licenses
 
     property var _spdxList: null
-    // property var _namesList: null
 
     function _getSpdxList(force) {
-        var upd = Func.updateSpdxList(licenses, _spdxList, /*_namesList,*/ force)
+        var upd = Func.updateSpdxList(licenses, _spdxList, force)
         if (upd !== null) {
             _spdxList = upd.spdx
-            // _namesList = upd.names
         }
         return _spdxList
     }
