@@ -59,7 +59,7 @@ A.AboutPageBase {
 
     ]
 
-    donations.text: qsTr("If you want to support my work, you can buy me a cup of coffee.")
+    donations.text: donations.defaultTextCoffee
     donations.services: [
         A.DonationService {
             name: "LiberaPay"
