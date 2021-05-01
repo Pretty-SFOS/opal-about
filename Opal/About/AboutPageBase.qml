@@ -1,48 +1,7 @@
 /*
  * This file is part of opal-about.
- *
  * SPDX-FileCopyrightText: 2020-2021 Mirian Margiani
  * SPDX-License-Identifier: GPL-3.0-or-later
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- * *** CHANGELOG: ***
- *
- * 2020-08-22 [breaking]:
- * - packaged as part of Opal
- * - renamed to opal-about
- * - restructured and refactored
- *
- * 2020-06-16:
- * - make author section title and about page title configurable
- *
- * 2020-05-09:
- * - remove appName property (makes translations easier)
- *
- * 2020-04-25:
- * - remove version numbers, use changelog instead
- * - backwards-incompatible changes are marked with "[breaking]"
- *
- * 2020-04-24 [breaking]:
- * - make 'data' fields more usable as 'extra info' fields
- *
- * 2020-04-18:
- * - highlight missing version number
- *
- * 2020-04-17:
- * - initial release
- *
  */
 
 import QtQuick 2.0
