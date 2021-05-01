@@ -38,10 +38,13 @@ import Sailfish.Silica 1.0
 import ".."
 
 Page {
+    id: root
     allowedOrientations: Orientation.All
     property list<License> licenses
     property list<Attribution> attributions
     property bool enableSourceHint: true
+    property alias pageDescription: pageHeader.description
+    property string appName
 
     SilicaFlickable {
         anchors.fill: parent
@@ -51,7 +54,13 @@ Page {
         Column {
             id: column
             width: parent.width
-            PageHeader { title: qsTranslate("Opal.About", "License(s)", "", licenses.length) }
+            spacing: Theme.paddingMedium
+
+            PageHeader {
+                id: pageHeader
+                title: qsTranslate("Opal.About", "License(s)", "", licenses.length+attributions.length)
+                description: appName
+            }
 
             Label {
                 visible: enableSourceHint
@@ -61,68 +70,28 @@ Page {
                 horizontalAlignment: Text.AlignLeft
                 wrapMode: Text.Wrap
                 font.pixelSize: Theme.fontSizeExtraSmall
-                color: Theme.secondaryHighlightColor
+                color: Theme.highlightColor
                 text: qsTranslate("Opal.About", "Note: please check the source code for most accurate information.")
             }
 
+            LicenseListPart {
+                visible: root.licenses.length > 0
+                title: appName
+                headerVisible: appName !== '' && pageDescription !== appName
+                licenses: root.licenses
+                initiallyExpanded: root.licenses.length === 1 && root.attributions.length === 0
+            }
+
             Repeater {
-                model: licenses
-                delegate: Column {
-                    width: parent.width - 2*Theme.horizontalPageMargin
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    spacing: Theme.paddingSmall
-
-                    Label {
-                        width: parent.width
-                        horizontalAlignment: Text.AlignRight
-                        wrapMode: Text.Wrap
-                        font.pixelSize: Theme.fontSizeSmall
-                        textFormat: Text.PlainText
-                        color: Theme.highlightColor
-                        text: modelData.name !== "" ? modelData.name : modelData.spdxId
-                    }
-
-                    Label {
-                        width: parent.width
-                        horizontalAlignment: Text.AlignRight
-                        wrapMode: Text.Wrap
-                        font.pixelSize: Theme.fontSizeExtraSmall
-                        textFormat: Text.PlainText
-                        color: Theme.secondaryHighlightColor
-                        text: modelData.__forComponents.join(', ')
-                        visible: modelData.__forComponents.length > 0
-                    }
-
-                    Label {
-                        width: parent.width
-                        horizontalAlignment: Text.AlignRight
-                        wrapMode: Text.Wrap
-                        font.pixelSize: Theme.fontSizeExtraSmall
-                        textFormat: Text.PlainText
-                        color: Theme.secondaryHighlightColor
-                        text: modelData.spdxId
-                        visible: modelData.name !== ""
-                    }
-
-                    Item { width: 1; height: 1 }
-
-                    Label {
-                        property bool error: modelData.error === true || modelData.fullText === ""
-                        width: parent.width
-                        wrapMode: Text.Wrap
-                        font.pixelSize: Theme.fontSizeExtraSmall
-                        textFormat: error ? Text.RichText : Text.PlainText
-                        color: Theme.highlightColor
-
-                        text: error ? '<style type="text/css">A { color: "' +
-                                      String(Theme.primaryColor) +
-                                      '"; }</style>' + qsTranslate("Opal.About", "Please refer to <a href='%1'>%1</a>").arg(
-                                          "https://spdx.org/licenses/%1.html".arg(modelData.spdxId))
-                                    : modelData.fullText
-                        onLinkActivated: Qt.openUrlExternally(link)
-                    }
-
-                    Item { width: 1; height: 1.5*Theme.paddingLarge }
+                model: attributions
+                delegate: LicenseListPart {
+                    title: modelData.name
+                    headerVisible: title !== '' && pageDescription !== title
+                    licenses: modelData.licenses
+                    extraTexts: modelData.entries
+                    initiallyExpanded: root.licenses.length === 0 &&
+                                       root.attributions.length === 1 &&
+                                       root.attributions[0].licenses.length === 1
                 }
             }
         }
