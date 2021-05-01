@@ -40,6 +40,7 @@ import ".."
 Page {
     allowedOrientations: Orientation.All
     property list<License> licenses
+    property bool enableSourceHint: true
 
     SilicaFlickable {
         anchors.fill: parent
@@ -50,6 +51,18 @@ Page {
             id: column
             width: parent.width
             PageHeader { title: qsTranslate("Opal.About", "License(s)", "", licenses.length) }
+
+            Label {
+                visible: enableSourceHint
+                width: parent.width - 2*Theme.horizontalPageMargin
+                height: visible ? implicitHeight + Theme.paddingLarge : 0
+                anchors.horizontalCenter: parent.horizontalCenter
+                horizontalAlignment: Text.AlignLeft
+                wrapMode: Text.Wrap
+                font.pixelSize: Theme.fontSizeExtraSmall
+                color: Theme.secondaryHighlightColor
+                text: qsTranslate("Opal.About", "Note: please check the source code for most accurate information.")
+            }
 
             Repeater {
                 model: licenses
