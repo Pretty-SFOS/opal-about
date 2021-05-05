@@ -674,4 +674,15 @@ Page {
             }
         }
     }
+
+    Component.onCompleted: {
+        // This is a workaround for a bug in Silica.
+        // We set the default allowed orientations to "All" to fix
+        // switching pages in horizontal mode using pageStack.animatorPush.
+        // FIXME Find a better way to fix this.
+        if (__silica_applicationwindow_instance &&
+                __silica_applicationwindow_instance._defaultPageOrientations) {
+            __silica_applicationwindow_instance._defaultPageOrientations = Orientation.All
+        }
+    }
 }
