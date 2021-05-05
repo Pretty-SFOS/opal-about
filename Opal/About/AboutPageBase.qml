@@ -65,11 +65,12 @@ import "private"
 
             contributionSections: [
                 ContributionSection {
-                    title: qsTr("Development")
+                    // title: qsTr("Development") -- automatically added for the top section
                     groups: [
                         ContributionGroup {
                             title: qsTr("Programming")
-                            entries: ["Au Thor", "Jane Doe"]
+                            entries: ["Au Thor", "Jane Doe"] // it is not necessary to repeat names
+                                                             // already listed in mainAttributions
                         },
                         ContributionGroup {
                             title: qsTr("Icon Design")
@@ -128,7 +129,7 @@ import "private"
 
     \todo {how to include a section for donations}
 
-    \sa License, InfoSection, ContributionSection, ContributionGroup
+    \sa License, InfoSection, Attribution, ContributionSection, ContributionGroup
 */
 Page {
     id: page
@@ -246,7 +247,7 @@ Page {
       This property holds a list of relevant licenses.
 
       The very first licenses in this list is interpreted as the main
-      licenses of the project and will be shown directly on the
+      license of the project and its name will be shown directly on the
       About page. If more than one license is specified, all
       additional licenses will be shown when clicking on the license
       section.
@@ -258,6 +259,9 @@ Page {
       is not possible, a short notice including a link to the full
       license text will be shown.
 
+      \note some licenses require you to include certain notices in a
+      prominent place. Use the \l License.customShortText property for this.
+
       \todo example
 
       \sa License
@@ -267,9 +271,16 @@ Page {
     /*!
       This property holds a list of attributions, e.g. to third-party libraries.
 
+      This list is intended for listing names not involved in development,
+      and for attributions to third-party libraries and the respective licenses.
+      For example, some Creative Commons licenses require attribution.
+
+      \note Use contribution sections for listing contributors.
+      See \l contributionSections.
+
       \todo example
 
-      \sa Attribution
+      \sa Attribution, contributionSections
     */
     property list<Attribution> attributions
 
@@ -284,14 +295,18 @@ Page {
 
     /*!
       This property holds a list of additional custom info sections.
-      \todo {Where will they be shown?}
+
+      Custom sections will be shown below the authors/contributors section
+      and above the donations and license sections.
+
       \todo example
-      \sa InfoSection
+
+      \sa InfoSection, donations, translationsUrl, sourcesUrl
     */
     property list<InfoSection> extraSections
 
     /*!
-      This property holds the definition of your apps contributors.
+      This property holds the list of your apps contributors.
 
       You can leave this property empty if you are the only contributor.
       When this list is not empty, a page showing all contributions can
@@ -300,9 +315,20 @@ Page {
       The contributors page component is configured through this property
       and should not be used directly.
 
+      The very first section is automatically added and contains the list
+      of names specified in the \l mainAttributions property. The title
+      of this section is "Development" (optionally translated).
+
+      \note If the first section in the \l contributionSections list is titled
+      "Development" too (or has no title), it will be merged with the
+      automatically inserted top section.
+
+      \note Third-party libraries and licenses can be specified using
+      the \l attributions property.
+
       \todo example
 
-      \sa ContributionSection, ContributionGroup
+      \sa ContributionSection, ContributionGroup, attributions
     */
     property list<ContributionSection> contributionSections
 
