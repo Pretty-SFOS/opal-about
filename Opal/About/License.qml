@@ -11,6 +11,7 @@ QtObject {
     property string spdxId
     property string customShortText: ""
 
+    property bool offline: false
     readonly property bool error: __error
     readonly property string name: __name
     readonly property string fullText: __fullText
@@ -55,7 +56,8 @@ QtObject {
             spdxId: spdxId,
             localUrl: __localUrl,
             remoteUrl: __remoteUrl,
-            shortText: customShortText
+            shortText: customShortText,
+            offline: root.offline
         });
     }
 }

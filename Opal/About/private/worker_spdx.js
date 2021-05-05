@@ -97,11 +97,22 @@ WorkerScript.onMessage = function(message) {
             console.log(LOG_SCOPE, "license loaded locally from", message.localUrl);
             sendSuccess(message.spdxId, o['name'], o['licenseText'],
                         getShortText(message.shortText, message.spdxId));
-        }
-        catch (e) {
-            loadRemote(message.spdxId, message.localUrl, message.remoteUrl, message.shortText);
+        } catch (e) {
+            if (!!message.offline) {
+                console.log(LOG_SCOPE, "license not cached at "+message.localUrl+
+                            ", skipping download in offline mode");
+                sendError(message.spdxId);
+            } else {
+                loadRemote(message.spdxId, message.localUrl, message.remoteUrl, message.shortText);
+            }
         }
     }, function(xhr) {
-        loadRemote(message.spdxId, message.localUrl, message.remoteUrl);
+        if (!!message.offline) {
+            console.log(LOG_SCOPE, "license not cached at "+message.localUrl+
+                        ", skipping download in offline mode");
+            sendError(message.spdxId);
+        } else {
+            loadRemote(message.spdxId, message.localUrl, message.remoteUrl, message.shortText);
+        }
     });
 }
