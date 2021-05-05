@@ -6,6 +6,7 @@
 
 import QtQuick 2.2
 import Sailfish.Silica 1.0
+import "functions.js" as Func
 import ".."
 
 Page {
@@ -57,7 +58,7 @@ Page {
                         model: modelData.groups
                         delegate: DetailList {
                             label: modelData.title
-                            values: modelData.entries
+                            values: modelData.__effectiveEntries
                         }
                     }
                 }
@@ -77,14 +78,13 @@ Page {
                     delegate: DetailList {
                         property string spdxString: modelData._getSpdxString(" \u2022 \u2022 \u2022")
                         activeLastValue: spdxString !== ''
-                        label: (modelData.entries.length === 0 && spdxString === '') ?
+                        label: (modelData.__effectiveEntries.length === 0 && spdxString === '') ?
                                    qsTranslate("Opal.About", "Thank you!") :
                                    modelData.name
                         values: {
-                            if (modelData.entries.length > 0 && spdxString !== '') modelData.entries.concat([spdxString])
-                            else if (modelData.entries.length > 0) modelData.entries
-                            else if (spdxString !== '') [spdxString]
-                            else [modelData.name]
+                            var vals = Func.makeStringListConcat(modelData.__effectiveEntries, spdxString, false)
+                            if (vals.length > 0) return vals
+                            else return [modelData.name]
                         }
                         onClicked: {
                             pageStack.animatorPush("LicensePage.qml", {

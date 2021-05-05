@@ -60,7 +60,7 @@ Page {
                     title: modelData.name
                     headerVisible: title !== '' && pageDescription !== title
                     licenses: modelData.licenses
-                    extraTexts: modelData.entries
+                    extraTexts: modelData.__effectiveEntries
                     initiallyExpanded: root.licenses.length === 0 &&
                                        root.attributions.length === 1 &&
                                        root.attributions[0].licenses.length === 1

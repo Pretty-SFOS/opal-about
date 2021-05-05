@@ -12,6 +12,7 @@ QtObject {
     property var entries: []
     property list<License> licenses
 
+    property var __effectiveEntries: Func.makeStringList(entries, false)
     property var _spdxList: null
 
     function _getSpdxList(force) {
