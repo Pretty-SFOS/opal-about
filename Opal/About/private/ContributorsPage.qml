@@ -76,12 +76,14 @@ Page {
                     delegate: DetailList {
                         property string spdxString: modelData._getSpdxString(" \u2022 \u2022 \u2022")
                         activeLastValue: spdxString !== ''
-                        label: modelData.name
+                        label: (modelData.entries.length === 0 && spdxString === '') ?
+                                   qsTranslate("Opal.About", "Thank you!") :
+                                   modelData.name
                         values: {
                             if (modelData.entries.length > 0 && spdxString !== '') modelData.entries.concat([spdxString])
                             else if (modelData.entries.length > 0) modelData.entries
                             else if (spdxString !== '') [spdxString]
-                            else [qsTranslate("Opal.About", "Thank you!")]
+                            else [modelData.name]
                         }
                         onClicked: {
                             pageStack.animatorPush("LicensePage.qml", {
