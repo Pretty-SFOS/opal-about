@@ -7,6 +7,8 @@
 # SPDX-FileCopyrightText: 2021 Mirian Margiani
 # SPDX-License-Identifier: CC0-1.0
 #
+# @@@ keep this line: based on template v0.1.0
+#
 
 # current semantic version number, cf. https://semver.org
 version: 0.2.0
@@ -23,9 +25,16 @@ nameStyled: About
 # Opal Gallery. Line breaks can included with '\n' but should be avoided.
 description: This module provides <i>AboutPageBase</i> for building customizable application information pages.
 
-# the module's main author
-# (listing additional contributors is not yet supported)
-author: ichthyosaurus
+# colon-separated list of this module's current maintainer(s)
+maintainers: ichthyosaurus
+
+# colon-separated list of this module's author(s) and contributors
+# this list should be exhaustive
+authors: ichthyosaurus
+
+# attribution string for the whole module, in the same for as a SPDX
+# FileCopyrightText entry.
+attribution: 2018-2021 Mirian Margiani
 
 # the module's SPDX license id, cf. https://spdx.org/licenses/
 mainLicenseSpdx: GPL-3.0-or-later
