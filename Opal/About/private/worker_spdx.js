@@ -85,7 +85,6 @@ function loadRemote(spdxId, localUrl, remoteUrl, origShortText) {
 
 WorkerScript.onMessage = function(message) {
     if (message.spdxId === undefined || message.spdxId === "") {
-        error = true;
         console.error(LOG_SCOPE, "cannot load license without spdx id");
         sendError("");
         return;
