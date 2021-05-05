@@ -401,19 +401,19 @@ Page {
 
     SilicaFlickable {
         id: _flickable
-        anchors.fill: parent
         contentHeight: column.height
+        anchors.fill: parent
+        VerticalScrollDecorator { }
 
         Column {
             id: column
+            width: parent.width
+            spacing: 1.5*Theme.paddingLarge
 
             PageHeader {
                 id: _pageHeader
                 title: qsTranslate("Opal.About", "About")
             }
-
-            width: parent.width
-            spacing: 1.5*Theme.paddingLarge
 
             Image {
                 id: _icon
