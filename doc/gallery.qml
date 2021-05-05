@@ -20,7 +20,8 @@ A.AboutPageBase {
                       "and rich text or <a href='https://example.org'>links</a>.")
 
     // note: don't use qsTr() for names in real applications
-    mainAttributions: [qsTr("the app's maintainer"), qsTr("another important person")]
+    authors: [qsTr("the app's maintainer"), qsTr("another important person")]
+    mainAttributions: [qsTr("additional name")]
     sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
     translationsUrl: "https://weblate.com/"
 
@@ -33,7 +34,7 @@ A.AboutPageBase {
     attributions: [
         A.Attribution {
             name: "My.Extra.Component"
-            entries: ["2020-2021 At Lanta"]
+            entries: ["2020-2021 John Doe", "2021 Jane Doe"]
             licenses: A.License { spdxId: "CC0-1.0" }
         },
         A.Attribution {
@@ -42,12 +43,12 @@ A.AboutPageBase {
         },
         A.Attribution {
             name: "Yet Another Lib"
-            entries: ["1984 Jane Doe"]
+            entries: "1984 Jane Doe"
             licenses: A.License { spdxId: "GPL-3.0-or-later" }
         },
         A.Attribution {
             name: "Other Imaginary Components"
-            entries: ["2000 Components Community"]
+            entries: "2000 Components Community"
             licenses: A.License { spdxId: "MIT" }
         },
         A.Attribution {
@@ -77,7 +78,7 @@ A.AboutPageBase {
             buttons: [
                 A.InfoButton {
                     text: qsTr("Data License")
-                    onClicked: function() { Qt.openUrlExternally("https://example.org") }
+                    onClicked: Qt.openUrlExternally("https://example.org")
                 }
             ]
         },
@@ -94,7 +95,7 @@ A.AboutPageBase {
             groups: [
                 A.ContributionGroup {
                     title: qsTr("Programming")
-                    entries: ["ichthyosaurus", "At Lanta", "Jane Doe"]
+                    entries: ["ichthyosaurus", "Jim Doe", "Jane Doe"]
                 },
                 A.ContributionGroup {
                     title: qsTr("Icon Design")
@@ -107,7 +108,7 @@ A.AboutPageBase {
             groups: [
                 A.ContributionGroup {
                     title: qsTr("English")
-                    entries: ["Some Body", "Bodhi Sam", "Sam B. Dy"]
+                    entries: ["Some Body", "Sam Bodhi", "Sam B. Dy"]
                 },
                 A.ContributionGroup {
                     title: qsTr("German")
