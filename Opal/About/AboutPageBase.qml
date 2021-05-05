@@ -405,6 +405,19 @@ Page {
         anchors.fill: parent
         VerticalScrollDecorator { }
 
+        onContentHeightChanged: {
+            if (_flickable.contentHeight > page.height &&
+                    _flickable.contentHeight - _pageHeader.origHeight +
+                    Theme.paddingMedium < page.height) {
+                var to = (page.height - (_flickable.contentHeight-_pageHeader.origHeight)) / 2 + Theme.paddingMedium
+                if (to < paddingAnim.to) paddingAnim.to = to
+                // console.count("[About] shrink: "+paddingAnim.to+" "+_pageHeader.origHeight+" p:"+page.height+" f:"+flickable.contentHeight)
+                hideAnim.restart()
+            } /* else {
+                console.count("[About] no shrink: "+_pageHeader.height)
+            } */
+        }
+
         Column {
             id: column
             width: parent.width
@@ -412,7 +425,25 @@ Page {
 
             PageHeader {
                 id: _pageHeader
+                property real origHeight: height
                 title: qsTranslate("Opal.About", "About")
+                Component.onCompleted: origHeight = height
+
+                ParallelAnimation {
+                    id: hideAnim
+                    FadeAnimator {
+                        target: _pageHeader
+                        to: 0.0
+                        duration: 80
+                    }
+                    SmoothedAnimation {
+                        id: paddingAnim
+                        target: _pageHeader
+                        property: "height"
+                        to: _pageHeader.origHeight
+                        duration: 80
+                    }
+                }
             }
 
             Image {
@@ -527,12 +558,15 @@ Page {
                         enabled: sourcesUrl !== ''
                     }
                 ]
+
+                clip: true
+                Behavior on height { SmoothedAnimation { duration: 80 } }
             }
 
             Item {
                 id: bottomVerticalSpacing
                 width: parent.width
-                height: Theme.horizontalPageMargin
+                height: Theme.paddingMedium
             }
         }
     }
