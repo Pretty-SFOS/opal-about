@@ -377,7 +377,7 @@ Page {
       \sa InfoSection
       \internal
     */
-    property alias _contribInfoSection: _contribInfo
+    property alias _licenseInfoSection: _licenseInfo
 
     /*!
       This property references the donations info section.
@@ -513,7 +513,7 @@ Page {
             }
 
             InfoSection {
-                id: _contribInfo
+                id: _licenseInfo
                 width: parent.width
                 title: qsTranslate("Opal.About", "License")
                 enabled: licenses.length > 0
