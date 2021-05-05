@@ -38,12 +38,27 @@ import "private"
     property of \l InfoSection. Refer to \l InfoSection and \l extraSections
     for more information.
 
+    Use the \l attributions property to define attributions that are
+    necessary but don't need a dedicated info section on the main page.
+
+    \section2 Donations
+
+    Users can be asked for donations using the \l donations group. Some default
+    texts are already provided. Set a list of \l DonationService elements
+    on the \l donations.services property.
+
+    It is also possible to explicitly ask for \e no donations by using
+    the \l DonationsGroup::defaultTextContribInstead text.
+
+    The section will be hidden if neither a text nor services are defined.
+
     \section2 Example Page
 
     The code below demonstrates an app info page for a simple project.
-    One-person projects without other contributors or third-party attribution
-    requirements (e.g. software libraries, etc.) can omit filling out
-    \l contributionSections property.
+    One-person projects without other contributors can omit setting the
+    \l contributionSections property. If additional attributions (e.g.
+    for third-party libraries) are required, the \l attributions property
+    can be omitted too.
 
     \qml
         import QtQuick 2.0
@@ -60,9 +75,22 @@ import "private"
             releaseNumber: APP_RELEASE
             description: qsTr("This is a short description of the app.")
             sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
+            translationsUrl: "https://weblate.org"
 
             authors: "Au Thor" // either a list or a single string
             licenses: License { spdxId: "GPL-3.0-or-later" }
+
+            donations.text: donations.defaultTextCoffee
+            donations.services: DonationService {
+                name: "LiberaPay"
+                url: "liberapay.com"
+            }
+
+            attributions: Attribution {
+                name: "The Library"
+                entries: ["1201 The Old Librarians", "2014 The Librarians"]
+                licenses: License { spdxId: "CC0-1.0" }
+            }
 
             contributionSections: [
                 ContributionSection {
@@ -71,7 +99,7 @@ import "private"
                         ContributionGroup {
                             title: qsTr("Programming")
                             entries: ["Au Thor", "Jane Doe"] // it is not necessary to repeat names
-                                                             // already listed in mainAttributions
+                                                             // already listed in mainAttributions/authors
                         },
                         ContributionGroup {
                             title: qsTr("Icon Design")
@@ -84,11 +112,11 @@ import "private"
                     groups: [
                         ContributionGroup {
                             title: qsTr("English")
-                            entries: ["Some Body"]
+                            entries: "Some Body"
                         },
                         ContributionGroup {
                             title: qsTr("German")
-                            entries: ["Max Mustermann"]
+                            entries: "Max Mustermann"
                         }
                     ]
                 }
@@ -128,13 +156,10 @@ import "private"
     if you want to explicitly use a pre-translated string. This should not be
     necessary, though.
 
-    \todo {how to include a section for donations}
-
-    \sa License, InfoSection, Attribution, ContributionSection, ContributionGroup
+    \sa License, InfoSection, Attribution, ContributionSection, ContributionGroup, donations
 */
 Page {
     id: page
-    allowedOrientations: Orientation.All
 
     /*!
       This property sets the app's name which will be displayed together with
@@ -158,8 +183,8 @@ Page {
 
       Setting this property is not strictly required but highly recommended.
 
-      \note You can use \opsnip {render-icons} to easily render icons to
-      any destination.
+      \note you can use \opsnip {render-icons} to easily render SVG icon
+      source to any destination.
     */
     property string iconSource: ""
 
@@ -167,7 +192,8 @@ Page {
       This property holds the app's version number.
 
       Use for example \c APP_VERSION if configured via C++.
-      \note You can use \opsnip {cached-defines} for passing options from
+
+      \note you can use \opsnip {cached-defines} for passing options from
       YAML to QML.
 
       \required
@@ -178,7 +204,8 @@ Page {
     /*!
       This property holds the app's release number.
       Use for example \c APP_RELEASE if configured via C++
-      \note You can use \opsnip {cached-defines} for passing options from
+
+      \note you can use \opsnip {cached-defines} for passing options from
       YAML to QML.
 
       Setting this property is not required. It will only be shown
@@ -189,7 +216,7 @@ Page {
     property string releaseNumber: "1"
 
     /*!
-      This property holds a rich text description of the app.
+      This property holds a styled text description of the app.
 
       Sailfish-themed styling is applied by default. You can include
       links in text using \c {<a>} tags if needed. Depending on your
@@ -209,40 +236,15 @@ Page {
       It is possible to assign a single string value instead of a list
       to this property.
 
-      \note If the first group in \l contributionSections is also titled
+      \note if the first group in \l contributionSections is also titled
       "Development", it will be merged automatically.
 
-      \note People's names should not be translated.
+      \note people's names should not be translated.
 
       \required
-      \sa contributionSections, attributions
+      \sa authors, contributionSections, attributions
     */
     property var mainAttributions: []
-
-    /*!
-      This property specifys where users can get the app's source code.
-
-      If your app is open-source software it is recommended to include a
-      link to a publicly accessible source code repository. This helps
-      potential contributors. If you don't want to setup a public
-      code repository you can add a custom info section with contact details.
-
-      \note some open-source licenses require you to provide your app's source code.
-    */
-    property string sourcesUrl: ""
-
-    /*!
-      This property specifys where users can contribute to the app's translations.
-
-      Helping with translations is a good way for non-technical users to contribute
-      to open source projects they enjoy. Giving them the chance to do so gives
-      warm and fuzzy feelings to everyone involved.
-
-      \note \l {https://weblate.com} {Weblate} is an open source tool for
-      translations. The community behind it provides a free service for
-      applicable open source projects.
-    */
-    property string translationsUrl: ""
 
     /*!
       This is a convenience property to be used instead of the \l mainAttributions property.
@@ -271,6 +273,31 @@ Page {
     property var __effectiveMainAttribs: Func.makeStringListConcat(authors, mainAttributions, false)
 
     /*!
+      This property specifys where users can get the app's source code.
+
+      If your app is open-source software it is recommended to include a
+      link to a publicly accessible source code repository. This helps
+      potential contributors. If you don't want to setup a public
+      code repository you can add a custom info section with contact details.
+
+      \note some open-source licenses require you to provide your app's source code.
+    */
+    property string sourcesUrl: ""
+
+    /*!
+      This property specifys where users can contribute to the app's translations.
+
+      Helping with translations is a good way for non-technical users to contribute
+      to open source projects they enjoy. Giving them the chance to do so gives
+      warm and fuzzy feelings to everyone involved.
+
+      \note \l {https://weblate.com} {Weblate} is an open source tool for
+      translations. The community behind it provides a free service for
+      applicable open source projects.
+    */
+    property string translationsUrl: ""
+
+    /*!
       This property holds a list of relevant licenses.
 
       The very first licenses in this list is interpreted as the main
@@ -281,15 +308,30 @@ Page {
 
       Licenses are specified by their \l {https://spdx.org/licenses/}
       {SPDX identifiers}. You don't have to include any license
-      texts manually. They will be automatically downloaded and cached
+      texts manually: they will be automatically downloaded and cached
       locally. If a license text is not available locally and downloading
       is not possible, a short notice including a link to the full
       license text will be shown.
 
-      \note some licenses require you to include certain notices in a
+      \b {Required notices:}
+
+      Some licenses require you to include certain notices in a
       prominent place. Use the \l License.customShortText property for this.
 
-      \todo example
+      Default short texts will be shown automatically for the
+      following licenses:
+
+      \table 100 %
+      \header
+        \li SPDX ID
+        \li Default short text
+      \row
+        \li GPL-*, AGPL-*, LGPL-*
+        \li This is free software: you are welcome to redistribute it under certain conditions.
+            There is NO WARRANTY, to the extent permitted by law.
+      \endtable
+
+      \note these default texts are not translated.
 
       \sa License
     */
@@ -305,8 +347,6 @@ Page {
       \note Use contribution sections for listing contributors.
       See \l contributionSections.
 
-      \todo example
-
       \sa Attribution, contributionSections
     */
     property list<Attribution> attributions
@@ -314,9 +354,24 @@ Page {
     /*!
       This property group holds a list of possible ways to donate to the project.
 
-      \todo example
+      Users can be asked for donations using the \l donations group. Some default
+      texts are already provided. Set a list of \l DonationService elements
+      on the \l donations.services property.
 
-      \sa DonationService
+      It is also possible to explicitly ask for \e no donations by using
+      the \l DonationsGroup::defaultTextContribInstead text.
+
+      The section will be hidden if neither a text nor services are defined.
+
+      \qml
+        donations.text: donations.defaultTextCoffee
+        donations.services: DonationService {
+            name: "LiberaPay"
+            url: "liberapay.com"
+        }
+      \endqml
+
+      \sa DonationService, DonationsGroup
     */
     readonly property DonationsGroup donations: DonationsGroup { }
 
@@ -326,9 +381,20 @@ Page {
       Custom sections will be shown below the authors/contributors section
       and above the donations and license sections.
 
-      \todo example
+      Multiple buttons can be added using \l InfoButton elements.
 
-      \sa InfoSection, donations, translationsUrl, sourcesUrl
+      \qml
+        extraSections: InfoSection {
+            title: qsTr("Data")
+            text: qsTr("Lorem ipsum dolor sit amet et cetera ad libitum plurum sid alum.")
+            buttons: InfoButton {
+                text: qsTr("Terms of Use")
+                onClicked: Qt.openUrlExternally("https://example.org")
+            }
+        }
+      \endqml
+
+      \sa InfoSection, InfoButton, donations, translationsUrl, sourcesUrl
     */
     property list<InfoSection> extraSections
 
@@ -353,7 +419,30 @@ Page {
       \note Third-party libraries and licenses can be specified using
       the \l attributions property.
 
-      \todo example
+      \qml
+          contributionSections: [
+              ContributionSection {
+                  // title: qsTr("Development")
+                  groups: [
+                      ContributionGroup {
+                          title: qsTr("Programming")
+                          entries: "..."
+                      },
+                      ContributionGroup {
+                          title: qsTr("Icon Design")
+                          entries: ["...", "..."]
+                      }
+                  ]
+              },
+              ContributionSection {
+                  title: qsTr("Translations")
+                  groups: ContributionGroup {
+                      title: qsTr("English")
+                      entries: ["...", "..."]
+                  }
+              }
+          ]
+      \endqml
 
       \sa ContributionSection, ContributionGroup, attributions
     */
@@ -558,9 +647,7 @@ Page {
                 text: enabled === false ?
                           qsTranslate("Opal.About", "This is proprietary software. All rights reserved.") :
                           ((licenses[0].name !== "" && licenses[0].error !== true) ?
-                               licenses[0].name : licenses[0].spdxId)/* +
-                          (licenses[0].customShortText === "" ?
-                               "" : "<br>"+licenses[0].customShortText)*/
+                               licenses[0].name : licenses[0].spdxId)
                 smallPrint: licenses[0].customShortText
                 showMoreLabel: qsTranslate("Opal.About", "show license(s)", "", licenses.length+attributions.length)
                 buttons: [
