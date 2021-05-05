@@ -460,13 +460,12 @@ Page {
             Label {
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: parent.width - 2*Theme.horizontalPageMargin
-                text: '<style type="text/css">A { color: "' +
-                      String(palette.secondaryColor) +
-                      '"; }</style>' + description
+                text: description
                 onLinkActivated: Qt.openUrlExternally(link)
                 wrapMode: Text.Wrap
-                textFormat: Text.RichText
+                textFormat: Text.StyledText
                 horizontalAlignment: Text.AlignHCenter
+                linkColor: palette.secondaryColor
                 palette.primaryColor: Theme.highlightColor
             }
 

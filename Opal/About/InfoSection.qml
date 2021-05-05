@@ -73,10 +73,9 @@ Column {
                     width: parent.width
                     horizontalAlignment: Text.AlignLeft
                     wrapMode: Text.Wrap
-                    text: '<style type="text/css">A { color: "' +
-                          String(palette.secondaryColor) +
-                          '"; }</style>' + root.text
-                    textFormat: Text.RichText
+                    text: root.text
+                    textFormat: Text.StyledText
+                    linkColor: palette.secondaryColor
                     palette.primaryColor: Theme.highlightColor
                 }
 
