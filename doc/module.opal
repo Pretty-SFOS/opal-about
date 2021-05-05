@@ -30,7 +30,7 @@ author: ichthyosaurus
 # the module's SPDX license id, cf. https://spdx.org/licenses/
 mainLicenseSpdx: GPL-3.0-or-later
 
-# Them main example page to be used in Opal Gallery is doc/gallery.qml.
+# The main example page to be used in Opal Gallery is doc/gallery.qml.
 # Additional pages must be placed in a directory called "doc/gallery" and listed
 # in "extraGalleryPages". Set to "none" if only the main QML file is used.
 # The field contains a space separated list of file names without path. Names
