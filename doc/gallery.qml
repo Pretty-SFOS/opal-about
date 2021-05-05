@@ -20,14 +20,15 @@ A.AboutPageBase {
                       "and rich text or <a href='https://example.org'>links</a>.")
 
     // note: don't use qsTr() for names in real applications
-    maintainer: qsTr("the main author or maintainer")
+    mainAttributions: [qsTr("the app's maintainer"), qsTr("another important person")]
     sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
     translationsUrl: "https://weblate.com/"
 
     licenses: A.License {
         spdxId: "GPL-3.0-or-later"
-        customShortText: "This is free software: you are free to change and redistribute it. " +
-                         "There is NO WARRANTY, to the extent permitted by law."
+        // -- automatically provided:
+        // customShortText: "This is free software: you are welcome to redistribute it under certain conditions. " +
+        //                  "There is NO WARRANTY, to the extent permitted by law."
     }
     attributions: [
         A.Attribution {
