@@ -19,3 +19,26 @@ function updateSpdxList(licenses, spdxTarget, force) {
 
     return { spdx: spdx }
 }
+
+function makeStringListConcat(first, second, allowEmpty) {
+    var a = makeStringList(first, allowEmpty)
+    var b = makeStringList(second, allowEmpty)
+    return a.concat(b)
+}
+
+function makeStringList(listOrString, allowEmpty) {
+    if (!(listOrString instanceof Array)) listOrString = [listOrString]
+
+    var ae = (allowEmpty === true ? 1 : 0)
+    var len = listOrString.length
+    var ret = []
+
+    for (var i = 0; i < len; i++) {
+        var val = listOrString[i]
+        var str = (typeof val === 'string' ? val : (!val ? '' : String(val))).trim()
+        if (ae === 0 && !val) continue
+        ret.push(val)
+    }
+
+    return ret
+}
