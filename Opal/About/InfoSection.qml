@@ -15,6 +15,7 @@ Column {
 
     property alias title: _titleLabel.text
     property string text: ""
+    property string smallPrint: ""
     property string showMoreLabel: qsTranslate("Opal.About", "show details")
     property list<InfoButton> buttons
     property alias backgroundItem: _bgItem
@@ -23,6 +24,7 @@ Column {
     default property alias contentItem: _contents.children
     property alias _titleItem: _titleLabel
     property alias _textItem: _textLabel
+    property alias _smallPrintItem: _smallPrintLabel
     property alias _showMoreLabelItem: _showMoreLabel
 
     property list<DonationService> __donationButtons
@@ -67,6 +69,7 @@ Column {
 
                 Label {
                     id: _textLabel
+                    visible: root.text !== ''
                     width: parent.width
                     horizontalAlignment: Text.AlignLeft
                     wrapMode: Text.Wrap
@@ -75,6 +78,18 @@ Column {
                           '"; }</style>' + root.text
                     textFormat: Text.RichText
                     palette.primaryColor: Theme.highlightColor
+                }
+
+                Label {
+                    id: _smallPrintLabel
+                    visible: smallPrint !== ''
+                    width: parent.width
+                    horizontalAlignment: Text.AlignLeft
+                    wrapMode: Text.Wrap
+                    text: smallPrint
+                    textFormat: Text.StyledText
+                    palette.primaryColor: Theme.highlightColor
+                    font.pixelSize: Theme.fontSizeSmall
                 }
 
                 Row {
@@ -86,7 +101,8 @@ Column {
 
                     Label {
                         id: _showMoreLabel
-                        textFormat: Text.StyledText; font.pixelSize: Theme.fontSizeExtraSmall
+                        font.pixelSize: Theme.fontSizeExtraSmall
+                        textFormat: Text.StyledText
                         text: "<i>%1</i>".arg(showMoreLabel)
                     }
                     Label {
