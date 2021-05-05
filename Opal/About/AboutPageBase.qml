@@ -34,7 +34,7 @@ import "private"
     If your app relies on third-party services, e.g. data providers
     or for cloud functionalities, you should include a dedicated info
     section for each service that requires the user to accept Terms of Use
-    or attribution. You can add links or open custom pages via the \c button
+    or attribution. You can add links or open custom pages via the \c buttons
     property of \l InfoSection. Refer to \l InfoSection and \l extraSections
     for more information.
 
@@ -316,22 +316,9 @@ Page {
       \b {Required notices:}
 
       Some licenses require you to include certain notices in a
-      prominent place. Use the \l License.customShortText property for this.
-
-      Default short texts will be shown automatically for the
-      following licenses:
-
-      \table 100 %
-      \header
-        \li SPDX ID
-        \li Default short text
-      \row
-        \li GPL-*, AGPL-*, LGPL-*
-        \li This is free software: you are welcome to redistribute it under certain conditions.
-            There is NO WARRANTY, to the extent permitted by law.
-      \endtable
-
-      \note these default texts are not translated.
+      prominent place. Use the \l License::customShortText property for this.
+      Follow the link for a list of default short texts that will be shown
+      automatically for a few licenses.
 
       \sa License
     */

@@ -7,9 +7,52 @@
 import QtQuick 2.0
 import "private/functions.js" as Func
 
+/*!
+    \qmltype Attribution
+    \inqmlmodule Opal.About
+    \inherits QtObject
+    \brief Provides the definition of an attribution.
+
+    \note if neither licenses nor entries are defined through
+    \l licenses and \l entries, a "thank you!" entry will be
+    shown on the contributors page using the \l name property.
+
+    \sa AboutPageBase::attributions, AboutPageBase::contributionSections, AboutPageBase::authors
+*/
 QtObject {
+    /*!
+      This property holds the name of the attributed entity.
+
+      If this attribution is for a third-party library, this should
+      be the library's name.
+
+      \required
+    */
     property string name
+
+    /*!
+      This property holds a list of texts linked to this attribution.
+
+      \b Example: if this is an attribution for a third-party library,
+      this list should contain the copyright holders as required
+      by the library's license.
+
+      It is possible to assign a single string value instead of a list
+      to this property.
+
+      \qml
+        entries: "2021 Jane Doe"
+        // or:
+        entries: ["2021 Jane Doe", "2020 John Doe"]
+      \endqml
+    */
     property var entries: []
+
+    /*!
+      This property holds a list of licenses relevant to this attribution.
+
+      \sa License
+    */
     property list<License> licenses
 
     property var __effectiveEntries: Func.makeStringList(entries, false)
