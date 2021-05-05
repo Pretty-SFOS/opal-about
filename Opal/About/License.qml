@@ -29,6 +29,7 @@ QtObject {
             __name = messageObject.name;
             __fullText = messageObject.fullText;
             __error = messageObject.error;
+            if (customShortText === '') customShortText = messageObject.shortText
         }
 
         Component.onCompleted: {
@@ -51,6 +52,10 @@ QtObject {
 
         __name = ""; __fullText = ""; __error = false;
         __worker.sendMessage({
-            spdxId: spdxId, localUrl: __localUrl, remoteUrl: __remoteUrl });
+            spdxId: spdxId,
+            localUrl: __localUrl,
+            remoteUrl: __remoteUrl,
+            shortText: customShortText
+        });
     }
 }

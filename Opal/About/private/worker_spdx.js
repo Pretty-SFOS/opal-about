@@ -6,20 +6,35 @@
 
 var LOG_SCOPE = '[Opal.About]'
 
+function getShortText(origShortText, spdxId) {
+    // This function provides standard short texts for a few common licenses,
+    // unless a short text is already provided by the user.
+    if (origShortText !== '') return origShortText
+
+    if (/^[AL]?GPL-/.test(spdxId)) {
+        return "This is free software: you are welcome to redistribute it under certain conditions. " +
+               "There is NO WARRANTY, to the extent permitted by law."
+    }
+
+    return origShortText
+}
+
 function sendError(spdxId) {
     WorkerScript.sendMessage({
         spdxId: spdxId,
         name: "",
         fullText: "",
+        shortText: "",
         error: true
     });
 }
 
-function sendSuccess(spdxId, name, fullText) {
+function sendSuccess(spdxId, name, fullText, shortText) {
     WorkerScript.sendMessage({
         spdxId: spdxId,
         name: name,
         fullText: fullText,
+        shortText: shortText,
         error: false
     });
 }
@@ -46,13 +61,14 @@ function request(type, url, onSuccess, onFailure, postData) {
     }
 }
 
-function loadRemote(spdxId, localUrl, remoteUrl) {
+function loadRemote(spdxId, localUrl, remoteUrl, origShortText) {
     request("GET", remoteUrl, function(xhr) {
         try {
             var o = JSON.parse(xhr.responseText);
             if (!o || typeof o !== "object") throw 1;
             console.log(LOG_SCOPE, "license loaded remotely from", remoteUrl);
-            sendSuccess(spdxId, o['name'], o['licenseText']);
+            sendSuccess(spdxId, o['name'], o['licenseText'],
+                        getShortText(origShortText, message.spdxId));
 
             request("PUT", localUrl, function(x){
                 console.log(LOG_SCOPE, "saved license with status", x.status, "to", localUrl);
@@ -81,10 +97,11 @@ WorkerScript.onMessage = function(message) {
             var o = JSON.parse(xhr.responseText);
             if (!o || typeof o !== "object") throw 1;
             console.log(LOG_SCOPE, "license loaded locally from", message.localUrl);
-            sendSuccess(message.spdxId, o['name'], o['licenseText']);
+            sendSuccess(message.spdxId, o['name'], o['licenseText'],
+                        getShortText(message.shortText, message.spdxId));
         }
         catch (e) {
-            loadRemote(message.spdxId, message.localUrl, message.remoteUrl);
+            loadRemote(message.spdxId, message.localUrl, message.remoteUrl, message.shortText);
         }
     }, function(xhr) {
         loadRemote(message.spdxId, message.localUrl, message.remoteUrl);
