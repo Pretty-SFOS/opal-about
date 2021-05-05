@@ -12,6 +12,8 @@ Page {
     allowedOrientations: Orientation.All
     property list<ContributionSection> sections
     property list<Attribution> attributions
+    property var maintainers: []
+    property var authors: []
 
     SilicaFlickable {
         anchors.fill: parent
@@ -23,6 +25,18 @@ Page {
             spacing: Theme.paddingMedium
 
             PageHeader { title: qsTranslate("Opal.About", "Contributors") }
+
+            DetailList {
+                visible: maintainers.length > 0
+                label: qsTranslate("Opal.About", "Maintainer(s)", "", maintainers.length)
+                values: maintainers
+            }
+
+            DetailList {
+                visible: authors.length > 0
+                label: qsTranslate("Opal.About", "Author(s)", "", authors.length)
+                values: authors
+            }
 
             Repeater {
                 model: sections
