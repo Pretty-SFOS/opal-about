@@ -101,28 +101,49 @@ Column {
 
             Item {
                 id: licenseTextContainer
-                height: licenseColumn.expanded ? licenseTextLabel.height : 0
+                height: licenseColumn.expanded ? textLoader.height : 0
                 width: parent.width - 2*Theme.horizontalPageMargin
                 anchors.horizontalCenter: parent.horizontalCenter
                 opacity: height > 0 ? 1.0 : 0.0
                 Behavior on opacity { FadeAnimation { duration: 150 } }
                 clip: true
 
-                Label {
-                    id: licenseTextLabel
-                    property bool error: modelData.error === true || modelData.fullText === ""
-                    width: parent.width
-                    wrapMode: Text.Wrap
-                    font.pixelSize: Theme.fontSizeExtraSmall
-                    textFormat: error ? Text.RichText : Text.PlainText
-                    color: Theme.highlightColor
+                Loader {
+                    id: textLoader
+                    asynchronous: true
+                    sourceComponent: Component {
+                        Column {
+                            width: licenseTextContainer.width
+                            spacing: Theme.paddingMedium
 
-                    text: error ? '<style type="text/css">A { color: "' +
-                                  String(Theme.primaryColor) +
-                                  '"; }</style>' + qsTranslate("Opal.About", "Please refer to <a href='%1'>%1</a>").arg(
-                                      "https://spdx.org/licenses/%1.html".arg(modelData.spdxId))
-                                : modelData.fullText
-                    onLinkActivated: Qt.openUrlExternally(link)
+                            Label {
+                                visible: modelData.customShortText !== ''
+                                text: modelData.customShortText + ' ―'
+                                width: parent.width
+                                wrapMode: Text.Wrap
+                                font.pixelSize: Theme.fontSizeSmall
+                                textFormat: Text.StyledText
+                                palette.primaryColor: Theme.highlightColor
+                                linkColor: Theme.primaryColor
+                                onLinkActivated: Qt.openUrlExternally(link)
+                            }
+
+                            Label {
+                                id: licenseTextLabel
+                                property bool error: modelData.error === true || modelData.fullText === ""
+                                width: parent.width
+                                wrapMode: Text.Wrap
+                                font.pixelSize: Theme.fontSizeExtraSmall
+                                textFormat: error ? Text.StyledText : Text.PlainText
+                                palette.primaryColor: Theme.highlightColor
+                                linkColor: Theme.primaryColor
+                                onLinkActivated: Qt.openUrlExternally(link)
+                                text: error ? qsTranslate("Opal.About", "Please refer to <a href='%1'>%1</a>").arg(
+                                                  "https://spdx.org/licenses/%1.html".arg(modelData.spdxId))
+                                            : modelData.fullText
+                            }
+                        }
+                    }
                 }
             }
         }
