@@ -12,8 +12,8 @@ Page {
     allowedOrientations: Orientation.All
     property list<ContributionSection> sections
     property list<Attribution> attributions
-    property var maintainers: []
-    property var authors: []
+    property var mainAttributions: []
+    property string appName
 
     SilicaFlickable {
         anchors.fill: parent
@@ -26,16 +26,15 @@ Page {
 
             PageHeader { title: qsTranslate("Opal.About", "Contributors") }
 
-            DetailList {
-                visible: maintainers.length > 0
-                label: qsTranslate("Opal.About", "Maintainer(s)", "", maintainers.length)
-                values: maintainers
+            SectionHeader {
+                text: qsTranslate("Opal.About", "Development")
+                visible: mainAttributions.length > 0
             }
 
             DetailList {
-                visible: authors.length > 0
-                label: qsTranslate("Opal.About", "Author(s)", "", authors.length)
-                values: authors
+                visible: mainAttributions.length > 0
+                label: appName
+                values: mainAttributions
             }
 
             Repeater {
@@ -46,7 +45,10 @@ Page {
 
                     SectionHeader {
                         text: modelData.title
-                        visible: modelData.groups.length > 0
+                        visible: modelData.title !== '' &&
+                                 modelData.groups.length > 0 &&
+                                 !(index === 0 && (modelData.title === 'Development' ||
+                                                   modelData.title === qsTranslate("Opal.About", "Development")))
                     }
 
                     Repeater {
