@@ -9,11 +9,12 @@ import Sailfish.Silica 1.0
 import ".."
 
 Page {
-    allowedOrientations: Orientation.All
     property list<ContributionSection> sections
     property list<Attribution> attributions
     property var mainAttributions: []
     property string appName
+
+    allowedOrientations: Orientation.All
 
     SilicaFlickable {
         anchors.fill: parent

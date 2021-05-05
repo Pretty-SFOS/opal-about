@@ -10,12 +10,13 @@ import ".."
 
 Page {
     id: root
-    allowedOrientations: Orientation.All
     property list<License> licenses
     property list<Attribution> attributions
     property bool enableSourceHint: true
     property alias pageDescription: pageHeader.description
     property string appName
+
+    allowedOrientations: Orientation.All
 
     SilicaFlickable {
         anchors.fill: parent
