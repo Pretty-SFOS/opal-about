@@ -60,7 +60,8 @@ import "private"
             description: qsTr("This is a short description of the app.")
             sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
 
-            maintainer: "Au Thor"
+            authors: "Au Thor"
+            // maintainers: [...]
             licenses: License {
                 spdxId: "GPL-3.0-or-later"
                 forComponents: ["MyApp"]
@@ -202,17 +203,42 @@ Page {
     property string description: ""
 
     /*!
-      This property holds the app's main author(s) or maintainer(s).
+      This property holds the app's author(s).
 
-      The default heading for this section may have to follow the gender of the
-      person listed below in some languages. In this case, the default shipped
-      translations should be used with caution and adapted if necessary.
+      Either \l authors, \l maintainers, or both values must be defined. If
+      a list of maintainers is provided, it will be shown on the main "about"
+      page, otherwise the list of authors is used. Both lists will be shown
+      at the top of the contributors page.
+
+      The default headings for these sections may have to follow the gender of the
+      person(s) listed in some languages. In this case, the default shipped
+      translations must be adapted if necessary.
 
       \note People's names should not be translated.
 
       \required
+      \sa authors, maintainers
     */
-    property string maintainer: ""
+    property var authors: []
+
+    /*!
+      This property holds the app's current maintainer(s).
+
+      Either \l authors, \l maintainers, or both values must be defined. If
+      a list of maintainers is provided, it will be shown on the main "about"
+      page, otherwise the list of authors is used. Both lists will be shown
+      at the top of the contributors page.
+
+      The default headings for these sections may have to follow the gender of the
+      person(s) listed in some languages. In this case, the default shipped
+      translations must be adapted if necessary.
+
+      \note People's names should not be translated.
+
+      \required
+      \sa authors, maintainers
+    */
+    property var maintainers: ""
 
     /*!
       This property specifys where users can get the app's source code.
@@ -360,6 +386,24 @@ Page {
     */
     property alias _donationsInfoSection: _donationsInfo
 
+    /*!
+      This property holds a converted comma-separated list of authors.
+      \sa authors
+      \internal
+    */
+    property string __effectiveAuthors: authors instanceof Array && authors.length > 0 ?
+                                            authors.join(', ') : (typeof authors === 'string' ?
+                                                                      authors : '')
+
+    /*!
+      This property holds a converted comma-separated list of maintainers.
+      \sa maintainers
+      \internal
+    */
+    property string __effectiveMaintainers: maintainers instanceof Array && maintainers.length > 0 ?
+                                                maintainers.join(', ') : (typeof maintainers === 'string' ?
+                                                                              maintainers : '')
+
     SilicaFlickable {
         id: _flickable
         anchors.fill: parent
@@ -429,14 +473,25 @@ Page {
             InfoSection {
                 id: _develInfo
                 width: parent.width
-                title: enabled ? qsTranslate("Opal.About", "Development") : qsTranslate("Opal.About", "Author")
-                enabled: contributionSections.length > 0 || attributions.length > 0
-                text: maintainer
+                title: qsTranslate("Opal.About", "Development")
+                enabled: contributionSections.length > 0 ||
+                         attributions.length > 0 ||
+                         maintainers.length > 1 ||
+                         authors.length > 1 ||
+                         (maintainers.length > 0 && authors.length > 0)
+                text: __effectiveMaintainers === '' ?
+                          __effectiveAuthors : __effectiveMaintainers
                 showMoreLabel: qsTranslate("Opal.About", "show contributors")
                 backgroundItem.onClicked: {
                     pageStack.animatorPush("private/ContributorsPage.qml", {
                                                'sections': contributionSections,
-                                               'attributions': attributions
+                                               'attributions': attributions,
+                                               'maintainers': __effectiveMaintainers === ''
+                                                              ? [] : (maintainers instanceof Array
+                                                                      ? maintainers : [maintainers]),
+                                               'authors': __effectiveAuthors === ''
+                                                          ? [] : (authors instanceof Array
+                                                                  ? authors : [authors])
                                            })
                 }
             }
@@ -485,7 +540,6 @@ Page {
                         enabled: sourcesUrl !== ''
                     }
                 ]
-
             }
 
             Item {
