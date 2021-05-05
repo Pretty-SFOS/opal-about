@@ -9,7 +9,7 @@ var LOG_SCOPE = '[Opal.About]'
 function getShortText(origShortText, spdxId) {
     // This function provides standard short texts for a few common licenses,
     // unless a short text is already provided by the user.
-    if (origShortText !== '') return origShortText
+    if (!!origShortText) return origShortText
 
     if (/^[AL]?GPL-/.test(spdxId)) {
         return "This is free software: you are welcome to redistribute it under certain conditions. " +
