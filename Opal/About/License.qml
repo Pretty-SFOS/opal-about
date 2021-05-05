@@ -46,7 +46,7 @@ QtObject {
         if (fullText !== "" && force !== true) return;
         if (spdxId === undefined || spdxId === "") {
             __error = true;
-            console.error("cannot load license without spdxId");
+            console.error("[Opal.About] cannot load license without spdxId");
             return;
         }
 
