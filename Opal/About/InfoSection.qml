@@ -41,6 +41,8 @@ Column {
             anchors.horizontalCenter: parent.horizontalCenter
             spacing: 0
 
+            Item { width: 1; height: Theme.paddingSmall }
+
             Label {
                 id: _titleLabel
                 width: parent.width
