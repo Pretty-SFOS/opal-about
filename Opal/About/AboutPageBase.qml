@@ -522,10 +522,10 @@ Page {
                 text: enabled === false ?
                           qsTranslate("Opal.About", "This is proprietary software. All rights reserved.") :
                           ((licenses[0].name !== "" && licenses[0].error !== true) ?
-                               licenses[0].name + (licenses[0].customShortText === "" ?
-                                                       "" :
-                                                       "<br>"+licenses[0].customShortText) :
-                               licenses[0].spdxId)
+                               licenses[0].name : licenses[0].spdxId)/* +
+                          (licenses[0].customShortText === "" ?
+                               "" : "<br>"+licenses[0].customShortText)*/
+                smallPrint: licenses[0].customShortText
                 showMoreLabel: qsTranslate("Opal.About", "show license(s)", "", licenses.length+attributions.length)
                 buttons: [
                     InfoButton {
