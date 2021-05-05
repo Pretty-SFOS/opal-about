@@ -18,11 +18,12 @@ Column {
     property string smallPrint: ""
     property string showMoreLabel: qsTranslate("Opal.About", "show details")
     property list<InfoButton> buttons
-    property alias backgroundItem: _bgItem
     property alias enabled: _bgItem.enabled
 
     default property alias contentItem: _contents.children
     signal clicked
+
+    property alias _backgroundItem: _bgItem
     property alias _titleItem: _titleLabel
     property alias _textItem: _textLabel
     property alias _smallPrintItem: _smallPrintLabel
