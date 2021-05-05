@@ -610,7 +610,7 @@ Page {
                 enabled: contributionSections.length > 0 || attributions.length > 0
                 text: __effectiveMainAttribs.join(', ')
                 showMoreLabel: qsTranslate("Opal.About", "show contributors")
-                backgroundItem.onClicked: {
+                onClicked: {
                     pageStack.animatorPush("private/ContributorsPage.qml", {
                                                'appName': appName,
                                                'sections': contributionSections,
@@ -642,7 +642,7 @@ Page {
                 width: parent.width
                 title: qsTranslate("Opal.About", "License")
                 enabled: licenses.length > 0
-                backgroundItem.onClicked: pageStack.animatorPush("private/LicensePage.qml", {
+                onClicked: pageStack.animatorPush("private/LicensePage.qml", {
                     'appName': appName, 'licenses': licenses, 'attributions': attributions })
                 text: enabled === false ?
                           qsTranslate("Opal.About", "This is proprietary software. All rights reserved.") :

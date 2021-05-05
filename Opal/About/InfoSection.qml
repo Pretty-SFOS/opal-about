@@ -22,6 +22,7 @@ Column {
     property alias enabled: _bgItem.enabled
 
     default property alias contentItem: _contents.children
+    signal clicked
     property alias _titleItem: _titleLabel
     property alias _textItem: _textLabel
     property alias _smallPrintItem: _smallPrintLabel
@@ -35,6 +36,8 @@ Column {
         enabled: false
         width: parent.width
         height: column.height
+
+        onClicked: root.clicked()
 
         Column {
             id: column
