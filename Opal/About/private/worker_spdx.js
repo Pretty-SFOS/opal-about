@@ -68,13 +68,12 @@ function loadRemote(spdxId, localUrl, remoteUrl, origShortText) {
             if (!o || typeof o !== "object") throw 1;
             console.log(LOG_SCOPE, "license loaded remotely from", remoteUrl);
             sendSuccess(spdxId, o['name'], o['licenseText'],
-                        getShortText(origShortText, message.spdxId));
+                        getShortText(origShortText, spdxId));
 
             request("PUT", localUrl, function(x){
                 console.log(LOG_SCOPE, "saved license with status", x.status, "to", localUrl);
             }, function(x){}, xhr.responseText);
-        }
-        catch (e) {
+        } catch (e) {
             console.log(LOG_SCOPE, "failed to load license remotely from", remoteUrl);
             sendError(spdxId);
         }
