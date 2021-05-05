@@ -17,7 +17,7 @@
     </message>
     <message>
         <source>Author</source>
-        <translation>Utvecklare</translation>
+        <translation type="vanished">Utvecklare</translation>
     </message>
     <message>
         <source>show contributors</source>
@@ -182,6 +182,28 @@
     <message>
         <source>Terms of Use</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>Utvecklare</translation>
+    </message>
+    <message numerus="yes">
+        <source>Author(s)</source>
+        <translation type="unfinished">
+            <numerusform>Utvecklare</numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Maintainer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>Maintainer(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 </TS>

@@ -13,7 +13,9 @@ import QtQuick 2.0
 
 Item {
     // commonly used strings
+    readonly property string k: qsTranslate("Opal.About.Common", "Author")
     readonly property string k: qsTranslate("Opal.About.Common", "Author(s)", "", 5)
+    readonly property string l: qsTranslate("Opal.About.Common", "Maintainer")
     readonly property string l: qsTranslate("Opal.About.Common", "Maintainer(s)", "", 5)
     readonly property string a: qsTranslate("Opal.About.Common", "Development")
     readonly property string b: qsTranslate("Opal.About.Common", "Programming")

@@ -17,7 +17,7 @@
     </message>
     <message>
         <source>Author</source>
-        <translation>作者</translation>
+        <translation type="vanished">作者</translation>
     </message>
     <message>
         <source>show contributors</source>
@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished">翻译</translation>
+        <translation>翻译</translation>
     </message>
     <message>
         <source>Note: please check the source code for most accurate information.</source>
@@ -179,6 +179,26 @@
     <message>
         <source>Terms of Use</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>作者</translation>
+    </message>
+    <message numerus="yes">
+        <source>Author(s)</source>
+        <translation>
+            <numerusform>作者</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Maintainer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>Maintainer(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 </TS>
