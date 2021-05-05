@@ -6,6 +6,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "private/functions.js" as Func
 import "private"
 
 /*!
@@ -60,7 +61,7 @@ import "private"
             description: qsTr("This is a short description of the app.")
             sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
 
-            mainAttributions: "Au Thor"
+            authors: "Au Thor" // either a list or a single string
             licenses: License { spdxId: "GPL-3.0-or-later" }
 
             contributionSections: [
@@ -244,6 +245,32 @@ Page {
     property string translationsUrl: ""
 
     /*!
+      This is a convenience property to be used instead of the \l mainAttributions property.
+
+      The entries of this property will be prepended to all entries of
+      \l mainAttributions.
+
+      It is possible to assign a single string value instead of a list
+      to this property.
+
+      \e{See \l mainAttributions for details.}
+
+      \required
+      \sa mainAttributions
+    */
+    property var authors: []
+
+    /*!
+      This property holds a cleaned list of main attributions.
+
+      The list is combined from the \l mainAttributions and \l authors properties.
+
+      \sa authors, mainAttributions
+      \internal
+    */
+    property var __effectiveMainAttribs: Func.makeStringListConcat(authors, mainAttributions, false)
+
+    /*!
       This property holds a list of relevant licenses.
 
       The very first licenses in this list is interpreted as the main
@@ -389,15 +416,7 @@ Page {
     */
     property alias _donationsInfoSection: _donationsInfo
 
-    /*!
-      This property holds a converted comma-separated list of main attributions.
-      \sa mainAttributions
-      \internal
-    */
-    property string __effectiveMainAttribs: mainAttributions instanceof Array && mainAttributions.length > 0 ?
-                                                mainAttributions.join(', ') :
-                                                (typeof mainAttributions === 'string' ?
-                                                     mainAttributions : '')
+    allowedOrientations: Orientation.All
 
     SilicaFlickable {
         id: _flickable
@@ -500,16 +519,14 @@ Page {
                 width: parent.width
                 title: qsTranslate("Opal.About", "Development")
                 enabled: contributionSections.length > 0 || attributions.length > 0
-                text: __effectiveMainAttribs === '' ? __effectiveMainAttribs : __effectiveMainAttribs
+                text: __effectiveMainAttribs.join(', ')
                 showMoreLabel: qsTranslate("Opal.About", "show contributors")
                 backgroundItem.onClicked: {
                     pageStack.animatorPush("private/ContributorsPage.qml", {
                                                'appName': appName,
                                                'sections': contributionSections,
                                                'attributions': attributions,
-                                               'mainAttributions': __effectiveMainAttribs === '' ?
-                                                                       [] : (mainAttributions instanceof Array
-                                                                           ? mainAttributions : [mainAttributions])
+                                               'mainAttributions': __effectiveMainAttribs
                                            })
                 }
             }
