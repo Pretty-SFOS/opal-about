@@ -60,12 +60,8 @@ import "private"
             description: qsTr("This is a short description of the app.")
             sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
 
-            authors: "Au Thor"
-            // maintainers: [...]
-            licenses: License {
-                spdxId: "GPL-3.0-or-later"
-                forComponents: ["MyApp"]
-            }
+            mainAttributions: "Au Thor"
+            licenses: License { spdxId: "GPL-3.0-or-later" }
 
             contributionSections: [
                 ContributionSection {
@@ -203,42 +199,23 @@ Page {
     property string description: ""
 
     /*!
-      This property holds the app's author(s).
+      This property holds a list of the app's author(s) and/or maintainer(s).
 
-      Either \l authors, \l maintainers, or both values must be defined. If
-      a list of maintainers is provided, it will be shown on the main "about"
-      page, otherwise the list of authors is used. Both lists will be shown
-      at the top of the contributors page.
+      The names in this list will be shown on the main "about" page, and
+      again at the top of the contributors page with the title "Development".
 
-      The default headings for these sections may have to follow the gender of the
-      person(s) listed in some languages. In this case, the default shipped
-      translations must be adapted if necessary.
+      It is possible to assign a single string value instead of a list
+      to this property.
 
-      \note People's names should not be translated.
-
-      \required
-      \sa authors, maintainers
-    */
-    property var authors: []
-
-    /*!
-      This property holds the app's current maintainer(s).
-
-      Either \l authors, \l maintainers, or both values must be defined. If
-      a list of maintainers is provided, it will be shown on the main "about"
-      page, otherwise the list of authors is used. Both lists will be shown
-      at the top of the contributors page.
-
-      The default headings for these sections may have to follow the gender of the
-      person(s) listed in some languages. In this case, the default shipped
-      translations must be adapted if necessary.
+      \note If the first group in \l contributionSections is also titled
+      "Development", it will be merged automatically.
 
       \note People's names should not be translated.
 
       \required
-      \sa authors, maintainers
+      \sa contributionSections, attributions
     */
-    property var maintainers: ""
+    property var mainAttributions: []
 
     /*!
       This property specifys where users can get the app's source code.
@@ -387,22 +364,14 @@ Page {
     property alias _donationsInfoSection: _donationsInfo
 
     /*!
-      This property holds a converted comma-separated list of authors.
-      \sa authors
+      This property holds a converted comma-separated list of main attributions.
+      \sa mainAttributions
       \internal
     */
-    property string __effectiveAuthors: authors instanceof Array && authors.length > 0 ?
-                                            authors.join(', ') : (typeof authors === 'string' ?
-                                                                      authors : '')
-
-    /*!
-      This property holds a converted comma-separated list of maintainers.
-      \sa maintainers
-      \internal
-    */
-    property string __effectiveMaintainers: maintainers instanceof Array && maintainers.length > 0 ?
-                                                maintainers.join(', ') : (typeof maintainers === 'string' ?
-                                                                              maintainers : '')
+    property string __effectiveMainAttribs: mainAttributions instanceof Array && mainAttributions.length > 0 ?
+                                                mainAttributions.join(', ') :
+                                                (typeof mainAttributions === 'string' ?
+                                                     mainAttributions : '')
 
     SilicaFlickable {
         id: _flickable
@@ -473,24 +442,17 @@ Page {
                 id: _develInfo
                 width: parent.width
                 title: qsTranslate("Opal.About", "Development")
-                enabled: contributionSections.length > 0 ||
-                         attributions.length > 0 ||
-                         maintainers.length > 1 ||
-                         authors.length > 1 ||
-                         (maintainers.length > 0 && authors.length > 0)
-                text: __effectiveMaintainers === '' ?
-                          __effectiveAuthors : __effectiveMaintainers
+                enabled: contributionSections.length > 0 || attributions.length > 0
+                text: __effectiveMainAttribs === '' ? __effectiveMainAttribs : __effectiveMainAttribs
                 showMoreLabel: qsTranslate("Opal.About", "show contributors")
                 backgroundItem.onClicked: {
                     pageStack.animatorPush("private/ContributorsPage.qml", {
+                                               'appName': appName,
                                                'sections': contributionSections,
                                                'attributions': attributions,
-                                               'maintainers': __effectiveMaintainers === ''
-                                                              ? [] : (maintainers instanceof Array
-                                                                      ? maintainers : [maintainers]),
-                                               'authors': __effectiveAuthors === ''
-                                                          ? [] : (authors instanceof Array
-                                                                  ? authors : [authors])
+                                               'mainAttributions': __effectiveMainAttribs === '' ?
+                                                                       [] : (mainAttributions instanceof Array
+                                                                           ? mainAttributions : [mainAttributions])
                                            })
                 }
             }
