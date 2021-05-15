@@ -32,6 +32,14 @@ See [`doc/gallery.qml`](doc/gallery.qml) for an example. Copy the file to get
 started. Documentation is included in the release bundle and can be added to
 QtCreator via Extras → Settings → Help → Documentation → Add.
 
+## Size
+
+The release bundle without documentation comments and without unnecessary files
+takes about 50 KiB. In comparison, a simple manually built "About" page with the
+HTML version of the GNU GPL v3+ takes about 40 KiB.
+
+The full source code is about 80 KiB in size.
+
 ## Development
 
 Follow the main documentation for developing modules
