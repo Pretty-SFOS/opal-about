@@ -7,9 +7,9 @@
 # See https://github.com/Pretty-SFOS/opal/blob/main/opal-development/opal-release-module.md
 # for documentation.
 #
-# @@@ keep this line: based on template v0.5.0
+# @@@ keep this line: based on template v0.5.1
 #
-c__FOR_RELEASE_LIB__="0.5.0"
+c__FOR_RELEASE_LIB__="0.5.1"
 
 # Run this script from the module's root directory.
 source ../opal/opal-development/opal-release-module.sh
@@ -20,6 +20,8 @@ parse_arguments "$@"
 # Note: modules requiring extra build steps (Qt plugins) are not yet supported.
 
 # which files and directories to translate
+# Note: translations are built from the original sources, independent of the
+# files marked for distribution in copy_files.
 cTRANSLATE=(Opal)
 
 # un-comment the following line to initially setup translations
@@ -32,6 +34,10 @@ cTRANSLATE=(Opal)
 function copy_files() {
     build_qdoc to="$DOC_BASE"
     cp -r Opal "$QML_BASE/Opal" || return 1
+
+    # We don't have to distribute the extra translations dummy file, as translations
+    # are built separately and are merged if needed.
+    rm "$QML_BASE/Opal/About/private/ExtraTranslations.qml"
 }
 
 # build the bundle
