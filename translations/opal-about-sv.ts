@@ -27,10 +27,6 @@
         <source>License</source>
         <translation>Licens</translation>
     </message>
-    <message>
-        <source>This is proprietary software. All rights reserved.</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message numerus="yes">
         <source>show license(s)</source>
         <translation>
@@ -62,10 +58,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Donations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Translations</source>
         <translation>Översättning</translation>
     </message>
@@ -79,6 +71,14 @@
     </message>
     <message>
         <source>Thank you!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Donations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This is proprietary software. All rights reserved.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -64,10 +64,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Donations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Translations</source>
         <translation>Tłumaczenia</translation>
     </message>
@@ -81,6 +77,10 @@
     </message>
     <message>
         <source>Thank you!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Donations</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
