@@ -568,7 +568,7 @@ Page {
                     width: parent.width
                     visible: String(versionNumber !== "")
                     text: qsTranslate("Opal.About", "Version %1").arg(
-                              String(releaseNumber === "1") ?
+                              (String(releaseNumber) === "1") ?
                                   versionNumber :
                                   versionNumber+"-"+releaseNumber)
                     color: Theme.secondaryHighlightColor
