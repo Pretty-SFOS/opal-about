@@ -78,7 +78,7 @@ A.AboutPageBase {
             buttons: [
                 A.InfoButton {
                     text: qsTr("Data License")
-                    onClicked: A.openOrCopyUrl("https://example.org")
+                    onClicked: page.openOrCopyUrl("https://example.org")
                 }
             ]
         },
