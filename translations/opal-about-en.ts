@@ -21,10 +21,6 @@
         <translation>Development</translation>
     </message>
     <message>
-        <source>Author</source>
-        <translation type="vanished">Author</translation>
-    </message>
-    <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="617"/>
         <source>show contributors</source>
         <translation>show contributors</translation>
@@ -46,10 +42,6 @@
         <location filename="../Opal/About/AboutPageBase.qml" line="666"/>
         <source>License</source>
         <translation>License</translation>
-    </message>
-    <message>
-        <source>This is proprietary software. All rights reserved.</source>
-        <translation type="vanished">This is proprietary software. All rights reserved.</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/AboutPageBase.qml" line="676"/>

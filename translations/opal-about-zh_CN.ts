@@ -16,10 +16,6 @@
         <translation>开发</translation>
     </message>
     <message>
-        <source>Author</source>
-        <translation type="vanished">作者</translation>
-    </message>
-    <message>
         <source>show contributors</source>
         <translation>显示贡献者</translation>
     </message>

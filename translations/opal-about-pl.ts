@@ -16,20 +16,12 @@
         <translation>Rozwój</translation>
     </message>
     <message>
-        <source>Author</source>
-        <translation type="vanished">Autor</translation>
-    </message>
-    <message>
         <source>show contributors</source>
         <translation>pokaż współtwórców</translation>
     </message>
     <message>
         <source>License</source>
         <translation>Licencja</translation>
-    </message>
-    <message>
-        <source>This is proprietary software. All rights reserved.</source>
-        <translation type="vanished">To jest zastrzeżone oprogramowanie. Wszelkie prawa zastrzeżone.</translation>
     </message>
     <message numerus="yes">
         <source>show license(s)</source>

@@ -16,10 +16,6 @@
         <translation>Utveckling</translation>
     </message>
     <message>
-        <source>Author</source>
-        <translation type="vanished">Utvecklare</translation>
-    </message>
-    <message>
         <source>show contributors</source>
         <translation>visa bidragsgivare</translation>
     </message>
