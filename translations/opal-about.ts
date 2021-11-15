@@ -4,82 +4,82 @@
 <context>
     <name>Opal.About</name>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="542"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="553"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="589"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="600"/>
         <source>Version %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="614"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="32"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="53"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="625"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="36"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="57"/>
         <source>Development</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="617"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="628"/>
         <source>show contributors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="629"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="97"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="116"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="640"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="103"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="122"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="48"/>
         <source>Homepage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="656"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="667"/>
         <source>Donations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="666"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="677"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../Opal/About/AboutPageBase.qml" line="676"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="687"/>
         <source>show license(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="634"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="645"/>
         <source>Translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="639"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="95"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="119"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="650"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="101"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="125"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="54"/>
         <source>Source Code</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="29"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="33"/>
         <source>Contributors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="71"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="75"/>
         <source>Acknowledgements</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="83"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="89"/>
         <source>Thank you!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="93"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="99"/>
         <source>Details</source>
         <translation type="unfinished"></translation>
     </message>
