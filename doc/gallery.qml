@@ -56,6 +56,15 @@ A.AboutPageBase {
             homepage: "https://example.org/component"
         },
         A.Attribution {
+            // Opal modules and other GPL software must be listed here.A
+            // All Opal modules provide an Attribution section to be copy-pasted.
+            name: "Opal.About"
+            entries: "2018-2021 Mirian Margiani"
+            licenses: A.License { spdxId: "GPL-3.0-or-later" }
+            sources: "https://github.com/Pretty-SFOS/opal-about"
+            homepage: "https://github.com/Pretty-SFOS/opal"
+        },
+        A.Attribution {
             // no entries and no licenses: adds a "thank you!"
             // entry on the contributors page
             name: "Some person"
@@ -64,7 +73,7 @@ A.AboutPageBase {
         A.Attribution {
             // no entries and no licenses: adds a "thank you!"
             // entry on the contributors page
-            name: "Some person"
+            name: "Some other person"
             homepage: "https://example.org"
             sources: "https://source.example.org"
         }
@@ -83,6 +92,16 @@ A.AboutPageBase {
     ]
 
     extraSections: [
+        A.InfoSection {
+            // Extra buttons can be added to the main list (source code, homepage, translations)
+            // by defining them in the first custom info section. Set no title.
+            buttons: [
+                A.InfoButton {
+                    text: qsTr("Forum")
+                    onClicked: page.openOrCopyUrl("https://example.org/forum")
+                }
+            ]
+        },
         A.InfoSection {
             title: qsTr("Data")
             text: qsTr("Lorem ipsum dolor sit amet et cetera ad libitum plurum sid alum.")
