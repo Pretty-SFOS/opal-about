@@ -64,7 +64,7 @@ Page {
         Button {
             Notification {
                 id: copyNotification
-                previewSummary: qsTranslate("Opal.About", "URL copied to clipboard: %1".arg(externalUrl))
+                previewSummary: qsTranslate("Opal.About", "Copied to clipboard: %1").arg(externalUrl)
                 // previewSummary: qsTranslate("Opal.About", "URL copied to clipboard")
                 // previewBody: externalUrl
                 isTransient: true
