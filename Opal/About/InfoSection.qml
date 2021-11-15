@@ -27,12 +27,12 @@ import Sailfish.Silica 1.0
         smallPrint: qsTr("Alum sid plurum libitum ad cetera et amet sit dolor ipsum lorem.")
         buttons: InfoButton {
             text: qsTr("Terms of Use")
-            onClicked: Qt.openUrlExternally("https://example.org")
+            onClicked: openOrCopyUrl("https://example.org")
         }
     }
     \endqml
 
-    \sa InfoSection, InfoButton, AboutPageBase::extraSections
+    \sa InfoSection, InfoButton, AboutPageBase::extraSections, AboutPageBase::openOrCopyUrl
 */
 Column {
     id: root
@@ -104,7 +104,7 @@ Column {
 
       The corresponding handler is \c onClicked.
 
-      \sa enabled, buttons, Qt::openUrlExternally
+      \sa enabled, buttons, AboutPageBase::openOrCopyUrl, Qt::openUrlExternally
     */
     signal clicked
 
@@ -240,7 +240,7 @@ Column {
 
                 visible: modelData.name !== '' && modelData.url !== ''
                 text: modelData.name
-                onClicked: Qt.openUrlExternally(modelData.url)
+                onClicked: pageStack.push("private/ExternalUrlPage.qml", {'externalUrl': modelData.url})
             }
         }
     }

@@ -78,7 +78,7 @@ A.AboutPageBase {
             buttons: [
                 A.InfoButton {
                     text: qsTr("Data License")
-                    onClicked: Qt.openUrlExternally("https://example.org")
+                    onClicked: A.openOrCopyUrl("https://example.org")
                 }
             ]
         },

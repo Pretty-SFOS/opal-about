@@ -20,12 +20,12 @@ import QtQuick 2.0
         text: qsTr("Lorem ipsum dolor sit amet et cetera ad libitum plurum sid alum.")
         buttons: InfoButton {
             text: qsTr("Terms of Use")
-            onClicked: Qt.openUrlExternally("https://example.org")
+            onClicked: page.copyOrOpenUrl("https://example.org")
         }
     }
     \endqml
 
-    \sa InfoSection, AboutPageBase::extraSections
+    \sa InfoSection, AboutPageBase::extraSections, AboutPageBase::copyOrOpenUrl
 */
 QtObject {
     /*!
@@ -49,7 +49,7 @@ QtObject {
 
       The corresponding handler is \c onClicked.
 
-      \sa Qt::openUrlExternally
+      \sa AboutPageBase::copyOrOpenUrl, Qt::openUrlExternally
     */
     signal clicked
 }

@@ -375,12 +375,12 @@ Page {
             text: qsTr("Lorem ipsum dolor sit amet et cetera ad libitum plurum sid alum.")
             buttons: InfoButton {
                 text: qsTr("Terms of Use")
-                onClicked: Qt.openUrlExternally("https://example.org")
+                onClicked: openOrCopyUrl("https://example.org")
             }
         }
       \endqml
 
-      \sa InfoSection, InfoButton, donations, translationsUrl, sourcesUrl
+      \sa InfoSection, InfoButton, donations, translationsUrl, sourcesUrl, openOrCopyUrl
     */
     property list<InfoSection> extraSections
 
@@ -491,6 +491,17 @@ Page {
     */
     property alias _donationsInfoSection: _donationsInfo
 
+    /*!
+      This function shows a page that lets the user preview
+      an external link before either copying it to the clipboard
+      or opening it externally. The \c title argument is optional.
+
+      \sa Qt::openUrlExternally
+    */
+    function openOrCopyUrl(externalUrl, title) {
+        pageStack.push("private/ExternalUrlPage.qml", {'externalUrl': externalUrl, 'title': title})
+    }
+
     allowedOrientations: Orientation.All
 
     SilicaFlickable {
@@ -581,7 +592,7 @@ Page {
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: parent.width - 2*Theme.horizontalPageMargin
                 text: description
-                onLinkActivated: Qt.openUrlExternally(link)
+                onLinkActivated: openOrCopyUrl(link)
                 wrapMode: Text.Wrap
                 textFormat: Text.StyledText
                 horizontalAlignment: Text.AlignHCenter
@@ -639,12 +650,12 @@ Page {
                 buttons: [
                     InfoButton {
                         text: qsTranslate("Opal.About", "Translations")
-                        onClicked: Qt.openUrlExternally(translationsUrl)
+                        onClicked: openOrCopyUrl(translationsUrl)
                         enabled: translationsUrl !== ''
                     },
                     InfoButton {
                         text: qsTranslate("Opal.About", "Source Code")
-                        onClicked: Qt.openUrlExternally(sourcesUrl)
+                        onClicked: openOrCopyUrl(sourcesUrl)
                         enabled: sourcesUrl !== ''
                     }
                 ]
