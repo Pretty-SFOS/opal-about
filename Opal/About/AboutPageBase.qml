@@ -170,7 +170,7 @@ Page {
     property string appName: ""
 
     /*!
-      This property specifys the path to the app's logo.
+      This property specifies the path to the app's logo.
 
       It is recommended to include the icon in your app's data directory.
       You can specify a full path to shared system files alternatively.
@@ -272,7 +272,7 @@ Page {
     property var __effectiveMainAttribs: Func.makeStringListConcat(authors, mainAttributions, false)
 
     /*!
-      This property specifys where users can get the app's source code.
+      This property specifies where users can get the app's source code.
 
       If your app is open-source software it is recommended to include a
       link to a publicly accessible source code repository. This helps
@@ -284,7 +284,7 @@ Page {
     property string sourcesUrl: ""
 
     /*!
-      This property specifys where users can contribute to the app's translations.
+      This property specifies where users can contribute to the app's translations.
 
       Helping with translations is a good way for non-technical users to contribute
       to open source projects they enjoy. Giving them the chance to do so gives
