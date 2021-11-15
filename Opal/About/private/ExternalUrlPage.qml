@@ -55,7 +55,10 @@ Page {
 
         Button {
             text: qsTranslate("Opal.About", "Open in browser")
-            onClicked: Qt.openUrlExternally(externalUrl)
+            onClicked: {
+                Qt.openUrlExternally(externalUrl)
+                pageStack.pop()
+            }
         }
 
         Button {
@@ -73,6 +76,7 @@ Page {
             onClicked: {
                 Clipboard.text = externalUrl
                 copyNotification.publish()
+                pageStack.pop()
             }
         }
     }
