@@ -69,6 +69,7 @@ Page {
                 // previewBody: externalUrl
                 isTransient: true
                 appIcon: "icon-lock-information"
+                icon: "icon-lock-information"
             }
 
             ButtonLayout.newLine: true
