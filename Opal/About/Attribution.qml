@@ -54,6 +54,22 @@ QtObject {
     */
     property list<License> licenses
 
+    /*!
+      This property may hold an URL to a relevant homepage.
+
+      When attributing a third-party library, it is common courtesy to provide
+      the link to its homepage. Some licenses may require it.
+    */
+    property string homepage
+
+    /*!
+      This property may hold an URL to relevant source code.
+
+      When attributing a third-party library, it may be helpful for end users
+      when a link to its source code is provided. Some licenses may require it.
+    */
+    property string sources
+
     property var __effectiveEntries: Func.makeStringList(entries, false)
     property var _spdxList: null
 

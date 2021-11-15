@@ -14,6 +14,8 @@ Page {
     property bool enableSourceHint: true
     property alias pageDescription: pageHeader.description
     property string appName
+    property string mainSources
+    property string mainHomepage
 
     allowedOrientations: Orientation.All
 
@@ -70,6 +72,8 @@ Page {
                 headerVisible: appName !== '' && root.attributions.length > 0
                 licenses: root.licenses
                 initiallyExpanded: root.licenses.length === 1 && root.attributions.length === 0
+                homepage: mainHomepage
+                sources: mainSources
             }
 
             Repeater {
@@ -82,6 +86,8 @@ Page {
                     initiallyExpanded: root.licenses.length === 0 &&
                                        root.attributions.length === 1 &&
                                        root.attributions[0].licenses.length === 1
+                    homepage: modelData.homepage
+                    sources: modelData.sources
                 }
             }
         }

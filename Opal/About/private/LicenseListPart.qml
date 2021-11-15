@@ -14,6 +14,9 @@ Column {
     property var extraTexts: []
     property bool initiallyExpanded: false
 
+    property string homepage: ''  // optional
+    property string sources: ''  // optional
+
     // Acknowledgements without licenses should be shown
     // on the contributors page but not on the licenses page.
     visible: licenses.length > 0
@@ -35,6 +38,22 @@ Column {
         font.pixelSize: Theme.fontSizeSmall
         color: Theme.highlightColor
         bottomPadding: Theme.paddingSmall
+    }
+
+    ButtonLayout {
+        visible: homepage !== '' || sources !== ''
+
+        Button {
+            visible: homepage !== ''
+            text: qsTranslate("Opal.About", "Homepage")
+            onClicked: pageStack.push("ExternalUrlPage.qml", {'externalUrl': homepage})
+        }
+
+        Button {
+            visible: sources !== ''
+            text: qsTranslate("Opal.About", "Source Code")
+            onClicked: pageStack.push("ExternalUrlPage.qml", {'externalUrl': sources})
+        }
     }
 
     Repeater {

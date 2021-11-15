@@ -46,18 +46,28 @@ A.AboutPageBase {
             name: "Yet Another Lib"
             entries: "1984 Jane Doe"
             licenses: A.License { spdxId: "GPL-3.0-or-later" }
+            homepage: "https://example.org/homepage"
+            sources: "https://example.org/sources"
         },
         A.Attribution {
             name: "Other Imaginary Components"
             entries: "2000 Components Community"
             licenses: A.License { spdxId: "MIT" }
+            homepage: "https://example.org/component"
         },
         A.Attribution {
             // no entries and no licenses: adds a "thank you!"
             // entry on the contributors page
             name: "Some person"
+            homepage: "https://example.org"
+        },
+        A.Attribution {
+            // no entries and no licenses: adds a "thank you!"
+            // entry on the contributors page
+            name: "Some person"
+            homepage: "https://example.org"
+            sources: "https://source.example.org"
         }
-
     ]
 
     donations.text: donations.defaultTextCoffee

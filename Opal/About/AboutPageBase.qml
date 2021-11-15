@@ -666,7 +666,8 @@ Page {
                 title: qsTranslate("Opal.About", "License")
                 enabled: licenses.length > 0
                 onClicked: pageStack.animatorPush("private/LicensePage.qml", {
-                    'appName': appName, 'licenses': licenses, 'attributions': attributions })
+                    'appName': appName, 'licenses': licenses, 'attributions': attributions,
+                    'mainSources': sourcesUrl, 'mainHomepage': homepageUrl })
                 text: enabled === false ?
                           "This component has been improperly configured. Please report this bug." :
                           ((licenses[0].name !== "" && licenses[0].error !== true) ?
