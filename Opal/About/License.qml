@@ -14,24 +14,26 @@ import Sailfish.Silica 1.0 // for StandardPaths
 
     Licenses are specified by their \l {https://spdx.org/licenses/}
     {SPDX identifiers}. You do not have to include any license
-    texts manually: they will be automatically downloaded and cached
-    locally. If a license text is not available locally and downloading
-    is not possible, a short notice including a link to the full
+    texts manually: they may be automatically downloaded if the user requests so,
+    and will be cached locally. If a license text is not available locally and
+    downloading is not possible, a short notice including a link to the full
     license text will be shown.
 
-    \note automatic downloading can be disabled by setting the \l offline
-    property on a license.
+    \note automatic downloading is disabled by default to avoid unexpected network
+    usage. Do not change the private \l __online property, as this could cause
+    costs for the user.
 
     \b {Required notices:}
 
     Some licenses require you to include certain notices in a
     prominent place. Use the \l customShortText property for this.
+    Some common notices are provided.
 
     \qml
     licenses: License { spdxId: "GPL-3.0-or-later" } // ~125 KiB
     \endqml
 
-    \sa AboutPageBase::licenses, Attribution
+    \sa AboutPageBase::licenses, Attribution, customShortText
 */
 QtObject {
     id: root
@@ -74,15 +76,6 @@ QtObject {
     property string customShortText: ""
 
     /*!
-      If this is \c true, automatic downloading will be disabled.
-
-      Cached license texts will be loaded locally but no new license
-      texts (and names) will be downloaded. The \l error flag will
-      be \true.
-    */
-    property bool offline: false
-
-    /*!
       This property is \c true when the license text could not be fetched.
     */
     readonly property bool error: __error
@@ -100,6 +93,16 @@ QtObject {
       show an explanatory text and a link to the full text.
     */
     readonly property string fullText: __fullText
+
+    /*!
+      If this is \c true, missing texts will be downloaded from the internet.
+
+      Downloading is disabled by default to avoid unexpected network usage which
+      could cause costs for the user.
+
+      Cached license texts will always be loaded locally.
+    */
+    property bool __online: false
 
     property string __localUrl: "%1/%2.json".arg(StandardPaths.temporary).arg(spdxId)
     property string __remoteUrl: "https://spdx.org/licenses/%1.json".arg(spdxId)
@@ -128,6 +131,10 @@ QtObject {
         if (__initialized) _load(true)
     }
 
+    on__OnlineChanged: {
+        _load()
+    }
+
     function _load(force) {
         if (fullText !== "" && force !== true) return;
         if (spdxId === undefined || spdxId === "") {
@@ -142,7 +149,7 @@ QtObject {
             localUrl: __localUrl,
             remoteUrl: __remoteUrl,
             shortText: customShortText,
-            offline: root.offline
+            online: !!__online
         });
     }
 }
