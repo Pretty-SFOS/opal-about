@@ -55,9 +55,9 @@ import "private"
 
     The code below demonstrates an app info page for a simple project.
     One-person projects without other contributors can omit setting the
-    \l contributionSections property. If additional attributions (e.g.
-    for third-party libraries) are required, the \l attributions property
-    can be omitted too.
+    \l contributionSections property. Opal.About must be attributed in the
+    \l attributions list. This list is meant for delcaring third-party
+    libraries and other acknowledgements.
 
     \qml
         import QtQuick 2.0
@@ -85,11 +85,20 @@ import "private"
                 url: "liberapay.com"
             }
 
-            attributions: Attribution {
-                name: "The Library"
-                entries: ["1201 The Old Librarians", "2014 The Librarians"]
-                licenses: License { spdxId: "CC0-1.0" }
-            }
+            attributions: [
+                Attribution {
+                    name: "Opal.About"
+                    entries: "2018-2021 Mirian Margiani"
+                    licenses: License { spdxId: "GPL-3.0-or-later" }
+                    sources: "https://github.com/Pretty-SFOS/opal-about"
+                    homepage: "https://github.com/Pretty-SFOS/opal"
+                },
+                Attribution {
+                    name: "The Library"
+                    entries: ["1201 The Old Librarians", "2014 The Librarians"]
+                    licenses: License { spdxId: "CC0-1.0" }
+                }
+            ]
 
             contributionSections: [
                 ContributionSection {
@@ -337,6 +346,8 @@ Page {
       This list is intended for listing names not involved in development,
       and for attributions to third-party libraries and the respective licenses.
       For example, some Creative Commons licenses require attribution.
+
+      \note GPL software like Opal.About and other Opal modules must be listed here.
 
       \note Use contribution sections for listing contributors.
       See \l contributionSections.
