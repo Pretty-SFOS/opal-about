@@ -124,7 +124,7 @@ Column {
                                 textFormat: Text.StyledText
                                 palette.primaryColor: Theme.highlightColor
                                 linkColor: Theme.primaryColor
-                                onLinkActivated: pageStack.push("private/ExternalUrlPage.qml", {'externalUrl': link})
+                                onLinkActivated: pageStack.push("ExternalUrlPage.qml", {'externalUrl': link})
                             }
 
                             Label {
@@ -136,7 +136,7 @@ Column {
                                 textFormat: error ? Text.StyledText : Text.PlainText
                                 palette.primaryColor: Theme.highlightColor
                                 linkColor: Theme.primaryColor
-                                onLinkActivated: pageStack.push("private/ExternalUrlPage.qml", {'externalUrl': link})
+                                onLinkActivated: pageStack.push("ExternalUrlPage.qml", {'externalUrl': link})
                                 text: error ? qsTranslate("Opal.About", "Please refer to <a href='%1'>%1</a>").arg(
                                                   "https://spdx.org/licenses/%1.html".arg(modelData.spdxId))
                                             : modelData.fullText
