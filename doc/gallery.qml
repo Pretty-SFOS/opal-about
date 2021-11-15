@@ -24,6 +24,7 @@ A.AboutPageBase {
     mainAttributions: [qsTr("additional name")]
     sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
     translationsUrl: "https://weblate.com/"
+    homepageUrl: "https://example.org/my/forum"
 
     licenses: A.License {
         spdxId: "GPL-3.0-or-later"

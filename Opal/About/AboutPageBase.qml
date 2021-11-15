@@ -297,6 +297,14 @@ Page {
     property string translationsUrl: ""
 
     /*!
+      This property specifies where users can find more information about the app.
+
+      This may be a dedicated homepage, a forum thread, or another online space
+      for information and/or feedback. A dedicated homepage is not required.
+    */
+    property string homepageUrl: ""
+
+    /*!
       This property holds a list of relevant licenses.
 
       The very first licenses in this list is interpreted as the main
@@ -617,6 +625,11 @@ Page {
                 }
 
                 buttons: [
+                    InfoButton {
+                        text: qsTranslate("Opal.About", "Homepage")
+                        onClicked: openOrCopyUrl(homepageUrl)
+                        enabled: homepageUrl !== ''
+                    },
                     InfoButton {
                         text: qsTranslate("Opal.About", "Translations")
                         onClicked: openOrCopyUrl(translationsUrl)
