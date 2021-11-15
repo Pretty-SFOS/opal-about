@@ -25,7 +25,7 @@ nameStyled: About
 # Opal Gallery. Line breaks can included with '\n' but should be avoided.
 description: This module provides <i>AboutPageBase</i> for building customizable application information pages.
 
-# attribution string for the whole module, in the same for as a SPDX
+# attribution string for the whole module, in the same form as a SPDX
 # FileCopyrightText entry.
 attribution: 2018-2021 Mirian Margiani
 
