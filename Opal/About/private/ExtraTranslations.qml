@@ -4,15 +4,15 @@
 //@ SPDX-License-Identifier: GPL-3.0-or-later
 
 import QtQuick 2.0
-//@ This file must not be used anywhere. It contains a list of some commonly
+//@ This file MUST NOT be used anywhere. It contains a list of some commonly
 //@ needed strings for which Opal.About will provide default translations.
-//@ Do not include this file in qmldir.
+//@ Do not include this file in qmldir. This file may not contain valid QML.
 Item {
     // commonly used strings
     readonly property string k: qsTranslate("Opal.About.Common", "Author")
-    readonly property string k: qsTranslate("Opal.About.Common", "Author(s)", "", 5)
-    readonly property string l: qsTranslate("Opal.About.Common", "Maintainer")
-    readonly property string l: qsTranslate("Opal.About.Common", "Maintainer(s)", "", 5)
+    readonly property string l: qsTranslate("Opal.About.Common", "Author(s)", "", 5)
+    readonly property string m: qsTranslate("Opal.About.Common", "Maintainer")
+    readonly property string n: qsTranslate("Opal.About.Common", "Maintainer(s)", "", 5)
     readonly property string a: qsTranslate("Opal.About.Common", "Development")
     readonly property string b: qsTranslate("Opal.About.Common", "Programming")
     readonly property string c: qsTranslate("Opal.About.Common", "Translations")
@@ -35,5 +35,5 @@ Item {
     readonly property string lh: qsTranslate("Opal.About.Common", "Finnish")
     readonly property string li: qsTranslate("Opal.About.Common", "Norwegian")
     readonly property string lj: qsTranslate("Opal.About.Common", "Latvian")
-    readonly property string lj: qsTranslate("Opal.About.Common", "Estonian")
+    readonly property string lk: qsTranslate("Opal.About.Common", "Estonian")
 }
