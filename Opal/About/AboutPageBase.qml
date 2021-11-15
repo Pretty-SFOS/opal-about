@@ -615,6 +615,19 @@ Page {
                                                'mainAttributions': __effectiveMainAttribs
                                            })
                 }
+
+                buttons: [
+                    InfoButton {
+                        text: qsTranslate("Opal.About", "Translations")
+                        onClicked: openOrCopyUrl(translationsUrl)
+                        enabled: translationsUrl !== ''
+                    },
+                    InfoButton {
+                        text: qsTranslate("Opal.About", "Source Code")
+                        onClicked: openOrCopyUrl(sourcesUrl)
+                        enabled: sourcesUrl !== ''
+                    }
+                ]
             }
 
             Column {
@@ -647,19 +660,6 @@ Page {
                                licenses[0].name : licenses[0].spdxId)
                 smallPrint: licenses[0].customShortText
                 showMoreLabel: qsTranslate("Opal.About", "show license(s)", "", licenses.length+attributions.length)
-                buttons: [
-                    InfoButton {
-                        text: qsTranslate("Opal.About", "Translations")
-                        onClicked: openOrCopyUrl(translationsUrl)
-                        enabled: translationsUrl !== ''
-                    },
-                    InfoButton {
-                        text: qsTranslate("Opal.About", "Source Code")
-                        onClicked: openOrCopyUrl(sourcesUrl)
-                        enabled: sourcesUrl !== ''
-                    }
-                ]
-
                 clip: true
                 Behavior on height { SmoothedAnimation { duration: 80 } }
             }
