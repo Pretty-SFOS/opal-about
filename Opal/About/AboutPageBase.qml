@@ -579,7 +579,7 @@ Page {
                     width: parent.width
                     visible: String(versionNumber !== "")
                     text: qsTranslate("Opal.About", "Version %1").arg(
-                              (String(releaseNumber) === "1") ?
+                              (String(releaseNumber) == "1") ?
                                   versionNumber :
                                   versionNumber+"-"+releaseNumber)
                     color: Theme.secondaryHighlightColor
@@ -642,7 +642,7 @@ Page {
                 onClicked: pageStack.animatorPush("private/LicensePage.qml", {
                     'appName': appName, 'licenses': licenses, 'attributions': attributions })
                 text: enabled === false ?
-                          qsTranslate("Opal.About", "This is proprietary software. All rights reserved.") :
+                          "This component has been improperly configured. Please report this bug." :
                           ((licenses[0].name !== "" && licenses[0].error !== true) ?
                                licenses[0].name : licenses[0].spdxId)
                 smallPrint: licenses[0].customShortText
