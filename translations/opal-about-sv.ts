@@ -78,7 +78,19 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>This is proprietary software. All rights reserved.</source>
+        <source>External Link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open in browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download license texts</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

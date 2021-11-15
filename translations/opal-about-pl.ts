@@ -29,7 +29,7 @@
     </message>
     <message>
         <source>This is proprietary software. All rights reserved.</source>
-        <translation>To jest zastrzeżone oprogramowanie. Wszelkie prawa zastrzeżone.</translation>
+        <translation type="vanished">To jest zastrzeżone oprogramowanie. Wszelkie prawa zastrzeżone.</translation>
     </message>
     <message numerus="yes">
         <source>show license(s)</source>
@@ -81,6 +81,22 @@
     </message>
     <message>
         <source>Donations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>External Link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open in browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download license texts</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
