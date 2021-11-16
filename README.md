@@ -21,7 +21,7 @@ another project. Simply download the
 ### Setup
 
 Follow the main documentation for installing Opal modules
-[here](https://github.com/Pretty-SFOS/opal-about/blob/main/README.md).
+[here](https://github.com/Pretty-SFOS/opal/blob/main/README.md).
 
 ### Configuration
 
