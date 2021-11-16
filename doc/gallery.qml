@@ -10,7 +10,6 @@ import Opal.About 1.0 as A
 
 A.AboutPageBase {
     id: page
-    allowedOrientations: S.Orientation.All
 
     appName: "Opal.About Example"
     appIcon: Qt.resolvedUrl("../../images/harbour-opal.png")
