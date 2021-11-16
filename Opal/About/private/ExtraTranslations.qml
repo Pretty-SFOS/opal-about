@@ -16,7 +16,6 @@ Item {
     readonly property string a: qsTranslate("Opal.About.Common", "Development")
     readonly property string b: qsTranslate("Opal.About.Common", "Programming")
     readonly property string c: qsTranslate("Opal.About.Common", "Translations")
-    readonly property string d: qsTranslate("Opal.About.Common", "Donations")
     readonly property string e: qsTranslate("Opal.About.Common", "Icon Design")
     readonly property string f: qsTranslate("Opal.About.Common", "Third-party libraries")
     readonly property string g: qsTranslate("Opal.About.Common", "Data")
