@@ -5,8 +5,8 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # 'About' page for Sailfish apps
 
-This repo provides files to include a fancy "About" page with license and
-contributors information in your Sailfish app.
+A shiny and flexible "About" page supporting license info, contributors,
+donations, etc. in your Sailfish app.
 
 ## Screenshots
 
@@ -21,10 +21,7 @@ another project. Simply download the
 ### Setup
 
 Follow the main documentation for installing Opal modules
-[in the Wiki](https://github.com/Pretty-SFOS/opal).
-
-(You could use this module without including other Opal files but default
-translations require some `pro`-file magic that is tedious to reimplement.)
+[here](https://github.com/Pretty-SFOS/opal-about/blob/main/README.md).
 
 ### Configuration
 
@@ -35,15 +32,8 @@ QtCreator via Extras → Settings → Help → Documentation → Add.
 ## Size
 
 The release bundle without documentation comments and without unnecessary files
-takes about 50 KiB. In comparison, a simple manually built "About" page with the
-HTML version of the GNU GPL v3+ takes about 40 KiB.
-
-The full source code is about 80 KiB in size.
-
-## Development
-
-Follow the main documentation for developing modules
-[in the Wiki](https://github.com/Pretty-SFOS/opal).
+takes about 50 KiB. In comparison, a bare-bones manually built "About" page
+including the HTML version of the GNU GPL v3+ takes about 40 KiB.
 
 ## License
 
