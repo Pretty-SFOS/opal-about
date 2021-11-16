@@ -101,6 +101,10 @@
         <source>Copied to clipboard: %1</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Version %1 (%2)</source>
+        <translation>Version %1 (%2)</translation>
+    </message>
 </context>
 <context>
     <name>Opal.About.Common</name>
@@ -184,10 +188,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Donations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Latvian</source>
         <translation type="unfinished"></translation>
     </message>
@@ -224,6 +224,42 @@
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Czech</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Greek</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Spanish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hungarian</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Indonesian</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Russian</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dutch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Slovak</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Turkish</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
