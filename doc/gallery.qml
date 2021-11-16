@@ -13,9 +13,9 @@ A.AboutPageBase {
     allowedOrientations: S.Orientation.All
 
     appName: "Opal.About Example"
-    iconSource: Qt.resolvedUrl("../../images/harbour-opal.png")
-    versionNumber: APP_VERSION
-    releaseNumber: APP_RELEASE
+    appIcon: Qt.resolvedUrl("../../images/harbour-opal.png")
+    appVersion: APP_VERSION
+    appRelease: APP_RELEASE
     description: qsTr("This is a short description of the app. It can use styled " +
                       "and rich text or <a href='https://example.org'>links</a>.")
 

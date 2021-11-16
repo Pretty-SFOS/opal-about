@@ -69,9 +69,9 @@ import "private"
             allowedOrientations: Orientation.All
 
             appName: qsTr("MyApp")
-            iconSource: Qt.resolvedUrl("../images/harbour-myapp.png")
-            versionNumber: APP_VERSION
-            releaseNumber: APP_RELEASE
+            appIcon: Qt.resolvedUrl("../images/harbour-myapp.png")
+            appVersion: APP_VERSION
+            appRelease: APP_RELEASE
             description: qsTr("This is a short description of the app.")
             sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
             translationsUrl: "https://weblate.org"
@@ -174,7 +174,7 @@ Page {
       its logo and version string.
 
       \required
-      \sa versionNumber releaseNumber
+      \sa appVersion, appRelease
     */
     property string appName: ""
 
@@ -185,8 +185,8 @@ Page {
       You can specify a full path to shared system files alternatively.
 
       \qml
-      iconSource: Qt.resolvedUrl("../images/harbour-myapp.png")
-      iconSource: "/usr/share/icons/hicolor/172x172/apps/harbour-myapp.png"
+      appIcon: Qt.resolvedUrl("../images/harbour-myapp.png")
+      appIcon: "/usr/share/icons/hicolor/172x172/apps/harbour-myapp.png"
       \endqml
 
       Setting this property is not strictly required but highly recommended.
@@ -194,7 +194,7 @@ Page {
       \note you can use \opsnip {render-icons} to easily render SVG icon
       source to any destination.
     */
-    property string iconSource: ""
+    property string appIcon: ""
 
     /*!
       This property holds the app's version number.
@@ -205,9 +205,9 @@ Page {
       YAML to QML.
 
       \required
-      \sa releaseNumber
+      \sa appRelease
     */
-    property string versionNumber: ""
+    property string appVersion: ""
 
     /*!
       This property holds the app's release number.
@@ -219,9 +219,21 @@ Page {
       Setting this property is not required. It will only be shown
       if its value is not \c 1.
 
-      \sa versionNumber
+      \sa appVersion
     */
-    property string releaseNumber: "1"
+    property string appRelease: "1"
+
+    /*!
+      This property holds the app's release type.
+
+      Some apps may be published in different flavours, e.g. in a version
+      for OpenRepos and a slightly different version for the official store.
+
+      Setting this property is optional.
+
+      \sa appVersion, appRelease
+    */
+    property string appReleaseType: ""
 
     /*!
       This property holds a styled text description of the app.
@@ -576,7 +588,7 @@ Page {
                 width: Theme.itemSizeExtraLarge
                 height: Theme.itemSizeExtraLarge
                 fillMode: Image.PreserveAspectFit
-                source: iconSource
+                source: appIcon
                 verticalAlignment: Image.AlignVCenter
             }
 
@@ -596,11 +608,18 @@ Page {
 
                 Label {
                     width: parent.width
-                    visible: String(versionNumber !== "")
-                    text: qsTranslate("Opal.About", "Version %1").arg(
-                              (String(releaseNumber) == "1") ?
-                                  versionNumber :
-                                  versionNumber+"-"+releaseNumber)
+                    visible: String(appVersion !== "")
+                    text: {
+                        var versionString = appVersion
+                        if (appRelease != "" && appRelease != "1") versionString += "-" + appRelease
+
+                        if (appReleaseType == "") {
+                            return qsTranslate("Opal.About", "Version %1").arg(versionString)
+                        } else {
+                            return qsTranslate("Opal.About", "Version %1 (%2)").arg(versionString).arg(appReleaseType)
+                        }
+                    }
+                    wrapMode: Text.Wrap
                     color: Theme.secondaryHighlightColor
                     font.pixelSize: Theme.fontSizeMedium
                     horizontalAlignment: Text.AlignHCenter
