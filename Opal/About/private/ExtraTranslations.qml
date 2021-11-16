@@ -35,4 +35,13 @@ Item {
     readonly property string li: qsTranslate("Opal.About.Common", "Norwegian")
     readonly property string lj: qsTranslate("Opal.About.Common", "Latvian")
     readonly property string lk: qsTranslate("Opal.About.Common", "Estonian")
+    readonly property string ll: qsTranslate("Opal.About.Common", "Czech")
+    readonly property string lm: qsTranslate("Opal.About.Common", "Greek")
+    readonly property string ln: qsTranslate("Opal.About.Common", "Spanish")
+    readonly property string lo: qsTranslate("Opal.About.Common", "Hungarian")
+    readonly property string lp: qsTranslate("Opal.About.Common", "Indonesian")
+    readonly property string lq: qsTranslate("Opal.About.Common", "Russian")
+    readonly property string lr: qsTranslate("Opal.About.Common", "Dutch")
+    readonly property string ls: qsTranslate("Opal.About.Common", "Slovak")
+    readonly property string lt: qsTranslate("Opal.About.Common", "Turkish")
 }
