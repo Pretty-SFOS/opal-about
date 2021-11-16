@@ -61,19 +61,19 @@
     </message>
     <message>
         <source>Note: please check the source code for most accurate information.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uwaga: sprawdź kod źródłowy, aby uzyskać najdokładniejsze informacje.</translation>
     </message>
     <message>
         <source>Acknowledgements</source>
-        <translation type="unfinished"></translation>
+        <translation>Podziękowanie</translation>
     </message>
     <message>
         <source>Thank you!</source>
-        <translation type="unfinished"></translation>
+        <translation>Dziękuję!</translation>
     </message>
     <message>
         <source>Donations</source>
-        <translation type="unfinished"></translation>
+        <translation>Darowizny</translation>
     </message>
     <message>
         <source>External Link</source>
@@ -188,7 +188,7 @@
     </message>
     <message>
         <source>Donations</source>
-        <translation type="unfinished"></translation>
+        <translation>Darowizny</translation>
     </message>
     <message>
         <source>Latvian</source>
