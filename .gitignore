@@ -5,9 +5,15 @@
 .directory
 build*
 *.pro.user
+*.creator.user
 *.spec.*
 *~
 *.~*
 *.qm
 dist*
 TODO*
+
+opal-*.cflags
+opal-*.creator
+opal-*.cxxflags
+opal-*.files
