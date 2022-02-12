@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2020-2021 Mirian Margiani
+SPDX-FileCopyrightText: 2020-2022 Mirian Margiani
 SPDX-License-Identifier: GFDL-1.3-or-later
 -->
 
@@ -31,13 +31,13 @@ QtCreator via Extras → Settings → Help → Documentation → Add.
 
 ## Size
 
-The release bundle without documentation comments and without unnecessary files
-takes about 50 KiB. In comparison, a bare-bones manually built "About" page
-including the HTML version of the GNU GPL v3+ takes about 40 KiB.
+The "minified" release bundle without documentation comments takes about 40 KiB.
+This is similar to a bare-bones manually built "About" page including the HTML
+version of the GNU GPL v3 but without a list of contributors.
 
 ## License
 
-> Copyright (C) 2018-2021  Mirian Margiani
+> Copyright (C) 2018-2022  Mirian Margiani
 > Program: opal-about
 >
 > This program is free software: you can redistribute it and/or modify

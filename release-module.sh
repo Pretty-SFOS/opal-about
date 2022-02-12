@@ -2,14 +2,14 @@
 #
 # This file is part of Opal and has been released into the public domain.
 # SPDX-License-Identifier: CC0-1.0
-# SPDX-FileCopyrightText: 2021 Mirian Margiani
+# SPDX-FileCopyrightText: 2021-2022 Mirian Margiani
 #
 # See https://github.com/Pretty-SFOS/opal/blob/main/opal-development/opal-release-module.md
 # for documentation.
 #
 # @@@ keep this line: based on template v0.6.1
 #
-c__FOR_RELEASE_LIB__="0.6.1"
+c__FOR_RELEASE_LIB__="0.6.3"
 
 # Run this script from the module's root directory.
 source ../opal/opal-development/opal-release-module.sh
