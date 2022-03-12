@@ -40,6 +40,11 @@ Column {
     width: parent.width
     height: childrenRect.height
 
+    // Copy of AboutPageBase::openOrCopyUrl to ensure it is available.
+    function openOrCopyUrl(externalUrl, title) {
+        pageStack.push("private/ExternalUrlPage.qml", {'externalUrl': externalUrl, 'title': title})
+    }
+
     /*!
       This property holds the section title.
 
@@ -166,6 +171,7 @@ Column {
                     textFormat: Text.StyledText
                     linkColor: palette.secondaryColor
                     palette.primaryColor: Theme.highlightColor
+                    onLinkActivated: openOrCopyUrl(link)
                 }
 
                 Label {
@@ -179,6 +185,7 @@ Column {
                     linkColor: palette.secondaryColor
                     palette.primaryColor: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeSmall
+                    onLinkActivated: openOrCopyUrl(link)
                 }
 
                 Row {
