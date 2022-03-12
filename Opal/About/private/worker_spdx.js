@@ -25,7 +25,7 @@ function sendError(spdxId, shortText) {
         fullText: "",
         shortText: shortText,
         error: true
-    });
+    })
 }
 
 function sendSuccess(spdxId, name, fullText, shortText) {
@@ -35,83 +35,83 @@ function sendSuccess(spdxId, name, fullText, shortText) {
         fullText: fullText,
         shortText: shortText,
         error: false
-    });
+    })
 }
 
 function request(type, url, onSuccess, onFailure, postData) {
-    var xhr = new XMLHttpRequest;
-    xhr.open(type, url);
+    var xhr = new XMLHttpRequest
+    xhr.open(type, url)
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
-            var response = xhr.responseText;
+            var response = xhr.responseText
 
             if (response === "") {
-                onFailure(xhr);
+                onFailure(xhr)
             } else {
-                onSuccess(xhr);
+                onSuccess(xhr)
             }
         }
-    };
+    }
 
     if (postData !== undefined && type === "PUT") {
-        xhr.send(postData);
+        xhr.send(postData)
     } else {
-        xhr.send();
+        xhr.send()
     }
 }
 
 function loadRemote(spdxId, localUrl, remoteUrl, origShortText) {
     request("GET", remoteUrl, function(xhr) {
         try {
-            var o = JSON.parse(xhr.responseText);
-            if (!o || typeof o !== "object") throw 1;
-            console.log(LOG_SCOPE, "license loaded remotely from", remoteUrl);
+            var o = JSON.parse(xhr.responseText)
+            if (!o || typeof o !== "object") throw 1
+            console.log(LOG_SCOPE, "license loaded remotely from", remoteUrl)
             sendSuccess(spdxId, o['name'], o['licenseText'],
-                        getShortText(origShortText, spdxId));
+                        getShortText(origShortText, spdxId))
 
             request("PUT", localUrl, function(x){
-                console.log(LOG_SCOPE, "saved license with status", x.status, "to", localUrl);
-            }, function(x){}, xhr.responseText);
+                console.log(LOG_SCOPE, "saved license with status", x.status, "to", localUrl)
+            }, function(x){}, xhr.responseText)
         } catch (e) {
-            console.log(LOG_SCOPE, "failed to load license remotely from", remoteUrl);
-            sendError(spdxId, getShortText(origShortText, spdxId));
+            console.log(LOG_SCOPE, "failed to load license remotely from", remoteUrl)
+            sendError(spdxId, getShortText(origShortText, spdxId))
         }
     }, function(xhr) {
-        console.log(LOG_SCOPE, "failed to load license remotely from", remoteUrl);
-        sendError(spdxId, getShortText(origShortText, spdxId));
-    });
+        console.log(LOG_SCOPE, "failed to load license remotely from", remoteUrl)
+        sendError(spdxId, getShortText(origShortText, spdxId))
+    })
 }
 
 WorkerScript.onMessage = function(message) {
     if (message.spdxId === undefined || message.spdxId === "") {
-        console.error(LOG_SCOPE, "cannot load license without spdx id");
-        sendError("");
-        return;
+        console.error(LOG_SCOPE, "cannot load license without spdx id")
+        sendError("")
+        return
     }
 
     request("GET", message.localUrl, function(xhr) {
         try {
-            var o = JSON.parse(xhr.responseText);
-            if (!o || typeof o !== "object") throw 1;
-            console.log(LOG_SCOPE, "license loaded locally from", message.localUrl);
+            var o = JSON.parse(xhr.responseText)
+            if (!o || typeof o !== "object") throw 1
+            console.log(LOG_SCOPE, "license loaded locally from", message.localUrl)
             sendSuccess(message.spdxId, o['name'], o['licenseText'],
-                        getShortText(message.shortText, message.spdxId));
+                        getShortText(message.shortText, message.spdxId))
         } catch (e) {
             if (!!message.online) {
-                loadRemote(message.spdxId, message.localUrl, message.remoteUrl, message.shortText);
+                loadRemote(message.spdxId, message.localUrl, message.remoteUrl, message.shortText)
             } else {
                 console.log(LOG_SCOPE, "license not cached at "+message.localUrl+
-                            ", skipping download in offline mode");
-                sendError(message.spdxId, getShortText(message.shortText, message.spdxId));
+                            ", skipping download in offline mode")
+                sendError(message.spdxId, getShortText(message.shortText, message.spdxId))
             }
         }
     }, function(xhr) {
         if (!!message.online) {
-            loadRemote(message.spdxId, message.localUrl, message.remoteUrl, message.shortText);
+            loadRemote(message.spdxId, message.localUrl, message.remoteUrl, message.shortText)
         } else {
             console.log(LOG_SCOPE, "license not cached at "+message.localUrl+
-                        ", skipping download in offline mode");
-            sendError(message.spdxId, getShortText(message.shortText, message.spdxId));
+                        ", skipping download in offline mode")
+            sendError(message.spdxId, getShortText(message.shortText, message.spdxId))
         }
-    });
+    })
 }

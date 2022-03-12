@@ -114,16 +114,16 @@ QtObject {
     property WorkerScript __worker: WorkerScript {
         source: "private/worker_spdx.js"
         onMessage: {
-            if (messageObject.spdxId !== spdxId) return;
-            __name = messageObject.name;
-            __fullText = messageObject.fullText;
-            __error = messageObject.error;
+            if (messageObject.spdxId !== spdxId) return
+            __name = messageObject.name
+            __fullText = messageObject.fullText
+            __error = messageObject.error
             if (customShortText === '') customShortText = messageObject.shortText
         }
 
         Component.onCompleted: {
-            _load();
-            __initialized = true;
+            _load()
+            __initialized = true
         }
     }
 
@@ -136,20 +136,22 @@ QtObject {
     }
 
     function _load(force) {
-        if (fullText !== "" && force !== true) return;
+        if (fullText !== "" && force !== true) return
         if (spdxId === undefined || spdxId === "") {
-            __error = true;
-            console.error("[Opal.About] cannot load license without spdxId");
-            return;
+            __error = true
+            console.error("[Opal.About] cannot load license without spdxId")
+            return
         }
 
-        __name = ""; __fullText = ""; __error = false;
+        __name = ""
+        __fullText = ""
+        __error = false
         __worker.sendMessage({
             spdxId: spdxId,
             localUrl: __localUrl,
             remoteUrl: __remoteUrl,
             shortText: customShortText,
             online: !!__online
-        });
+        })
     }
 }
