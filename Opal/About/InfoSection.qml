@@ -176,6 +176,7 @@ Column {
                     wrapMode: Text.Wrap
                     text: smallPrint
                     textFormat: Text.StyledText
+                    linkColor: palette.secondaryColor
                     palette.primaryColor: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeSmall
                 }
