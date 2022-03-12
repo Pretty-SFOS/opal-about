@@ -154,7 +154,7 @@ Column {
             Column {
                 width: parent.width
                 spacing: Theme.paddingMedium
-                visible: root.text !== ""
+                visible: root.text !== "" || root.smallPrint !== ""
 
                 Label {
                     id: _textLabel
