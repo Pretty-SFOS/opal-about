@@ -70,7 +70,7 @@
         <translation>Código Fuente</translation>
     </message>
     <message>
-        <location filename="../Opal/About/InfoSection.qml" line="72"/>
+        <location filename="../Opal/About/InfoSection.qml" line="77"/>
         <source>show details</source>
         <translation>Mostrar detalles</translation>
     </message>

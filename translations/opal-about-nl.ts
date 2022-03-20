@@ -70,7 +70,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/InfoSection.qml" line="72"/>
+        <location filename="../Opal/About/InfoSection.qml" line="77"/>
         <source>show details</source>
         <translation type="unfinished"></translation>
     </message>

@@ -90,7 +90,7 @@
         <translation>Details</translation>
     </message>
     <message>
-        <location filename="../Opal/About/InfoSection.qml" line="72"/>
+        <location filename="../Opal/About/InfoSection.qml" line="77"/>
         <source>show details</source>
         <translation>Details zeigen</translation>
     </message>
