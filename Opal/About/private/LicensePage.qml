@@ -16,6 +16,7 @@ Page {
     property string appName
     property string mainSources
     property string mainHomepage
+    property string allowDownloadingLicenses: false
 
     allowedOrientations: Orientation.All
 
@@ -37,6 +38,9 @@ Page {
         VerticalScrollDecorator { }
 
         PullDownMenu {
+            visible: allowDownloadingLicenses
+            enabled: visible
+
             MenuItem {
                 text: qsTranslate("Opal.About", "Download license texts")
                 onClicked: _downloadLicenses()

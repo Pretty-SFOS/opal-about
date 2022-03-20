@@ -336,8 +336,8 @@ Page {
 
       Licenses are specified by their \l {https://spdx.org/licenses/}
       {SPDX identifiers}. You don't have to include any license
-      texts manually: they will be automatically downloaded and cached
-      locally. If a license text is not available locally and downloading
+      texts manually: users can download them automatically and the files will
+      be cached locally. If a license text is not available locally and downloading
       is not possible, a short notice including a link to the full
       license text will be shown.
 
@@ -348,9 +348,29 @@ Page {
       Follow the link for a list of default short texts that will be shown
       automatically for a few licenses.
 
-      \sa License
+      \sa License, allowDownloadingLicenses
     */
     property list<License> licenses
+
+    /*!
+      This property defines whether to enable downloading licenses.
+
+      If this is set to \c true, users will be able to download license texts
+      automatically. If it is set to \c false, this feature will be disabled
+      and users must click on a link to open the license text in the browser.
+
+      \note fetching license texts always requires manual action from the user.
+
+      \b {Internet access:}
+
+      Your app must have the \c Internet permission in its Sailjail
+      profile to be able to download license texts. It is generally advised to
+      use as few permissions as possible. Thus, downloading license texts is
+      disabled by default.
+
+      \sa licenses, License
+    */
+    property bool allowDownloadingLicenses: false
 
     /*!
       This property holds a list of attributions, e.g. to third-party libraries.
@@ -650,7 +670,8 @@ Page {
                                                'appName': appName,
                                                'sections': contributionSections,
                                                'attributions': attributions,
-                                               'mainAttributions': __effectiveMainAttribs
+                                               'mainAttributions': __effectiveMainAttribs,
+                                               'allowDownloadingLicenses': allowDownloadingLicenses
                                            })
                 }
 
@@ -697,7 +718,9 @@ Page {
                 enabled: licenses.length > 0
                 onClicked: pageStack.animatorPush("private/LicensePage.qml", {
                     'appName': appName, 'licenses': licenses, 'attributions': attributions,
-                    'mainSources': sourcesUrl, 'mainHomepage': homepageUrl })
+                    'mainSources': sourcesUrl, 'mainHomepage': homepageUrl,
+                    'allowDownloadingLicenses': allowDownloadingLicenses
+                })
                 text: enabled === false ?
                           "This component has been improperly configured. Please report this bug." :
                           ((licenses[0].name !== "" && licenses[0].error !== true) ?

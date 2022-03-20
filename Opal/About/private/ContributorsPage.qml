@@ -14,6 +14,8 @@ Page {
     property var mainAttributions: []
     property string appName
 
+    property bool allowDownloadingLicenses: false
+
     // this could be used to always attribute Opal.About in case all users forget
     // to properly attribute this library
     property list<Attribution> _defaultAttributions
@@ -113,7 +115,8 @@ Page {
                                                                'enableSourceHint': true,
                                                                'pageDescription': modelData.name,
                                                                'mainSources': modelData.source,
-                                                               'mainHomepage': modelData.homepage
+                                                               'mainHomepage': modelData.homepage,
+                                                               'allowDownloadingLicenses': allowDownloadingLicenses
                                                            })
                                 } else {
                                     var pages = []
