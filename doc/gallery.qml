@@ -1,7 +1,7 @@
 /*
  * This file is part of harbour-opal.
  * SPDX-License-Identifier: GPL-3.0-or-later
- * SPDX-FileCopyrightText: 2020-2021 Mirian Margiani
+ * SPDX-FileCopyrightText: 2020-2022 Mirian Margiani
  */
 
 import QtQuick 2.0
@@ -34,7 +34,7 @@ A.AboutPageBase {
     attributions: [
         A.Attribution {
             name: "My.Extra.Component"
-            entries: ["2020-2021 John Doe", "2021 Jane Doe"]
+            entries: ["2020-2022 John Doe", "2022 Jane Doe"]
             licenses: A.License { spdxId: "CC0-1.0" }
         },
         A.Attribution {
@@ -58,7 +58,7 @@ A.AboutPageBase {
             // Opal modules and other GPL software must be listed here.A
             // All Opal modules provide an Attribution section to be copy-pasted.
             name: "Opal.About"
-            entries: "2018-2021 Mirian Margiani"
+            entries: "2018-2022 Mirian Margiani"
             licenses: A.License { spdxId: "GPL-3.0-or-later" }
             sources: "https://github.com/Pretty-SFOS/opal-about"
             homepage: "https://github.com/Pretty-SFOS/opal"
