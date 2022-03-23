@@ -10,3 +10,5 @@ DonationService 1.0 DonationService.qml
 InfoButton 1.0 InfoButton.qml
 InfoSection 1.0 InfoSection.qml
 License 1.0 License.qml
+# generated files:
+OpalAboutAttribution 1.0 OpalAboutAttribution.qml
