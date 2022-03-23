@@ -543,6 +543,19 @@ Page {
     property alias _donationsInfoSection: _donationsInfo
 
     /*!
+      This property holds attribution info about the app itself as a \c Attribution object.
+      \sa Attribution
+      \internal
+    */
+    readonly property Attribution _effectiveSelfAttribution: Attribution {
+        name: appName
+        entries: __effectiveMainAttribs
+        licenses: page.licenses
+        homepage: homepageUrl
+        sources: sourcesUrl
+    }
+
+    /*!
       This function shows a page that lets the user preview
       an external link before either copying it to the clipboard
       or opening it externally. The \c title argument is optional.
@@ -717,9 +730,10 @@ Page {
                 title: qsTranslate("Opal.About", "License")
                 enabled: licenses.length > 0
                 onClicked: pageStack.animatorPush("private/LicensePage.qml", {
-                    'appName': appName, 'licenses': licenses, 'attributions': attributions,
-                    'mainSources': sourcesUrl, 'mainHomepage': homepageUrl,
-                    'allowDownloadingLicenses': allowDownloadingLicenses
+                    'mainAttribution': _effectiveSelfAttribution,
+                    'attributions': attributions,
+                    'allowDownloadingLicenses': allowDownloadingLicenses,
+                    'enableSourceHint': true
                 })
                 text: enabled === false ?
                           "This component has been improperly configured. Please report this bug." :

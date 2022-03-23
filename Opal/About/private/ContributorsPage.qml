@@ -111,12 +111,10 @@ Page {
                             onClicked: {
                                 if (values[values.length-1] === spdxString) {
                                     pageStack.animatorPush("LicensePage.qml", {
-                                                               'attributions': [modelData],
-                                                               'enableSourceHint': true,
-                                                               'pageDescription': modelData.name,
-                                                               'mainSources': modelData.source,
-                                                               'mainHomepage': modelData.homepage,
+                                                               'mainAttribution': modelData,
+                                                               'attributions': [],
                                                                'allowDownloadingLicenses': allowDownloadingLicenses
+                                                               'enableSourceHint': true
                                                            })
                                 } else {
                                     var pages = []

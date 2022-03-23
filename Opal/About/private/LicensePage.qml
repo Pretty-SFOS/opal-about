@@ -9,20 +9,23 @@ import ".."
 
 Page {
     id: root
-    property list<License> licenses
+    property Attribution mainAttribution
     property list<Attribution> attributions
     property bool enableSourceHint: true
     property alias pageDescription: pageHeader.description
+    property bool allowDownloadingLicenses: false
+
+    property list<License> licenses
     property string appName
     property string mainSources
     property string mainHomepage
-    property bool allowDownloadingLicenses: false
+
 
     allowedOrientations: Orientation.All
 
     function _downloadLicenses() {
-        for (var lic in licenses) {
-            licenses[lic].__online = true
+        for (var lic in mainAttribution.licenses) {
+            mainAttribution.licenses[lic].__online = true
         }
 
         for (var attr in attributions) {
@@ -54,8 +57,8 @@ Page {
 
             PageHeader {
                 id: pageHeader
-                title: qsTranslate("Opal.About", "License(s)", "", licenses.length+attributions.length)
-                description: appName
+                title: qsTranslate("Opal.About", "License(s)", "", root.mainAttribution.licenses.length + attributions.length)
+                description: mainAttribution.name
             }
 
             Label {
@@ -71,13 +74,14 @@ Page {
             }
 
             LicenseListPart {
-                visible: root.licenses.length > 0
-                title: appName
-                headerVisible: appName !== '' && root.attributions.length > 0
-                licenses: root.licenses
-                initiallyExpanded: root.licenses.length === 1 && root.attributions.length === 0
-                homepage: mainHomepage
-                sources: mainSources
+                visible: root.mainAttribution.licenses.length > 0 || root.mainAttribution.__effectiveEntries.length > 0
+                title: root.mainAttribution.name
+                headerVisible: root.mainAttribution.name !== '' && root.attributions.length > 0
+                licenses: root.mainAttribution.licenses
+                extraTexts: root.mainAttribution.__effectiveEntries
+                initiallyExpanded: root.mainAttribution.licenses.length === 1 && root.attributions.length === 0
+                homepage: root.mainAttribution.homepage
+                sources: root.mainAttribution.sources
             }
 
             Repeater {
