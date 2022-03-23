@@ -49,7 +49,7 @@ function copy_files() {
         "//@ SPDX-License-Identifier: ${cMETADATA[mainLicenseSpdx]}" \
         "" \
         "Attribution {" \
-        "    name: \"${cMETADATA[fullNameStyled]} (${cMETADATA[version]})\"" \
+        "    name: \"${cMETADATA[fullNameStyled]} (v${cMETADATA[version]})\"" \
         "    entries: \"${cMETADATA[attribution]}\"" \
         "    licenses: License { spdxId: \"${cMETADATA[mainLicenseSpdx]}\"}" \
         "    sources: \"https://github.com/Pretty-SFOS/${cMETADATA[fullName]}\"" \
