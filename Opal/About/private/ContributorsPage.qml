@@ -113,7 +113,7 @@ Page {
                                     pageStack.animatorPush("LicensePage.qml", {
                                                                'mainAttribution': modelData,
                                                                'attributions': [],
-                                                               'allowDownloadingLicenses': allowDownloadingLicenses
+                                                               'allowDownloadingLicenses': allowDownloadingLicenses,
                                                                'enableSourceHint': true
                                                            })
                                 } else {
