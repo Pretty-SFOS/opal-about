@@ -4,67 +4,67 @@
 <context>
     <name>Opal.About</name>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="565"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="598"/>
         <source>About</source>
         <translation>Tentang</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="617"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="650"/>
         <source>Version %1</source>
         <translation>Versi %1</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="619"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="652"/>
         <source>Version %1 (%2)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="644"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="36"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="57"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="677"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="38"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="59"/>
         <source>Development</source>
         <translation>Pengembangan</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="647"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="680"/>
         <source>show contributors</source>
         <translation>tampilkan kontributor</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="659"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="103"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="122"/>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="48"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="693"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="118"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="142"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="70"/>
         <source>Homepage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="686"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="720"/>
         <source>Donations</source>
         <translation>Donasi</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="696"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="730"/>
         <source>License</source>
         <translation>Lisensi</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Opal/About/AboutPageBase.qml" line="706"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="743"/>
         <source>show license(s)</source>
         <translation>
             <numerusform>tampilkan lisensi</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="664"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="698"/>
         <source>Translations</source>
         <translation>Terjemahan</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="669"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="101"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="125"/>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="54"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="703"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="116"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="145"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="76"/>
         <source>Source Code</source>
         <translation>Kode Sumber</translation>
     </message>
@@ -74,44 +74,45 @@
         <translation>Tampilkan rincian</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="33"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="35"/>
         <source>Contributors</source>
         <translation>Kontributor-kontributor</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="75"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="77"/>
         <source>Acknowledgements</source>
         <translation>Pengakuan</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="89"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="95"/>
         <source>Thank you!</source>
         <translation>Terima kasih!</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="99"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="110"/>
+        <location filename="../Opal/About/private/LicensePage.qml" line="61"/>
         <source>Details</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="159"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="181"/>
         <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
         <translation>Silakan merujuk &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/LicensePage.qml" line="41"/>
+        <location filename="../Opal/About/private/LicensePage.qml" line="48"/>
         <source>Download license texts</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../Opal/About/private/LicensePage.qml" line="53"/>
+        <location filename="../Opal/About/private/LicensePage.qml" line="62"/>
         <source>License(s)</source>
         <translation>
             <numerusform>Lisensi</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/LicensePage.qml" line="66"/>
+        <location filename="../Opal/About/private/LicensePage.qml" line="75"/>
         <source>Note: please check the source code for most accurate information.</source>
         <translation>Catatan: silakan periksa kode sumber untuk informasi yang paling akurat.</translation>
     </message>
