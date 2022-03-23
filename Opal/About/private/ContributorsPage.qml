@@ -85,31 +85,50 @@ Page {
                         delegate: DetailList {
                             // FIXME dots are not right-to-left compatible
                             property string spdxString: modelData._getSpdxString(" \u2022 \u2022 \u2022")
+                            property bool showLicensePage: false
 
-                            activeLastValue: spdxString !== '' || modelData.sources !== '' || modelData.homepage !== ''
+                            activeLastValue:    spdxString !== ''
+                                             || modelData.sources !== ''
+                                             || modelData.homepage !== ''
+                                             || modelData.description !== ''
                             label: (modelData.__effectiveEntries.length === 0 && spdxString === '') ?
                                        qsTranslate("Opal.About", "Thank you!") :
                                        modelData.name
                             values: {
                                 var vals = Func.makeStringListConcat(modelData.__effectiveEntries, spdxString, false)
-                                if (vals.length > 0) {
-                                    return vals
-                                } else {
+
+                                if (vals.length === 0) {
+                                    vals = [modelData.name]
+                                }
+
+                                if (spdxString === '') {
                                     var append = ''
 
-                                    if (modelData.sources !== '' && modelData.homepage !== '') {
+                                    if (modelData.description !== '' ||
+                                            (modelData.sources !== '' &&
+                                             modelData.homepage !== '')) {
                                         append = qsTranslate("Opal.About", "Details")
+
+                                        if (modelData.description !== '') {
+                                            showLicensePage = true
+                                        }
                                     } else if (modelData.sources !== '') {
                                         append = qsTranslate("Opal.About", "Source Code")
-                                    } else {
+                                    } else if (modelData.homepage !== '') {
                                         append = qsTranslate("Opal.About", "Homepage")
                                     }
 
-                                    return [modelData.name, append + "  \u2022 \u2022 \u2022"]
+                                    if (append !== '') {
+                                        vals.push(append + "  \u2022 \u2022 \u2022")
+                                    }
+                                } else {
+                                    showLicensePage = true
                                 }
+
+                                return vals
                             }
                             onClicked: {
-                                if (values[values.length-1] === spdxString) {
+                                if (showLicensePage) {
                                     pageStack.animatorPush("LicensePage.qml", {
                                                                'mainAttribution': modelData,
                                                                'attributions': [],

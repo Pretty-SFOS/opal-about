@@ -55,6 +55,24 @@ QtObject {
     property list<License> licenses
 
     /*!
+      This property may hold an additional description of the attribution.
+
+      When attributing a third-party library, it may be desired to explain how
+      exactly the library is used.
+
+      When publishing a derived project, simply adding the name of the "parent"
+      project is not enough. A short explanation is polite and will help users
+      understand the origins of the new project.
+
+      \note this description is only included on the license page. Sometimes,
+      a \c InfoSection is better suited to display acknowledgments on the main
+      page instead of / in addition to the license page.
+
+      \sa InfoSection, InfoButton, InfoSection::smallPrint, openOrCopyUrl
+    */
+    property string description
+
+    /*!
       This property may hold an URL to a relevant homepage.
 
       When attributing a third-party library, it is common courtesy to provide

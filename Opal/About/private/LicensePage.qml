@@ -57,7 +57,9 @@ Page {
 
             PageHeader {
                 id: pageHeader
-                title: qsTranslate("Opal.About", "License(s)", "", root.mainAttribution.licenses.length + attributions.length)
+                title: root.mainAttribution.licenses.length + attributions.length === 0 ?
+                           qsTranslate("Opal.About", "Details") :
+                           qsTranslate("Opal.About", "License(s)", "", root.mainAttribution.licenses.length + attributions.length)
                 description: mainAttribution.name
             }
 
@@ -74,11 +76,14 @@ Page {
             }
 
             LicenseListPart {
-                visible: root.mainAttribution.licenses.length > 0 || root.mainAttribution.__effectiveEntries.length > 0
+                visible:    root.mainAttribution.licenses.length > 0
+                         || root.mainAttribution.__effectiveEntries.length > 0
+                         || root.mainAttribution.description !== ''
                 title: root.mainAttribution.name
                 headerVisible: root.mainAttribution.name !== '' && root.attributions.length > 0
                 licenses: root.mainAttribution.licenses
                 extraTexts: root.mainAttribution.__effectiveEntries
+                description: root.mainAttribution.description
                 initiallyExpanded: root.mainAttribution.licenses.length === 1 && root.attributions.length === 0
                 homepage: root.mainAttribution.homepage
                 sources: root.mainAttribution.sources
@@ -91,6 +96,7 @@ Page {
                     headerVisible: title !== '' && pageDescription !== title
                     licenses: modelData.licenses
                     extraTexts: modelData.__effectiveEntries
+                    description: modelData.description
                     initiallyExpanded: root.licenses.length === 0 &&
                                        root.attributions.length === 1 &&
                                        root.attributions[0].licenses.length === 1

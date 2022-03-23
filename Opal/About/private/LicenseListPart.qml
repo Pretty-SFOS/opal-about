@@ -14,19 +14,41 @@ Column {
     property var extraTexts: []
     property bool initiallyExpanded: false
 
+    property string description: ''  // optional
     property string homepage: ''  // optional
     property string sources: ''  // optional
 
     // Acknowledgements without licenses should be shown
-    // on the contributors page but not on the licenses page.
-    visible: licenses.length > 0
+    // on the contributors page but not on the licenses page,
+    // unless they have a description.
+    visible: licenses.length > 0 || description != ''
     width: parent.width
     height: childrenRect.height
     spacing: Theme.paddingSmall
 
+    // Copy of AboutPageBase::openOrCopyUrl to ensure it is available.
+    function openOrCopyUrl(externalUrl, title) {
+        pageStack.push("ExternalUrlPage.qml", {'externalUrl': externalUrl, 'title': title})
+    }
+
     SectionHeader {
         visible: headerVisible
         text: title
+    }
+
+    Label {
+        x: Theme.horizontalPageMargin
+        visible: description !== ''
+        width: parent.width - 2*x
+        wrapMode: Text.Wrap
+        text: description
+        font.pixelSize: Theme.fontSizeSmall
+        color: Theme.highlightColor
+        bottomPadding: Theme.paddingSmall
+        textFormat: Text.StyledText
+        onLinkActivated: openOrCopyUrl(link)
+        linkColor: palette.secondaryHighlightColor
+        palette.primaryColor: Theme.highlightColor
     }
 
     Label {
