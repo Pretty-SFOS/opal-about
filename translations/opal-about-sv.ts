@@ -189,7 +189,7 @@
     </message>
     <message>
         <source>Latvian</source>
-        <translation type="unfinished"></translation>
+        <translation>Lettiska</translation>
     </message>
     <message>
         <source>Your contributions to translations or code would be most welcome.</source>
