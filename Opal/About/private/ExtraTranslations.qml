@@ -13,7 +13,9 @@ Item {
     readonly property string l: qsTranslate("Opal.About.Common", "Author(s)", "", 5)
     readonly property string m: qsTranslate("Opal.About.Common", "Maintainer")
     readonly property string n: qsTranslate("Opal.About.Common", "Maintainer(s)", "", 5)
-    readonly property string a: qsTranslate("Opal.About.Common", "Development")
+    // note: "Development" is not listed here because this string is already used
+    //       in AboutPageBase.qml. It will be in the final translations anyway.
+    // readonly property string a: qsTranslate("Opal.About.Common", "Development")
     readonly property string b: qsTranslate("Opal.About.Common", "Programming")
     readonly property string c: qsTranslate("Opal.About.Common", "Translations")
     readonly property string e: qsTranslate("Opal.About.Common", "Icon Design")
