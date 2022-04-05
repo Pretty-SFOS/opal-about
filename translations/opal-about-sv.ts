@@ -23,7 +23,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="680"/>
         <source>show contributors</source>
-        <translation>visa bidragsgivare</translation>
+        <translation>visa medverkande</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="730"/>
@@ -49,12 +49,12 @@
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="35"/>
         <source>Contributors</source>
-        <translation>Deltagare</translation>
+        <translation>Medverkande</translation>
     </message>
     <message>
         <location filename="../Opal/About/InfoSection.qml" line="77"/>
         <source>show details</source>
-        <translation>visa detaljer</translation>
+        <translation>visa detaljerat</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="62"/>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="75"/>
         <source>Note: please check the source code for most accurate information.</source>
-        <translation>OBS! Kontrollera källkoden för mer information.</translation>
+        <translation>Notis: Kontrollera källkoden för mest korrekt information.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="77"/>
@@ -102,7 +102,7 @@
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="57"/>
         <source>Open in browser</source>
-        <translation>Öppna i webbläsaren</translation>
+        <translation>Öppna i webbläsare</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="76"/>
@@ -126,7 +126,7 @@
         <location filename="../Opal/About/private/ContributorsPage.qml" line="110"/>
         <location filename="../Opal/About/private/LicensePage.qml" line="61"/>
         <source>Details</source>
-        <translation>Detaljerad information</translation>
+        <translation>Detaljerat</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="67"/>
@@ -149,7 +149,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="20"/>
         <source>Translations</source>
-        <translation>Översättning</translation>
+        <translation>Översättningar</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="21"/>
@@ -232,7 +232,7 @@
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="53"/>
         <source>You can support this project by contributing, or by donating using any of these services.</source>
-        <translation>Du kan stödja det här projektet genom kodbidrag eller genom att donera med någon av dessa tjänster.</translation>
+        <translation>Du kan stödja projektet genom kodbidrag eller donation med hjälp av dessa tjänster.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="38"/>
@@ -242,7 +242,7 @@
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="65"/>
         <source>Your contributions to translations or code would be most welcome.</source>
-        <translation>Ditt bidrag till översättningar eller kod är mycket välkomna.</translation>
+        <translation>Kodbidrag eller översättningar är väldigt välkommet.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="39"/>
