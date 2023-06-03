@@ -60,6 +60,8 @@ Column {
         text: extraTexts.join('; ')
         font.pixelSize: Theme.fontSizeSmall
         color: Theme.highlightColor
+        linkColor: Theme.primaryColor
+        onLinkActivated: openOrCopyUrl(link)
         bottomPadding: Theme.paddingSmall
     }
 
