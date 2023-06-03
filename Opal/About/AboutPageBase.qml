@@ -777,7 +777,7 @@ Page {
                 buttons: [
                     InfoButton {
                         text: qsTranslate("Opal.About", "Homepage")
-                        onClicked: openOrCopyUrl(homepageUrl)
+                        onClicked: openOrCopyUrl(homepageUrl, text)
                         enabled: homepageUrl !== ''
                     },
                     InfoButton {
@@ -790,12 +790,12 @@ Page {
                     },
                     InfoButton {
                         text: qsTranslate("Opal.About", "Translations")
-                        onClicked: openOrCopyUrl(translationsUrl)
+                        onClicked: openOrCopyUrl(translationsUrl, text)
                         enabled: translationsUrl !== ''
                     },
                     InfoButton {
                         text: qsTranslate("Opal.About", "Source Code")
-                        onClicked: openOrCopyUrl(sourcesUrl)
+                        onClicked: openOrCopyUrl(sourcesUrl, text)
                         enabled: sourcesUrl !== ''
                     }
                 ]
