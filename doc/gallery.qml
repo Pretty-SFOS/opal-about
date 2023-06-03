@@ -1,7 +1,7 @@
 /*
  * This file is part of harbour-opal.
  * SPDX-License-Identifier: GPL-3.0-or-later
- * SPDX-FileCopyrightText: 2020-2022 Mirian Margiani
+ * SPDX-FileCopyrightText: 2020-2023 Mirian Margiani
  */
 
 import QtQuick 2.0
@@ -12,7 +12,7 @@ A.AboutPageBase {
     id: page
 
     appName: "Opal.About Example"
-    appIcon: Qt.resolvedUrl("../../images/harbour-opal.png")
+    appIcon: Qt.resolvedUrl("../../images/harbour-opal-gallery.png")
     appVersion: APP_VERSION
     appRelease: APP_RELEASE
     description: qsTr("This is a short description of the app. It can use styled " +
