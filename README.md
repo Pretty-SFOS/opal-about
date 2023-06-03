@@ -12,6 +12,33 @@ changelogs, donations, etc. in your Sailfish app.
 
 TBD.
 
+## Example code
+
+A most basic but beautiful “About” page can be added with very few lines of
+code:
+
+```{qml}
+import QtQuick 2.0
+import Sailfish.Silica 1.0 as S
+import Opal.About 1.0 as A
+
+A.AboutPageBase {
+    id: root
+    allowedOrientations: S.Orientation.All
+    appName: "My App"
+    appIcon: Qt.resolvedUrl("../images/harbour-my-app.png")
+    appVersion: "1.0.0"
+    description: "My App is a simple app."
+    authors: "2023 Me, Myself, and I"
+    licenses: A.License { spdxId: "GPL-3.0-or-later" }
+    attributions: A.OpalAboutAttribution {}
+    sourcesUrl: "https://git.example.org/my-app"
+}
+```
+
+Advanced features are just as easy to use and extensive documentation is
+available through QtCreator.
+
 ## How to use
 
 You do not need to clone this repository if you only intend to use the module in
