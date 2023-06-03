@@ -86,12 +86,8 @@ import "private"
             }
 
             attributions: [
-                Attribution {
-                    name: "Opal.About"
-                    entries: "2018-2021 Mirian Margiani"
-                    licenses: License { spdxId: "GPL-3.0-or-later" }
-                    sources: "https://github.com/Pretty-SFOS/opal-about"
-                    homepage: "https://github.com/Pretty-SFOS/opal"
+                OpalAboutAttribution {
+                    // provided by Opal.About
                 },
                 Attribution {
                     name: "The Library"

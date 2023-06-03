@@ -56,11 +56,12 @@ A.AboutPageBase {
         },
         A.Attribution {
             // Opal modules and other GPL software must be listed here.A
-            // All Opal modules provide an Attribution section to be copy-pasted.
-            name: "Opal.About"
-            entries: "2018-2022 Mirian Margiani"
+            // All Opal modules provide an Attribution section to be copy-pasted,
+            // and/or an Attribution component that can be used directly.
+            name: "Opal.MyModule"  // Use OpalAboutAttribution {} to attribute the Opal.About module.
+            entries: "2018-2023 Mirian Margiani"
             licenses: A.License { spdxId: "GPL-3.0-or-later" }
-            sources: "https://github.com/Pretty-SFOS/opal-about"
+            sources: "https://github.com/Pretty-SFOS/opal-mymodule"
             homepage: "https://github.com/Pretty-SFOS/opal"
         },
         A.Attribution {
