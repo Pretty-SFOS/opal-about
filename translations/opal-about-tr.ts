@@ -2,74 +2,88 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="tr">
 <context>
+    <name>LicenseListPart</name>
+    <message>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="183"/>
+        <source>License text</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Opal.About</name>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="598"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="684"/>
         <source>About</source>
         <translation>Hakkında</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="650"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="736"/>
         <source>Version %1</source>
         <translation>Sürüm %1</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="652"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="738"/>
         <source>Version %1 (%2)</source>
         <translation>Sürüm %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="677"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="763"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="38"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="59"/>
         <source>Development</source>
         <translation>Geliştirme</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="680"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="766"/>
         <source>show contributors</source>
         <translation>katkıda bulunanları göster</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="693"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="779"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="118"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="142"/>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="70"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="73"/>
         <source>Homepage</source>
         <translation>Ana sayfa</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="720"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="784"/>
+        <location filename="../Opal/About/private/ChangelogPage.qml" line="85"/>
+        <source>Changelog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/AboutPageBase.qml" line="814"/>
         <source>Donations</source>
         <translation>Bağışlar</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="730"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="824"/>
         <source>License</source>
         <translation>Lisans</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Opal/About/AboutPageBase.qml" line="743"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="837"/>
         <source>show license(s)</source>
         <translation>
             <numerusform>lisansı göster</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="698"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="792"/>
         <source>Translations</source>
         <translation>Çeviriler</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="703"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="797"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="116"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="145"/>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="76"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="79"/>
         <source>Source Code</source>
         <translation>Kaynak Kodları</translation>
     </message>
     <message>
-        <location filename="../Opal/About/InfoSection.qml" line="77"/>
+        <location filename="../Opal/About/InfoSection.qml" line="78"/>
         <source>show details</source>
         <translation>ayrıntıları göster</translation>
     </message>
@@ -95,9 +109,8 @@
         <translation>Ayrıntılar</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="181"/>
         <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
-        <translation>Lütfen &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt; adresine bakın</translation>
+        <translation type="vanished">Lütfen &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt; adresine bakın</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="48"/>
@@ -135,6 +148,11 @@
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="76"/>
         <source>Copy to clipboard</source>
         <translation>Panoya kopyala</translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="184"/>
+        <source>Please refer to &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
