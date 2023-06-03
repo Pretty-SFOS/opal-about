@@ -25,6 +25,38 @@ A.AboutPageBase {
     translationsUrl: "https://weblate.com/"
     homepageUrl: "https://example.org/my/forum"
 
+    // changelogList: Qt.resolvedUrl("Changelog.qml")
+
+    changelogItems: [
+        // add new entries at the top
+        A.Changelog {
+            version: "3.0.0-1"
+            date: "2023-03-01"
+            paragraphs: "This version introduces an important clarification: " +
+                        "this changelog is just an example, and it does not " +
+                        "refer to the Opal Gallery app."
+        },
+        A.Changelog {
+            version: "2.0.0-1"
+            date: "2023-02-01"
+            // author: "ichthyosaurus" -- the author field is optional
+            paragraphs: [
+                "A lot has changed since the last version. Unicorns learned " +
+                "to fly and penguins grew horns.",
+                "We decided to increase the version number to celebrate " +
+                "these achievements of nature."
+            ]
+        },
+        A.Changelog {
+            version: "1.0.0-1"
+            date: "2023-01-01"
+            author: "ichthyosaurus"
+            paragraphs: "This is the first version. Everything is new and " +
+                        "shiny, so be sure to check every page of this brand new " +
+                        "app."
+        }
+    ]
+
     licenses: A.License {
         spdxId: "GPL-3.0-or-later"
         // -- automatically provided:

@@ -51,6 +51,27 @@ import "private"
 
     The section will be hidden if neither a text nor services are defined.
 
+    \section2 Changelogs
+
+    You can optionally provide a changelog that can be accessed inside the app
+    to notify users of important changes.
+
+    Keep in mind that this is a user-facing changelog, so keep it simple and
+    highlight only the most notable changes in a few short paragraphs. Bullet
+    points are discouraged and will not look good.
+
+    Changelogs can either be defined inline or in a separate QML file.
+    Prefer a separate file if your changelogs get large, or if you want to
+    reuse them in custom components.
+
+    Use the \l changelogItems property to quickly define changelogs for
+    a few versions inline. Use the \l changelogList property to set
+    a reference to a separate QML file providing a \l ChangelogList item.
+
+    \note the two options \l changelogItems and \l changelogList cannot
+    be used at the same time. If both are defined, \l changelogItems will
+    take precedence.
+
     \section2 Example Page
 
     The code below demonstrates an app info page for a simple project.
@@ -78,6 +99,16 @@ import "private"
 
             authors: "Au Thor" // either a list or a single string
             licenses: License { spdxId: "GPL-3.0-or-later" }
+
+            changelogItems: [
+                // add new items at the top of the list
+                Changelog {
+                    version: "1.0.0-1"
+                    date: "2023-01-02"  // optional
+                    author: "Au Thor"   // optional
+                    paragraphs: "A short paragraph describing this initial version."
+                }
+            ]
 
             donations.text: donations.defaultTextCoffee
             donations.services: DonationService {
@@ -320,6 +351,64 @@ Page {
       for information and/or feedback. A dedicated homepage is not required.
     */
     property string homepageUrl: ""
+
+    /*!
+      This property holds a list of changelog sections, one per released version.
+
+      It is not required to provide a changelog in-app. Most apps only provide
+      a changelog through their release channels (e.g. on OpenRepos) or in the
+      published RPM package. Other apps don't provide a changelog at all.
+
+      \note Keep in mind that this is a user-facing changelog, so keep it simple and
+      highlight only the most notable changes in a few short paragraphs.
+
+      The list should be sorted chronologically, with the most recent entry at
+      the top so that users don't have to scroll to the bottom to find the most
+      relevant information.
+
+      \note If your changelogs get large, prefer using the \l changelogList
+      property for performance reasons.
+
+      See the \l Changelog documentation for details.
+
+      \sa Changelog, changelogList, ChangelogList
+    */
+    property list<Changelog> changelogItems
+
+
+    /*!
+      This property holds a reference to an externally defined changelog.
+
+      Use the \l changelogItems property to quickly define changelogs for
+      a few versions inline. As the list of changelogs gets longer, consider
+      moving it to a separate QML file to improve performance of the main
+      “About” page.
+
+      Define a reference to the changelog:
+
+      \qml
+      changelogList: Qt.resolvedUrl("MyChangelog.qml")
+      \endqml
+
+      Define the changelog separately:
+
+      \qml
+      ChangelogList {
+          Changelog {
+              // ...
+          }
+
+          Changelog {
+              // ...
+          }
+      }
+      \endqml
+
+      See the \l ChangelogList documentation for details.
+
+      \sa ChangelogList, Changelog, changelogItems
+    */
+    property url changelogList
 
     /*!
       This property holds a list of relevant licenses.
@@ -690,6 +779,14 @@ Page {
                         text: qsTranslate("Opal.About", "Homepage")
                         onClicked: openOrCopyUrl(homepageUrl)
                         enabled: homepageUrl !== ''
+                    },
+                    InfoButton {
+                        text: qsTranslate("Opal.About", "Changelog")
+                        onClicked: pageStack.animatorPush(
+                            Qt.resolvedUrl("private/ChangelogPage.qml"),
+                            {appName: appName, changelogItems: changelogItems,
+                             changelogList: changelogList})
+                        enabled: changelogItems.length > 0 || changelogList != ""
                     },
                     InfoButton {
                         text: qsTranslate("Opal.About", "Translations")
