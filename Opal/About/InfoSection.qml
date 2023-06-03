@@ -1,6 +1,6 @@
 //@ This file is part of opal-about.
 //@ https://github.com/Pretty-SFOS/opal-about
-//@ SPDX-FileCopyrightText: 2020-2022 Mirian Margiani
+//@ SPDX-FileCopyrightText: 2020-2023 Mirian Margiani
 //@ SPDX-License-Identifier: GPL-3.0-or-later
 
 import QtQuick 2.0
@@ -42,7 +42,8 @@ Column {
 
     // Copy of AboutPageBase::openOrCopyUrl to ensure it is available.
     function openOrCopyUrl(externalUrl, title) {
-        pageStack.push("private/ExternalUrlPage.qml", {'externalUrl': externalUrl, 'title': title})
+        pageStack.push(Qt.resolvedUrl("private/ExternalUrlPage.qml"),
+            {'externalUrl': externalUrl, 'title': !!title ? title : ''})
     }
 
     /*!
