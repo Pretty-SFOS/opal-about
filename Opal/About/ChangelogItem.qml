@@ -7,7 +7,7 @@ import QtQuick 2.0
 import "private/functions.js" as Func
 
 /*!
-    \qmltype Changelog
+    \qmltype ChangelogItem
     \inqmlmodule Opal.About
     \inherits QtObject
     \brief Provides the definition of a changelog section for a specific version.

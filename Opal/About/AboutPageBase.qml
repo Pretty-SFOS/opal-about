@@ -102,7 +102,7 @@ import "private"
 
             changelogItems: [
                 // add new items at the top of the list
-                Changelog {
+                ChangelogItem {
                     version: "1.0.0-1"
                     date: "2023-01-02"  // optional
                     author: "Au Thor"   // optional
@@ -369,11 +369,11 @@ Page {
       \note If your changelogs get large, prefer using the \l changelogList
       property for performance reasons.
 
-      See the \l Changelog documentation for details.
+      See the \l ChangelogItem documentation for details.
 
-      \sa Changelog, changelogList, ChangelogList
+      \sa ChangelogItem, changelogList, ChangelogList
     */
-    property list<Changelog> changelogItems
+    property list<ChangelogItem> changelogItems
 
 
     /*!
@@ -394,11 +394,11 @@ Page {
 
       \qml
       ChangelogList {
-          Changelog {
+          ChangelogItem {
               // ...
           }
 
-          Changelog {
+          ChangelogItem {
               // ...
           }
       }
@@ -406,7 +406,7 @@ Page {
 
       See the \l ChangelogList documentation for details.
 
-      \sa ChangelogList, Changelog, changelogItems
+      \sa ChangelogList, ChangelogItem, changelogItems
     */
     property url changelogList
 

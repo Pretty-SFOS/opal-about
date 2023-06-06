@@ -11,19 +11,19 @@ import QtQuick 2.0
     \inherits QtObject
     \brief Provides a container to store a changelog in a separate file.
 
-    Simply define \l Changelog items in chronologically descending order
+    Simply define \l ChangelogItem items in chronologically descending order
     (most recent at the top) as children of this component, like so:
 
     \qml
     ChangelogList {
-        Changelog {
+        ChangelogItem {
             version: "2.0.0-1"
             date: "2023-02-01"
             paragraphs: [
                 "...", "..."
             ]
         }
-        Changelog {
+        ChangelogItem {
             version: "1.0.0-1"
             date: "2023-01-01"
             paragraphs: "..."
@@ -31,7 +31,7 @@ import QtQuick 2.0
     }
     \endqml
 
-    \sa Changelog, AboutPageBase::changelogItems, AboutPageBase::changelogList
+    \sa ChangelogItem, AboutPageBase::changelogItems, AboutPageBase::changelogList
 */
 QtObject {
     id: root
@@ -48,7 +48,7 @@ QtObject {
 
       It is not necessary to access this property manually.
     */
-    property list<Changelog> changelogItems
+    property list<ChangelogItem> changelogItems
 
     /*!
       This property marks this component as a changelog list.

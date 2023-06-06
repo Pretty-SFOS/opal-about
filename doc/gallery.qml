@@ -29,14 +29,14 @@ A.AboutPageBase {
 
     changelogItems: [
         // add new entries at the top
-        A.Changelog {
+        A.ChangelogItem {
             version: "3.0.0-1"
             date: "2023-03-01"
             paragraphs: "This version introduces an important clarification: " +
                         "this changelog is just an example, and it does not " +
                         "refer to the Opal Gallery app."
         },
-        A.Changelog {
+        A.ChangelogItem {
             version: "2.0.0-1"
             date: "2023-02-01"
             // author: "ichthyosaurus" -- the author field is optional
@@ -47,7 +47,7 @@ A.AboutPageBase {
                 "these achievements of nature."
             ]
         },
-        A.Changelog {
+        A.ChangelogItem {
             version: "1.0.0-1"
             date: "2023-01-01"
             author: "ichthyosaurus"

@@ -9,7 +9,7 @@ import ".."
 
 Page {
     id: root
-    property list<Changelog> changelogItems
+    property list<ChangelogItem> changelogItems
     property url changelogList
     property string appName
 
