@@ -12,34 +12,33 @@
 <context>
     <name>Opal.About</name>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="684"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="691"/>
         <source>About</source>
         <translation>Über</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="736"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="738"/>
         <source>Version %1</source>
         <translation>Version %1</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="738"/>
         <source>Version %1 (%2)</source>
-        <translation>Version %1 (%2)</translation>
+        <translation type="vanished">Version %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="763"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="762"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="38"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="59"/>
         <source>Development</source>
         <translation>Entwicklung</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="766"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="765"/>
         <source>show contributors</source>
         <translation>Mitwirkende zeigen</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="779"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="778"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="118"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="142"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="73"/>
@@ -47,23 +46,23 @@
         <translation>Webseite</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="784"/>
-        <location filename="../Opal/About/private/ChangelogPage.qml" line="85"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="783"/>
+        <location filename="../Opal/About/private/ChangelogPage.qml" line="26"/>
         <source>Changelog</source>
         <translation>Änderungen</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="814"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="813"/>
         <source>Donations</source>
         <translation>Spenden</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="824"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="823"/>
         <source>License</source>
         <translation>Lizenz</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Opal/About/AboutPageBase.qml" line="837"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="836"/>
         <source>show license(s)</source>
         <translation>
             <numerusform>Lizenz zeigen</numerusform>
@@ -71,12 +70,12 @@
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="792"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="791"/>
         <source>Translations</source>
         <translation>Übersetzungen</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="797"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="796"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="116"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="145"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="79"/>
@@ -155,6 +154,16 @@
         <location filename="../Opal/About/private/LicenseListPart.qml" line="184"/>
         <source>Please refer to &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
         <translation>Bitte beachten Sie &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/ChangelogNews.qml" line="208"/>
+        <source>News</source>
+        <translation>Neuigkeiten</translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/ChangelogNews.qml" line="209"/>
+        <source>Changes since version %1</source>
+        <translation>Änderungen seit Version %1</translation>
     </message>
 </context>
 <context>
