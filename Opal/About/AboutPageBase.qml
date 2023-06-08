@@ -72,6 +72,11 @@ import "private"
     be used at the same time. If both are defined, \l changelogItems will
     take precedence.
 
+    Use the \l ChangelogNews component to automatically show the latest
+    changes on the first start after the app has been updated. This component
+    has to be used from the main \l ApplicationWindow. See \l ChangelogNews
+    for details.
+
     \section2 Example Page
 
     The code below demonstrates an app info page for a simple project.
@@ -371,10 +376,9 @@ Page {
 
       See the \l ChangelogItem documentation for details.
 
-      \sa ChangelogItem, changelogList, ChangelogList
+      \sa ChangelogItem, changelogList, ChangelogList, ChangelogNews
     */
     property list<ChangelogItem> changelogItems
-
 
     /*!
       This property holds a reference to an externally defined changelog.
@@ -383,6 +387,9 @@ Page {
       a few versions inline. As the list of changelogs gets longer, consider
       moving it to a separate QML file to improve performance of the main
       “About” page.
+
+      \note Define the changelog separately and use this property if you want
+      to automatically show recent changes on startup. See \l ChangelogNews.
 
       Define a reference to the changelog:
 
@@ -406,7 +413,7 @@ Page {
 
       See the \l ChangelogList documentation for details.
 
-      \sa ChangelogList, ChangelogItem, changelogItems
+      \sa ChangelogList, ChangelogItem, changelogItems, ChangelogNews
     */
     property url changelogList
 
