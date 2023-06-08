@@ -728,16 +728,8 @@ Page {
                 Label {
                     width: parent.width
                     visible: String(appVersion !== "")
-                    text: {
-                        var versionString = appVersion
-                        if (appRelease != "" && appRelease != "1") versionString += "-" + appRelease
-
-                        if (appReleaseType == "") {
-                            return qsTranslate("Opal.About", "Version %1").arg(versionString)
-                        } else {
-                            return qsTranslate("Opal.About", "Version %1 (%2)").arg(versionString).arg(appReleaseType)
-                        }
-                    }
+                    text: qsTranslate("Opal.About", "Version %1").
+                        arg(Func.formatAppVersion(appVersion, appRelease, appReleaseType))
                     wrapMode: Text.Wrap
                     color: Theme.secondaryHighlightColor
                     font.pixelSize: Theme.fontSizeMedium

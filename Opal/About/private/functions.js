@@ -40,3 +40,17 @@ function makeStringList(listOrString, allowEmpty) {
 
     return ret
 }
+
+function formatAppVersion(version, release, releaseType) {
+    var versionString = version
+
+    if (!!release && release !== "" && release !== "1") {
+        versionString += "-" + release
+    }
+
+    if (!!releaseType && releaseType !== "") {
+        versionString += " (%1)".arg(releaseType)
+    }
+
+    return versionString
+}
