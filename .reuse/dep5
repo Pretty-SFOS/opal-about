@@ -7,6 +7,10 @@ Files: translations/*
 Copyright: Opal.About translations contributors
 License: GPL-3.0-or-later
 
+Files: doc/screenshot-*.png
+Copyright: Mirian Margiani
+License: CC-BY-SA-4.0
+
 Files: release-module.sh
 Copyright: Mirian Margiani
 License: CC0-1.0
