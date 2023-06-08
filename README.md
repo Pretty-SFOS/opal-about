@@ -39,6 +39,10 @@ A.AboutPageBase {
 Advanced features are just as easy to use and extensive documentation is
 available through QtCreator.
 
+### Note on Qmllive
+
+`Opal.About` does not yet work properly with Qmllive.
+
 ## How to use
 
 You do not need to clone this repository if you only intend to use the module in
@@ -62,7 +66,7 @@ QtCreator via Extras → Settings → Help → Documentation → Add.
 
 ## Size
 
-The "minified" release bundle without documentation comments takes about 40 KiB.
+The “minified” release bundle without documentation comments takes about 40 KiB.
 This is similar to a bare-bones manually built “About” page including the HTML
 version of the GNU GPL v3 but without a list of contributors.
 
