@@ -52,20 +52,28 @@ QtObject {
     property string author
 
     /*!
-      This property may hold an additional description of the attribution.
+      This property holds text describing the changes in this version.
 
-      When attributing a third-party library, it may be desired to explain how
-      exactly the library is used.
+      Keep in mind that this is a user-facing changelog, so keep it as non-technical
+      as appropriate and as concise as possible.
 
-      When publishing a derived project, simply adding the name of the "parent"
-      project is not enough. A short explanation is polite and will help users
-      understand the origins of the new project.
+      If the \l textFormat is set to either \c {Text.StyledText} or \c {Text.RichText},
+      you can include simple formatting and external links using simplified HTML.
 
-      \note this description is only included on the license page. Sometimes,
-      a \c InfoSection is better suited to display acknowledgments on the main
-      page instead of / in addition to the license page.
+      It is recommended to precede paragraphs with a very short title:
 
-      \sa InfoSection, InfoButton, InfoSection::smallPrint, openOrCopyUrl
+      \qml
+      paragraphs: [
+          "<i>Sharing:</i> this release introduces a new plugin to support sharing data between apps.",
+          "<i>New permissions:</i> the Camera permission is now required for the new snapshots feature."
+      ]
+      \endqml
+
+      You can pass a single string or an array of strings to this property:
+
+      \qml
+      paragraphs: "<i>New translation: Greenlandic (Kalaallisut)"
+      \endqml
     */
     property var paragraphs
 
