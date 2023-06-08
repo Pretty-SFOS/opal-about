@@ -57,7 +57,7 @@ Column {
         visible: text !== ''
         width: parent.width - 2*x
         wrapMode: Text.Wrap
-        text: extraTexts.join('\x3B ')  // semicolon
+        text: extraTexts.join(', ')
         font.pixelSize: Theme.fontSizeSmall
         color: Theme.highlightColor
         linkColor: Theme.primaryColor
