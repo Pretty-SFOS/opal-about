@@ -1,12 +1,12 @@
 //@ This file is part of opal-about.
 //@ https://github.com/Pretty-SFOS/opal-about
-//@ SPDX-FileCopyrightText: 2021 Mirian Margiani
+//@ SPDX-FileCopyrightText: 2021-2023 Mirian Margiani
 //@ SPDX-License-Identifier: GPL-3.0-or-later
 
 import QtQuick 2.0
 //@ This file MUST NOT be used anywhere. It contains a list of some commonly
 //@ needed strings for which Opal.About will provide default translations.
-//@ Do not include this file in qmldir. This file may not contain valid QML.
+//@ Do not include this file in qmldir. This file may contain invalid QML.
 Item {
     // commonly used strings
     readonly property string k: qsTranslate("Opal.About.Common", "Author")

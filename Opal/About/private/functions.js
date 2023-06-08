@@ -1,6 +1,6 @@
 //@ This file is part of opal-about.
 //@ https://github.com/Pretty-SFOS/opal-about
-//@ SPDX-FileCopyrightText: 2021 Mirian Margiani
+//@ SPDX-FileCopyrightText: 2021-2023 Mirian Margiani
 //@ SPDX-License-Identifier: GPL-3.0-or-later
 
 .pragma library
@@ -29,10 +29,9 @@ function makeStringList(listOrString, allowEmpty) {
     if (!(listOrString instanceof Array)) listOrString = [listOrString]
 
     var ae = (allowEmpty === true ? 1 : 0)
-    var len = listOrString.length
     var ret = []
 
-    for (var i = 0; i < len; i++) {
+    for (var i in listOrString) {
         var val = listOrString[i]
         var str = (typeof val === 'string' ? val : (!val ? '' : String(val))).trim()
         if (ae === 0 && !val) continue
