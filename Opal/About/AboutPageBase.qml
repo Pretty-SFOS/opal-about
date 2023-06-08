@@ -44,7 +44,7 @@ import "private"
 
     Users can be asked for donations using the \l donations group. Some default
     texts are already provided. Set a list of \l DonationService elements
-    on the \l donations.services property.
+    on the \l {DonationsGroup::services}{donations.services} property.
 
     It is also possible to explicitly ask for \e no donations by using
     the \l DonationsGroup::defaultTextContribInstead text.
@@ -478,7 +478,7 @@ Page {
 
       Users can be asked for donations using the \l donations group. Some default
       texts are already provided. Set a list of \l DonationService elements
-      on the \l donations.services property.
+      on the \l {DonationsGroup::services}{donations.services} property.
 
       It is also possible to explicitly ask for \e no donations by using
       the \l DonationsGroup::defaultTextContribInstead text.
@@ -642,8 +642,8 @@ Page {
 
     /*!
       This function shows a page that lets the user preview
-      an external link before either copying it to the clipboard
-      or opening it externally. The \c title argument is optional.
+      an external link (\a externalUrl) before either copying it to the clipboard
+      or opening it externally. The \a title argument is optional.
 
       \sa Qt::openUrlExternally
     */

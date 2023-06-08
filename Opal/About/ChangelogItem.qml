@@ -72,8 +72,8 @@ QtObject {
     /*!
       This property defines the text format for the description.
 
-      Set one of the QtQuick \l Text values. The default is
-      \l {Text.StyledText}.
+      Set one of the QtQuick \c Text values. The default is
+      \c {Text.StyledText}.
     */
     property int textFormat: Text.StyledText
 

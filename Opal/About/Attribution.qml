@@ -68,7 +68,7 @@ QtObject {
       a \c InfoSection is better suited to display acknowledgments on the main
       page instead of / in addition to the license page.
 
-      \sa InfoSection, InfoButton, InfoSection::smallPrint, openOrCopyUrl
+      \sa InfoSection, InfoButton, InfoSection::smallPrint, AboutPageBase::openOrCopyUrl
     */
     property string description
 
