@@ -75,9 +75,12 @@ version of the GNU GPL v3 but without a list of contributors.
 To **use** packaged translations in your project, follow the main documentation for
 using Opal modules [here](https://github.com/Pretty-SFOS/opal#using-opal).
 
-You can also **contribute** translations. Translations are managed using
+You can also **contribute** translations. If an app uses Opal modules, consider
+updating its translations at the source (i.e. here), so that all Opal users can
+benefit from it. Translations are managed using
 [Weblate](https://hosted.weblate.org/projects/opal/opal-about).
-Please prefer this over pull requests (which are still welcome, of course).
+
+Please prefer Weblate over pull requests (which are still welcome, of course).
 If you just found a minor problem, you can also
 [leave a comment in the forum](https://forum.sailfishos.org/t/opal-qml-components-for-app-development/15801)
 or [open an issue](https://github.com/Pretty-SFOS/opal-about/issues/new).
