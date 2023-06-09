@@ -10,7 +10,7 @@ changelogs, donations, etc. in your Sailfish app.
 
 ## Screenshots
 
-TBD.
+Screenshots can be found in the [doc](doc/) directory.
 
 ## Example code
 
