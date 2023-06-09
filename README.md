@@ -62,13 +62,35 @@ started.
 ### Documentation
 
 Extensive documentation is included in the release bundle and can be added to
-QtCreator via Extras → Settings → Help → Documentation → Add.
+QtCreator (Sailfish SDK) via Extras → Settings → Help → Documentation → Add.
 
 ## Size
 
 The “minified” release bundle without documentation comments takes about 40 KiB.
 This is similar to a bare-bones manually built “About” page including the HTML
 version of the GNU GPL v3 but without a list of contributors.
+
+## Translations
+
+To **use** packaged translations in your project, follow the main documentation for
+using Opal modules [here](https://github.com/Pretty-SFOS/opal#using-opal).
+
+You can also **contribute** translations. Translations are managed using
+[Weblate](https://hosted.weblate.org/projects/opal/opal-about).
+Please prefer this over pull requests (which are still welcome, of course).
+If you just found a minor problem, you can also
+[leave a comment in the forum](https://forum.sailfishos.org/t/opal-qml-components-for-app-development/15801)
+or [open an issue](https://github.com/Pretty-SFOS/opal-about/issues/new).
+
+Please include the following details:
+
+1. the language you were using
+2. where you found the error
+3. the incorrect text
+4. the correct translation
+
+See [the Qt documentation](https://doc.qt.io/qt-5/qml-qtqml-date.html#details) for
+details on how to translate date formats to your local format.
 
 ## License
 
