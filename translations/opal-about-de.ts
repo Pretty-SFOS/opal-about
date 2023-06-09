@@ -49,7 +49,7 @@
         <location filename="../Opal/About/AboutPageBase.qml" line="783"/>
         <location filename="../Opal/About/private/ChangelogPage.qml" line="26"/>
         <source>Changelog</source>
-        <translation>Änderungen</translation>
+        <translation>Änderungsverlauf</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="813"/>
