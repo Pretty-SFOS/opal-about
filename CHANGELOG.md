@@ -5,7 +5,7 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
-## 2.0.0 (2023-06-08)
+## 2.0.0 (2023-06-11)
 
 I forgot to rename a component before the final 1.0.0 release, so now we get
 version 2.0.0 because of this breaking change.
@@ -16,6 +16,7 @@ version 2.0.0 because of this breaking change.
 - added missing documentation for the `paragraphs` property in `ChangelogItem`
 - fixed a few links in the documentation
 - fixed QML minification for some files where it failed
+- moved translations to Weblate
 
 ## 1.0.0 (2023-06-03)
 
