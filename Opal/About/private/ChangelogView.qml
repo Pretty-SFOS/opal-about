@@ -135,6 +135,7 @@ SilicaListView {
                 text: modelData
                 linkColor: Theme.primaryColor
                 onLinkActivated: openOrCopyUrl(link)
+                bottomPadding: Theme.paddingMedium
             }
         }
     }
