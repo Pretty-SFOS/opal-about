@@ -5,6 +5,11 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 2.1.0 (2023-06-13)
+
+- updated translations: Indonesian, French, German
+- fixed spacing of changelog paragraphs
+
 ## 2.0.0 (2023-06-11)
 
 I forgot to rename a component before the final 1.0.0 release, so now we get
