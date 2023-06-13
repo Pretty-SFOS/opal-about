@@ -207,7 +207,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="21"/>
         <source>Icon Design</source>
-        <translation>Icon-Design</translation>
+        <translation>Symbol-Design</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="22"/>
