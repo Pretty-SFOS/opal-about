@@ -3,7 +3,7 @@ SPDX-FileCopyrightText: 2020-2023 Mirian Margiani
 SPDX-License-Identifier: GFDL-1.3-or-later
 -->
 
-# 'About' page for Sailfish apps
+# “About” page for Sailfish apps
 
 A shiny and flexible “About” page supporting license info, contributors,
 changelogs, donations, etc. in your Sailfish app.
@@ -37,11 +37,11 @@ A.AboutPageBase {
 ```
 
 Advanced features are just as easy to use and extensive documentation is
-available through QtCreator.
+available through QtCreator (Sailfish SDK).
 
-### Note on Qmllive
+### Note on QmlLive
 
-`Opal.About` does not yet work properly with Qmllive.
+`Opal.About` does not yet work properly with QmlLive.
 
 ## How to use
 
