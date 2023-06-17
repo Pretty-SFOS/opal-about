@@ -15,6 +15,9 @@ import QtQuick 2.0
     (most recent at the top) as children of this component, like so:
 
     \qml
+    import QtQuick 2.0
+    import Opal.About 1.0
+
     ChangelogList {
         ChangelogItem {
             version: "2.0.0-1"
