@@ -58,7 +58,8 @@ import "private"
 
     Keep in mind that this is a user-facing changelog, so keep it simple and
     highlight only the most notable changes in a few short paragraphs. Bullet
-    points are discouraged and will not look good.
+    points are discouraged as they don't look good if a single list item extends
+    more than one line.
 
     Changelogs can either be defined inline or in a separate QML file.
     Prefer a separate file if your changelogs get large, or if you want to
