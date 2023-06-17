@@ -6,7 +6,7 @@
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="183"/>
         <source>License text</source>
-        <translation type="unfinished"></translation>
+        <translation>Licenstext</translation>
     </message>
 </context>
 <context>
@@ -37,7 +37,7 @@
         <location filename="../Opal/About/AboutPageBase.qml" line="785"/>
         <location filename="../Opal/About/private/ChangelogPage.qml" line="26"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringslogg</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="825"/>
@@ -158,12 +158,12 @@
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="208"/>
         <source>News</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyheter</translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="209"/>
         <source>Changes since version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändrat sedan version %1</translation>
     </message>
 </context>
 <context>
@@ -231,25 +231,25 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="23"/>
         <source>Data</source>
-        <translation type="unfinished"></translation>
+        <translation>Data</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="25"/>
         <source>Data License(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Datalicens</numerusform>
+            <numerusform>Datalicenser</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="22"/>
         <source>Third-party libraries</source>
-        <translation type="unfinished"></translation>
+        <translation>Tredjeparts bibliotek</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="24"/>
         <source>Data License</source>
-        <translation type="unfinished"></translation>
+        <translation>Datalicens</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="40"/>
@@ -279,7 +279,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="26"/>
         <source>Terms of Use</source>
-        <translation type="unfinished"></translation>
+        <translation>Villkor för användning</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="12"/>
@@ -289,22 +289,22 @@
     <message numerus="yes">
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="13"/>
         <source>Author(s)</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>Utvecklare</numerusform>
-            <numerusform></numerusform>
+            <numerusform>Utvecklare</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="14"/>
         <source>Maintainer</source>
-        <translation type="unfinished"></translation>
+        <translation>Ansvarig</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="15"/>
         <source>Maintainer(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Ansvarig</numerusform>
+            <numerusform>Ansvariga</numerusform>
         </translation>
     </message>
     <message>
