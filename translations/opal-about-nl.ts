@@ -116,9 +116,9 @@
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="62"/>
         <source>License(s)</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>Licentie</numerusform>
-            <numerusform></numerusform>
+            <numerusform>Licenties</numerusform>
         </translation>
     </message>
     <message>
