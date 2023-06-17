@@ -63,7 +63,8 @@ import "private"
 
     Changelogs can either be defined inline or in a separate QML file.
     Prefer a separate file if your changelogs get large, or if you want to
-    reuse them in custom components.
+    reuse them in multiple components (like on the “About” page through
+    \l {changelogList} as well as on startup in \l ChangelogNews).
 
     Use the \l changelogItems property to quickly define changelogs for
     a few versions inline. Use the \l changelogList property to set
