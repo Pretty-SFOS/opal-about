@@ -5,6 +5,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 2.1.1 (2023-06-17)
+
+- minor documentation updates and clarifications
+
 ## 2.1.0 (2023-06-13)
 
 - updated translations: Indonesian, French, German
