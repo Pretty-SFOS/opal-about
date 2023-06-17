@@ -2,7 +2,7 @@
 #
 # This file is part of Opal and has been released into the public domain.
 # SPDX-License-Identifier: CC0-1.0
-# SPDX-FileCopyrightText: 2021-2022 Mirian Margiani
+# SPDX-FileCopyrightText: 2021-2023 Mirian Margiani
 #
 # See https://github.com/Pretty-SFOS/opal/blob/main/opal-development/opal-release-module.md
 # for documentation.
@@ -48,10 +48,11 @@ function copy_files() {
         "//@ SPDX-FileCopyrightText: ${cMETADATA[attribution]}" \
         "//@ SPDX-License-Identifier: ${cMETADATA[mainLicenseSpdx]}" \
         "" \
-        "Attribution {" \
+        "import \"../../Opal/About\" as A" \
+        "A.Attribution {" \
         "    name: \"${cMETADATA[fullNameStyled]} (v${cMETADATA[version]})\"" \
         "    entries: \"${cMETADATA[attribution]}\"" \
-        "    licenses: License { spdxId: \"${cMETADATA[mainLicenseSpdx]}\"}" \
+        "    licenses: A.License { spdxId: \"${cMETADATA[mainLicenseSpdx]}\"}" \
         "    sources: \"https://github.com/Pretty-SFOS/${cMETADATA[fullName]}\"" \
         "    homepage: \"https://github.com/Pretty-SFOS/opal\"" \
         "}" "" > "$QML_BASE/Opal/About/OpalAboutAttribution.qml"
