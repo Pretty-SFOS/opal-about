@@ -67,6 +67,7 @@
         <translation>
             <numerusform>Mostrar licencia</numerusform>
             <numerusform>Mostrar licencias</numerusform>
+            <numerusform>Mostrar licencias</numerusform>
         </translation>
     </message>
     <message>
@@ -118,6 +119,7 @@
         <source>License(s)</source>
         <translation>
             <numerusform>Licencia</numerusform>
+            <numerusform>Licencias</numerusform>
             <numerusform>Licencias</numerusform>
         </translation>
     </message>
