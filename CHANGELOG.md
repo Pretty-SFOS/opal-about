@@ -7,6 +7,7 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 ## 2.1.1 (2023-06-17)
 
+- updated translations: Spanish, Swedish, French, Dutch, Turkish
 - minor documentation updates and clarifications
 
 ## 2.1.0 (2023-06-13)

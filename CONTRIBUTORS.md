@@ -46,6 +46,7 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 - Carmen F. B.
 - Lucas Peinado
+- Jaime Marquínez Ferrándiz
 
 ### French
 
