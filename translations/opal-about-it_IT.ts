@@ -26,7 +26,7 @@
         <location filename="../Opal/About/private/ContributorsPage.qml" line="38"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="59"/>
         <source>Development</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Sviluppo</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="767"/>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="793"/>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Traduzioni</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="798"/>
@@ -204,17 +204,17 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="19"/>
         <source>Programming</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Programmazione</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="20"/>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Traduzioni</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="21"/>
         <source>Icon Design</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Stile Icone</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="22"/>
@@ -267,7 +267,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="33"/>
         <source>Chinese</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cinese</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="34"/>
