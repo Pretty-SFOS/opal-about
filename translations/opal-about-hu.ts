@@ -35,7 +35,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="767"/>
         <source>show contributors</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">közreműködők megjelenítése</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="780"/>
@@ -43,7 +43,7 @@
         <location filename="../Opal/About/private/ContributorsPage.qml" line="142"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="73"/>
         <source>Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Honlap</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="785"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="815"/>
         <source>Donations</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Adományok</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="825"/>
@@ -65,7 +65,8 @@
         <location filename="../Opal/About/AboutPageBase.qml" line="838"/>
         <source>show license(s)</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
+            <numerusform>Licenc megjelenítése</numerusform>
+            <numerusform>Licencek megjelenítése</numerusform>
         </translation>
     </message>
     <message>
@@ -84,7 +85,7 @@
     <message>
         <location filename="../Opal/About/InfoSection.qml" line="78"/>
         <source>show details</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">részletek megjelenítése</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="35"/>
@@ -99,45 +100,46 @@
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="95"/>
         <source>Thank you!</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Köszönöm!</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="110"/>
         <location filename="../Opal/About/private/LicensePage.qml" line="61"/>
         <source>Details</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Részletek</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="48"/>
         <source>Download license texts</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Licencszövegek letöltése</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="62"/>
         <source>License(s)</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
+            <numerusform>Licenc</numerusform>
+            <numerusform>Licencek</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="75"/>
         <source>Note: please check the source code for most accurate information.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Megjegyzés: Kérlek ellenőrizd a forráskódot a legpontosabb információért.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="27"/>
         <source>External Link</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Külső hivatkozás</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="57"/>
         <source>Open in browser</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Megnyitás böngészőben</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="67"/>
         <source>Copied to clipboard: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A vágólapra másolva: %1</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="76"/>
@@ -165,17 +167,17 @@
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="40"/>
         <source>If you want to support my work, you can buy me a cup of coffee.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ha támogatni szeretnéd a munkámat, vehetsz nekem egy csésze kávét.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="53"/>
         <source>You can support this project by contributing, or by donating using any of these services.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Támogathatod ezt a projektet közreműködéssel, vagy ezen szolgáltatásokon keresztüli adományozással.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="65"/>
         <source>Your contributions to translations or code would be most welcome.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A hozzájárulásaid a fordításokhoz, vagy a kódhoz nagyon szívesen fogadjuk.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="12"/>
