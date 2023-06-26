@@ -6,7 +6,7 @@
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="183"/>
         <source>License text</source>
-        <translation type="unfinished"></translation>
+        <translation>Litsentsi tekst</translation>
     </message>
 </context>
 <context>
@@ -49,7 +49,7 @@
         <location filename="../Opal/About/AboutPageBase.qml" line="785"/>
         <location filename="../Opal/About/private/ChangelogPage.qml" line="26"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Muudatuste logi</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="815"/>
@@ -153,17 +153,17 @@
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="184"/>
         <source>Please refer to &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Palun vaata siia: &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="208"/>
         <source>News</source>
-        <translation type="unfinished"></translation>
+        <translation>Uudised</translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="209"/>
         <source>Changes since version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Muudatused alates versioonist %1</translation>
     </message>
 </context>
 <context>
@@ -186,27 +186,27 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="12"/>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Autor</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="13"/>
         <source>Author(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Autor</numerusform>
+            <numerusform>Autorid</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="14"/>
         <source>Maintainer</source>
-        <translation type="unfinished"></translation>
+        <translation>Jätkuarendaja</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="15"/>
         <source>Maintainer(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Jätkuarendaja</numerusform>
+            <numerusform>Jätkuarendajad</numerusform>
         </translation>
     </message>
     <message>
@@ -227,30 +227,30 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="22"/>
         <source>Third-party libraries</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolmandate osapoolte teegid</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="23"/>
         <source>Data</source>
-        <translation type="unfinished"></translation>
+        <translation>Andmed</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="24"/>
         <source>Data License</source>
-        <translation type="unfinished"></translation>
+        <translation>Andmete litsents</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="25"/>
         <source>Data License(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Andmete litsents</numerusform>
+            <numerusform>Andmete litsentsid</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="26"/>
         <source>Terms of Use</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutustingimused</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="29"/>
@@ -300,7 +300,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="38"/>
         <source>Latvian</source>
-        <translation type="unfinished"></translation>
+        <translation>läti</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="39"/>
