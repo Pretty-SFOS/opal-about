@@ -208,7 +208,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="19"/>
         <source>Programming</source>
-        <translation type="unfinished">Pemrograman</translation>
+        <translation>Pemrograman</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="20"/>

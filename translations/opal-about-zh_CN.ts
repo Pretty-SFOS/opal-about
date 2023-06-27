@@ -104,7 +104,7 @@
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="27"/>
         <source>External Link</source>
-        <translation type="unfinished">外部链接</translation>
+        <translation>外部链接</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="57"/>
@@ -138,7 +138,7 @@
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="67"/>
         <source>Copied to clipboard: %1</source>
-        <translation type="unfinished">复制到剪贴板：%1</translation>
+        <translation>复制到剪贴板：%1</translation>
     </message>
     <message>
         <source>Version %1 (%2)</source>
