@@ -5,6 +5,13 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 2.2.0 (2023-06-29)
+
+- added the ready-made Attribution component to `Opal/Attributions/Opal<module>Attribution.qml`
+- you no longer have to import all Opal modules on the “About” page to attribute them,
+  simply use `import "../modules/Opal/Attributions"` to access all attributions
+- no extra import is required to attribute `Opal.About` itself
+
 ## 2.1.1 (2023-06-17)
 
 - updated translations: Spanish, Swedish, French, Dutch, Turkish
