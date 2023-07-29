@@ -43,13 +43,13 @@
         <location filename="../Opal/About/private/ContributorsPage.qml" line="142"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="73"/>
         <source>Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Beranda</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="785"/>
         <location filename="../Opal/About/private/ChangelogPage.qml" line="26"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Daftar perubahan</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="815"/>
@@ -105,7 +105,7 @@
         <location filename="../Opal/About/private/ContributorsPage.qml" line="110"/>
         <location filename="../Opal/About/private/LicensePage.qml" line="61"/>
         <source>Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Detil</translation>
     </message>
     <message>
         <source>Please refer to &lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
@@ -131,22 +131,22 @@
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="27"/>
         <source>External Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Tautan luar</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="57"/>
         <source>Open in browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka di browser</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="67"/>
         <source>Copied to clipboard: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Disalin ke papan klip: %1</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="76"/>
         <source>Copy to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Salin ke papan klip</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="184"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="23"/>
         <source>Data</source>
-        <translation type="unfinished"></translation>
+        <translation>Data</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="24"/>
