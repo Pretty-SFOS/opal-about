@@ -66,7 +66,6 @@
         <source>show license(s)</source>
         <translation>
             <numerusform>lisansı göster</numerusform>
-            <numerusform>lisansları göster</numerusform>
         </translation>
     </message>
     <message>
@@ -122,7 +121,6 @@
         <source>License(s)</source>
         <translation>
             <numerusform>Lisans</numerusform>
-            <numerusform>Lisanslar</numerusform>
         </translation>
     </message>
     <message>

@@ -66,7 +66,6 @@
         <source>show license(s)</source>
         <translation type="unfinished">
             <numerusform>Licenc megjelenítése</numerusform>
-            <numerusform>Licencek megjelenítése</numerusform>
         </translation>
     </message>
     <message>
@@ -118,7 +117,6 @@
         <source>License(s)</source>
         <translation type="unfinished">
             <numerusform>Licenc</numerusform>
-            <numerusform>Licencek</numerusform>
         </translation>
     </message>
     <message>

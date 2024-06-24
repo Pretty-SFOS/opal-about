@@ -67,7 +67,6 @@
         <translation>
             <numerusform>Afficher la licence</numerusform>
             <numerusform>Afficher les licences</numerusform>
-            <numerusform>Afficher les licences</numerusform>
         </translation>
     </message>
     <message>
@@ -119,7 +118,6 @@
         <source>License(s)</source>
         <translation>
             <numerusform>Licence</numerusform>
-            <numerusform>Licences</numerusform>
             <numerusform>Licences</numerusform>
         </translation>
     </message>
@@ -192,7 +190,6 @@
         <translation>
             <numerusform>Auteur</numerusform>
             <numerusform>Auteurs</numerusform>
-            <numerusform>Auteurs</numerusform>
         </translation>
     </message>
     <message>
@@ -205,7 +202,6 @@
         <source>Maintainer(s)</source>
         <translation>
             <numerusform>Mainteneur</numerusform>
-            <numerusform>Mainteneurs</numerusform>
             <numerusform>Mainteneurs</numerusform>
         </translation>
     </message>
@@ -244,7 +240,6 @@
         <source>Data License(s)</source>
         <translation>
             <numerusform>Licence de données</numerusform>
-            <numerusform>Licences de données</numerusform>
             <numerusform>Licences de données</numerusform>
         </translation>
     </message>
