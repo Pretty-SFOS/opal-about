@@ -1,9 +1,12 @@
-# This file is part of Opal.About and has been released into the public domain.
+# This file is part of Opal and has been released into the public domain.
 # SPDX-License-Identifier: CC0-1.0
-# SPDX-FileCopyrightText: 2020-2023 Mirian Margiani
+# SPDX-FileCopyrightText: 2020-2024 Mirian Margiani
 
 .directory
+
 build*
+build-doc*
+
 *.pro.user
 *.creator.user
 *.spec.*

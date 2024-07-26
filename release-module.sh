@@ -2,17 +2,25 @@
 #
 # This file is part of Opal and has been released into the public domain.
 # SPDX-License-Identifier: CC0-1.0
-# SPDX-FileCopyrightText: 2021-2023 Mirian Margiani
+# SPDX-FileCopyrightText: 2021-2024 Mirian Margiani
 #
-# See https://github.com/Pretty-SFOS/opal/blob/main/opal-development/opal-release-module.md
-# for documentation.
+# See https://github.com/Pretty-SFOS/opal for more information.
 #
-# @@@ keep this line: based on template v0.8.0
+# @@@ keep this line: based on template v1.0.0
 #
-c__FOR_RELEASE_LIB__="0.8.0"
+c__FOR_RELEASE_LIB__="1.0.0"
 
 # Run this script from the module's root directory.
-source ../opal/opal-development/opal-release-module.sh
+source ../opal/opal-development/opal-release-module.sh || {
+    echo && printf -- "%s\n" \
+        "Failed to source library functions. Make sure the main" \
+        "Opal repository is cloned next to this module's directory (../opal)." \
+        "" "Run this:"
+    printf -- "\t%s\n" \
+        "cd $(dirname "$(pwd)")" \
+        "git clone https://github.com/Pretty-SFOS/opal opal"
+    exit 128
+}
 parse_arguments "$@"
 
 # Copy and edit this template file for new Opal modules.
