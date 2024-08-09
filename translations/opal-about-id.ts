@@ -156,7 +156,7 @@
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="208"/>
         <source>News</source>
-        <translation type="unfinished"></translation>
+        <translation>Berita</translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="209"/>
@@ -223,7 +223,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="22"/>
         <source>Third-party libraries</source>
-        <translation type="unfinished"></translation>
+        <translation>Pustaka pihak ketiga</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="23"/>
@@ -245,7 +245,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="26"/>
         <source>Terms of Use</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketentuan penggunaan</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="29"/>
@@ -345,7 +345,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="48"/>
         <source>Turkish</source>
-        <translation type="unfinished"></translation>
+        <translation>Bahasa Turki</translation>
     </message>
 </context>
 </TS>
