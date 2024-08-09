@@ -5,6 +5,12 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 2.2.1 (2024-08-09)
+
+- updated translations: Finnish, Indonesian, Chinese, Ukrainian, Russian, Polish, Hungarian
+- fixed version being displayed when no version is given (thanks @roundedrectangle!)
+- updated packaging boilerplate
+
 ## 2.2.0 (2023-06-29)
 
 - added the ready-made Attribution component to `Opal/Attributions/Opal<module>Attribution.qml`
