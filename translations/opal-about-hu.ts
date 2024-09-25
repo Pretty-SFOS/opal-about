@@ -250,13 +250,13 @@
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="32"/>
         <source>German</source>
         <comment>language name</comment>
-        <translation type="unfinished">Német</translation>
+        <translation>Német</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="33"/>
         <source>French</source>
         <comment>language name</comment>
-        <translation type="unfinished">Francia</translation>
+        <translation>Francia</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="34"/>
@@ -268,7 +268,7 @@
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="35"/>
         <source>English</source>
         <comment>language name</comment>
-        <translation type="unfinished">Angol</translation>
+        <translation>Angol</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="36"/>
@@ -340,7 +340,7 @@
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="47"/>
         <source>Indonesian</source>
         <comment>language name</comment>
-        <translation type="unfinished">Indonéz</translation>
+        <translation>Indonéz</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="48"/>

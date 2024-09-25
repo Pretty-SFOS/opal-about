@@ -102,7 +102,7 @@
         <location filename="../Opal/About/private/ContributorsPage.qml" line="110"/>
         <location filename="../Opal/About/private/LicensePage.qml" line="61"/>
         <source>Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Informatie</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="48"/>
@@ -255,13 +255,13 @@
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="32"/>
         <source>German</source>
         <comment>language name</comment>
-        <translation type="unfinished">Duits</translation>
+        <translation>Duits</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="33"/>
         <source>French</source>
         <comment>language name</comment>
-        <translation type="unfinished">Frans</translation>
+        <translation>Frans</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="34"/>
@@ -273,7 +273,7 @@
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="35"/>
         <source>English</source>
         <comment>language name</comment>
-        <translation type="unfinished">Engels</translation>
+        <translation>Engels</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="36"/>
