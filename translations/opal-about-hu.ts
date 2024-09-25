@@ -31,7 +31,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="767"/>
         <source>show contributors</source>
-        <translation type="unfinished">közreműködők megjelenítése</translation>
+        <translation>közreműködők megjelenítése</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="780"/>
@@ -39,7 +39,7 @@
         <location filename="../Opal/About/private/ContributorsPage.qml" line="142"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="73"/>
         <source>Homepage</source>
-        <translation type="unfinished">Honlap</translation>
+        <translation>Honlap</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="785"/>
@@ -50,7 +50,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="815"/>
         <source>Donations</source>
-        <translation type="unfinished">Adományok</translation>
+        <translation>Adományok</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="825"/>
@@ -60,7 +60,7 @@
     <message numerus="yes">
         <location filename="../Opal/About/AboutPageBase.qml" line="838"/>
         <source>show license(s)</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>Licenc megjelenítése</numerusform>
         </translation>
     </message>
@@ -80,7 +80,7 @@
     <message>
         <location filename="../Opal/About/InfoSection.qml" line="78"/>
         <source>show details</source>
-        <translation type="unfinished">részletek megjelenítése</translation>
+        <translation>részletek megjelenítése</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="35"/>
@@ -95,7 +95,7 @@
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="95"/>
         <source>Thank you!</source>
-        <translation type="unfinished">Köszönöm!</translation>
+        <translation>Köszönöm!</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="110"/>
@@ -106,19 +106,19 @@
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="48"/>
         <source>Download license texts</source>
-        <translation type="unfinished">Licencszövegek letöltése</translation>
+        <translation>Licencszövegek letöltése</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="62"/>
         <source>License(s)</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>Licenc</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="75"/>
         <source>Note: please check the source code for most accurate information.</source>
-        <translation type="unfinished">Megjegyzés: Kérlek ellenőrizd a forráskódot a legpontosabb információért.</translation>
+        <translation>Megjegyzés: Kérlek ellenőrizd a forráskódot a legpontosabb információért.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="27"/>
@@ -161,17 +161,17 @@
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="40"/>
         <source>If you want to support my work, you can buy me a cup of coffee.</source>
-        <translation type="unfinished">Ha támogatni szeretnéd a munkámat, vehetsz nekem egy csésze kávét.</translation>
+        <translation>Ha támogatni szeretnéd a munkámat, vehetsz nekem egy csésze kávét.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="53"/>
         <source>You can support this project by contributing, or by donating using any of these services.</source>
-        <translation type="unfinished">Támogathatod ezt a projektet közreműködéssel, vagy ezen szolgáltatásokon keresztüli adományozással.</translation>
+        <translation>Támogathatod ezt a projektet közreműködéssel, vagy ezen szolgáltatásokon keresztüli adományozással.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="65"/>
         <source>Your contributions to translations or code would be most welcome.</source>
-        <translation type="unfinished">A hozzájárulásaid a fordításokhoz, vagy a kódhoz nagyon szívesen fogadjuk.</translation>
+        <translation>A hozzájárulásaid a fordításokhoz, vagy a kódhoz nagyon szívesen fogadjuk.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="12"/>
@@ -237,163 +237,136 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="30"/>
         <source>Swedish</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Svéd</translation>
+        <translation>Svéd</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="31"/>
         <source>Polish</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Lengyel</translation>
+        <translation>Lengyel</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="32"/>
         <source>German</source>
-        <comment>language name</comment>
         <translation>Német</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="33"/>
         <source>French</source>
-        <comment>language name</comment>
         <translation>Francia</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="34"/>
         <source>Chinese</source>
-        <comment>language name</comment>
-        <translation type="unfinished">kínai</translation>
+        <translation>kínai</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="35"/>
         <source>English</source>
-        <comment>language name</comment>
         <translation>Angol</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="36"/>
         <source>Italian</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Olasz</translation>
+        <translation>Olasz</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="37"/>
         <source>Finnish</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Finn</translation>
+        <translation>Finn</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="38"/>
         <source>Norwegian</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Norvég</translation>
+        <translation>Norvég</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="39"/>
         <source>Norwegian Bokmål</source>
-        <comment>language name</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="40"/>
         <source>Norwegian Nynorsk</source>
-        <comment>language name</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="41"/>
         <source>Latvian</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Lett</translation>
+        <translation>Lett</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="42"/>
         <source>Estonian</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Észt</translation>
+        <translation>Észt</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="43"/>
         <source>Czech</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Cseh</translation>
+        <translation>Cseh</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="44"/>
         <source>Greek</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Görög</translation>
+        <translation>Görög</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="45"/>
         <source>Spanish</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Spanyol</translation>
+        <translation>Spanyol</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="46"/>
         <source>Hungarian</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Magyar</translation>
+        <translation>Magyar</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="47"/>
         <source>Indonesian</source>
-        <comment>language name</comment>
         <translation>Indonéz</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="48"/>
         <source>Russian</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Orosz</translation>
+        <translation>Orosz</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="49"/>
         <source>Dutch</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Holland</translation>
+        <translation>Holland</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="50"/>
         <source>Dutch (Belgium)</source>
-        <comment>language name</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="51"/>
         <source>Slovak</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Szlovák</translation>
+        <translation>Szlovák</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="52"/>
         <source>Turkish</source>
-        <comment>language name</comment>
-        <translation type="unfinished">Török</translation>
+        <translation>Török</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="53"/>
         <source>Ukrainian</source>
-        <comment>language name</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
         <source>Romanian</source>
-        <comment>language name</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="55"/>
         <source>Serbian</source>
-        <comment>language name</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="56"/>
         <source>Moldavian</source>
-        <comment>language name</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
