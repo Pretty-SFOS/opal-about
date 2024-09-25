@@ -22,10 +22,6 @@
         <translation>Version %1</translation>
     </message>
     <message>
-        <source>Version %1 (%2)</source>
-        <translation type="vanished">Version %1 (%2)</translation>
-    </message>
-    <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="764"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="38"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="59"/>
@@ -206,37 +202,32 @@
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="19"/>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="16"/>
         <source>Programming</source>
         <translation>Programmation</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="20"/>
-        <source>Translations</source>
-        <translation>Traductions</translation>
-    </message>
-    <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="21"/>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="17"/>
         <source>Icon Design</source>
         <translation>Design de l&apos;icône</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="22"/>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="18"/>
         <source>Third-party libraries</source>
         <translation>Bibliothèques tierces</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="23"/>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="19"/>
         <source>Data</source>
         <translation>Données</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="24"/>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="20"/>
         <source>Data License</source>
         <translation>Licence de données</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="25"/>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="21"/>
         <source>Data License(s)</source>
         <translation>
             <numerusform>Licence de données</numerusform>
@@ -244,109 +235,171 @@
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="26"/>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="22"/>
         <source>Terms of Use</source>
         <translation>Conditions d&apos;utilisation</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="29"/>
-        <source>Swedish</source>
-        <translation>suédois</translation>
-    </message>
-    <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="30"/>
-        <source>Polish</source>
-        <translation>polonais</translation>
+        <source>Swedish</source>
+        <comment>language name</comment>
+        <translation type="unfinished">suédois</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="31"/>
-        <source>German</source>
-        <translation>allemand</translation>
+        <source>Polish</source>
+        <comment>language name</comment>
+        <translation type="unfinished">polonais</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="32"/>
-        <source>French</source>
-        <translation>français</translation>
+        <source>German</source>
+        <comment>language name</comment>
+        <translation type="unfinished">allemand</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="33"/>
-        <source>Chinese</source>
-        <translation>chinois</translation>
+        <source>French</source>
+        <comment>language name</comment>
+        <translation type="unfinished">français</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="34"/>
-        <source>English</source>
-        <translation>anglais</translation>
+        <source>Chinese</source>
+        <comment>language name</comment>
+        <translation type="unfinished">chinois</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="35"/>
-        <source>Italian</source>
-        <translation>italien</translation>
+        <source>English</source>
+        <comment>language name</comment>
+        <translation type="unfinished">anglais</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="36"/>
-        <source>Finnish</source>
-        <translation>finnois</translation>
+        <source>Italian</source>
+        <comment>language name</comment>
+        <translation type="unfinished">italien</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="37"/>
-        <source>Norwegian</source>
-        <translation>norvégien</translation>
+        <source>Finnish</source>
+        <comment>language name</comment>
+        <translation type="unfinished">finnois</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="38"/>
-        <source>Latvian</source>
-        <translation>letton</translation>
+        <source>Norwegian</source>
+        <comment>language name</comment>
+        <translation type="unfinished">norvégien</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="39"/>
-        <source>Estonian</source>
-        <translation>estonien</translation>
+        <source>Norwegian Bokmål</source>
+        <comment>language name</comment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="40"/>
-        <source>Czech</source>
-        <translation>tchèque</translation>
+        <source>Norwegian Nynorsk</source>
+        <comment>language name</comment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="41"/>
-        <source>Greek</source>
-        <translation>grec</translation>
+        <source>Latvian</source>
+        <comment>language name</comment>
+        <translation type="unfinished">letton</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="42"/>
-        <source>Spanish</source>
-        <translation>espagnol</translation>
+        <source>Estonian</source>
+        <comment>language name</comment>
+        <translation type="unfinished">estonien</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="43"/>
-        <source>Hungarian</source>
-        <translation>hongrois</translation>
+        <source>Czech</source>
+        <comment>language name</comment>
+        <translation type="unfinished">tchèque</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="44"/>
-        <source>Indonesian</source>
-        <translation>indonésien</translation>
+        <source>Greek</source>
+        <comment>language name</comment>
+        <translation type="unfinished">grec</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="45"/>
-        <source>Russian</source>
-        <translation>russe</translation>
+        <source>Spanish</source>
+        <comment>language name</comment>
+        <translation type="unfinished">espagnol</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="46"/>
-        <source>Dutch</source>
-        <translation>néerlandais</translation>
+        <source>Hungarian</source>
+        <comment>language name</comment>
+        <translation type="unfinished">hongrois</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="47"/>
-        <source>Slovak</source>
-        <translation>slovaque</translation>
+        <source>Indonesian</source>
+        <comment>language name</comment>
+        <translation type="unfinished">indonésien</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="48"/>
+        <source>Russian</source>
+        <comment>language name</comment>
+        <translation type="unfinished">russe</translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="49"/>
+        <source>Dutch</source>
+        <comment>language name</comment>
+        <translation type="unfinished">néerlandais</translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="50"/>
+        <source>Dutch (Belgium)</source>
+        <comment>language name</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="51"/>
+        <source>Slovak</source>
+        <comment>language name</comment>
+        <translation type="unfinished">slovaque</translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="52"/>
         <source>Turkish</source>
-        <translation>turc</translation>
+        <comment>language name</comment>
+        <translation type="unfinished">turc</translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="53"/>
+        <source>Ukrainian</source>
+        <comment>language name</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
+        <source>Romanian</source>
+        <comment>language name</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="55"/>
+        <source>Serbian</source>
+        <comment>language name</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Opal/About/private/ExtraTranslations.qml" line="56"/>
+        <source>Moldavian</source>
+        <comment>language name</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
