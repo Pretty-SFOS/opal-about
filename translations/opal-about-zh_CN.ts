@@ -352,7 +352,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="53"/>
         <source>Ukrainian</source>
-        <translation type="unfinished"></translation>
+        <translation>乌克兰语</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
