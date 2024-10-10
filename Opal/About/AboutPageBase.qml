@@ -854,7 +854,7 @@ Page {
         // switching pages in horizontal mode using pageStack.animatorPush.
         // FIXME Find a better way to fix this.
         if (__silica_applicationwindow_instance &&
-                __silica_applicationwindow_instance._defaultPageOrientations) {
+                __silica_applicationwindow_instance.hasOwnProperty('_defaultPageOrientations')) {
             __silica_applicationwindow_instance._defaultPageOrientations = Orientation.All
         }
     }
