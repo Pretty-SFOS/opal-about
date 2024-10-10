@@ -20,8 +20,7 @@ Page {
     property string mainSources
     property string mainHomepage
 
-
-    allowedOrientations: Orientation.All
+    property bool includeOpal: false
 
     function _downloadLicenses() {
         for (var lic in mainAttribution.licenses) {
@@ -33,6 +32,13 @@ Page {
                 attributions[attr].licenses[lic].__online = true
             }
         }
+    }
+
+    allowedOrientations: Orientation.All
+
+    OpalAttributionsLoader {
+        id: opalAttributions
+        enabled: includeOpal
     }
 
     SilicaFlickable {
@@ -57,9 +63,10 @@ Page {
 
             PageHeader {
                 id: pageHeader
-                title: root.mainAttribution.licenses.length + attributions.length === 0 ?
+                title: (!includeOpal && root.mainAttribution.licenses.length + attributions.length === 0) ?
                            qsTranslate("Opal.About", "Details") :
-                           qsTranslate("Opal.About", "License(s)", "", root.mainAttribution.licenses.length + attributions.length)
+                           qsTranslate("Opal.About", "License(s)", "",
+                                       root.mainAttribution.licenses.length + attributions.length)
                 description: mainAttribution.name
             }
 
@@ -89,20 +96,18 @@ Page {
                 sources: root.mainAttribution.sources
             }
 
-            Repeater {
+            LicenseListRepeater {
                 model: attributions
-                delegate: LicenseListPart {
-                    title: modelData.name
-                    headerVisible: title !== '' && pageDescription !== title
-                    licenses: modelData.licenses
-                    extraTexts: modelData.__effectiveEntries
-                    description: modelData.description
-                    initiallyExpanded: root.licenses.length === 0 &&
-                                       root.attributions.length === 1 &&
-                                       root.attributions[0].licenses.length === 1
-                    homepage: modelData.homepage
-                    sources: modelData.sources
-                }
+                mainModule: root.pageDescription
+                initiallyExpanded: root.licenses.length === 0 &&
+                                   root.attributions.length === 1 &&
+                                   root.attributions[0].licenses.length === 1 &&
+                                   !root.includeOpal
+            }
+
+            LicenseListRepeater {
+                model: opalAttributions.loadedAttributions
+                initiallyExpanded: false
             }
         }
     }

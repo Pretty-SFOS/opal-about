@@ -483,6 +483,27 @@ Page {
     property list<Attribution> attributions
 
     /*!
+      This property defines whether attributions for Opal modules are included automatically.
+
+      If this property is set to \c true, all \c {Opal*Attribution.qml} components
+      in the \c {qml/modules/Opal/Attributions} directory are loaded automatically
+      and added to the list of attributions.
+
+      If it is set to \c false, you must manually include appropriate attributions.
+
+      \note this feature only works if the provided module attribution files
+      are properly installed to \c {qml/modules/Opal/Attributions}. If your modules
+      are installed to a non-standard location, you must add attributions manually.
+
+      \note this feature will be enabled by default in an upcoming version.
+
+      \defaultValue false
+
+      \sa attributions
+    */
+    property bool autoAddOpalAttributions: false
+
+    /*!
       This property group holds a list of possible ways to donate to the project.
 
       Users can be asked for donations using the \l donations group. Some default
@@ -762,7 +783,9 @@ Page {
                 id: _develInfo
                 width: parent.width
                 title: qsTranslate("Opal.About", "Development")
-                enabled: contributionSections.length > 0 || attributions.length > 0
+                enabled: autoAddOpalAttributions ||
+                         contributionSections.length > 0 ||
+                         attributions.length > 0
                 text: __effectiveMainAttribs.join(', ')
                 showMoreLabel: qsTranslate("Opal.About", "show contributors")
                 onClicked: {
@@ -771,7 +794,8 @@ Page {
                                                'sections': contributionSections,
                                                'attributions': attributions,
                                                'mainAttributions': __effectiveMainAttribs,
-                                               'allowDownloadingLicenses': allowDownloadingLicenses
+                                               'allowDownloadingLicenses': allowDownloadingLicenses,
+                                               'autoAddOpalAttributions': autoAddOpalAttributions
                                            })
                 }
 
@@ -828,7 +852,8 @@ Page {
                     'mainAttribution': _effectiveSelfAttribution,
                     'attributions': attributions,
                     'allowDownloadingLicenses': allowDownloadingLicenses,
-                    'enableSourceHint': true
+                    'enableSourceHint': true,
+                    'includeOpal': autoAddOpalAttributions
                 })
                 text: enabled === false ?
                           "This component has been improperly configured. Please report this bug." :

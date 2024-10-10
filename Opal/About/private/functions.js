@@ -1,6 +1,6 @@
 //@ This file is part of opal-about.
 //@ https://github.com/Pretty-SFOS/opal-about
-//@ SPDX-FileCopyrightText: 2021-2023 Mirian Margiani
+//@ SPDX-FileCopyrightText: 2021-2024 Mirian Margiani
 //@ SPDX-License-Identifier: GPL-3.0-or-later
 
 .pragma library

@@ -5,22 +5,25 @@
 
 import QtQuick 2.2
 import Sailfish.Silica 1.0
-import "functions.js" as Func
 import ".."
 
 Page {
+    id: root
+
     property list<ContributionSection> sections
     property list<Attribution> attributions
     property var mainAttributions: []
     property string appName
 
     property bool allowDownloadingLicenses: false
-
-    // this could be used to always attribute Opal.About in case all users forget
-    // to properly attribute this library
-    property list<Attribution> _defaultAttributions
+    property bool autoAddOpalAttributions: false
 
     allowedOrientations: Orientation.All
+
+    OpalAttributionsLoader {
+        id: opalAttributions
+        enabled: autoAddOpalAttributions
+    }
 
     SilicaFlickable {
         anchors.fill: parent
@@ -75,79 +78,15 @@ Page {
 
                 SectionHeader {
                     text: qsTranslate("Opal.About", "Acknowledgements")
-                    visible: attributions.length > 0
+                    visible: attributions.length > 0 || opalAttributions.loadedAttributions.length > 0
                 }
 
-                Repeater {
-                    model: [attributions, _defaultAttributions]
-                    delegate: Repeater {
-                        model: modelData
-                        delegate: DetailList {
-                            // FIXME dots are not right-to-left compatible
-                            property string spdxString: modelData._getSpdxString(" \u2022 \u2022 \u2022")
-                            property bool showLicensePage: false
+                ContributorsAttributionRepeater {
+                    model: attributions
+                }
 
-                            activeLastValue:    spdxString !== ''
-                                             || modelData.sources !== ''
-                                             || modelData.homepage !== ''
-                                             || modelData.description !== ''
-                            label: (modelData.__effectiveEntries.length === 0 && spdxString === '') ?
-                                       qsTranslate("Opal.About", "Thank you!") :
-                                       modelData.name
-                            values: {
-                                var vals = Func.makeStringListConcat(modelData.__effectiveEntries, spdxString, false)
-
-                                if (vals.length === 0) {
-                                    vals = [modelData.name]
-                                }
-
-                                if (spdxString === '') {
-                                    var append = ''
-
-                                    if (modelData.description !== '' ||
-                                            (modelData.sources !== '' &&
-                                             modelData.homepage !== '')) {
-                                        append = qsTranslate("Opal.About", "Details")
-
-                                        if (modelData.description !== '') {
-                                            showLicensePage = true
-                                        }
-                                    } else if (modelData.sources !== '') {
-                                        append = qsTranslate("Opal.About", "Source Code")
-                                    } else if (modelData.homepage !== '') {
-                                        append = qsTranslate("Opal.About", "Homepage")
-                                    }
-
-                                    if (append !== '') {
-                                        vals.push(append + "  \u2022 \u2022 \u2022")
-                                    }
-                                } else {
-                                    showLicensePage = true
-                                }
-
-                                return vals
-                            }
-                            onClicked: {
-                                if (showLicensePage) {
-                                    pageStack.animatorPush("LicensePage.qml", {
-                                                               'mainAttribution': modelData,
-                                                               'attributions': [],
-                                                               'allowDownloadingLicenses': allowDownloadingLicenses,
-                                                               'enableSourceHint': true
-                                                           })
-                                } else {
-                                    var pages = []
-                                    if (modelData.homepage !== '') pages.push({'page': Qt.resolvedUrl('ExternalUrlPage.qml'),
-                                                                                 'properties': {'externalUrl': modelData.homepage,
-                                                                                     'title': qsTranslate("Opal.About", 'Homepage')}})
-                                    if (modelData.sources !== '') pages.push({'page': Qt.resolvedUrl('ExternalUrlPage.qml'),
-                                                                                 'properties': {'externalUrl': modelData.sources,
-                                                                                     'title': qsTranslate("Opal.About", 'Source Code')}})
-                                    pageStack.push(pages)
-                                }
-                            }
-                        }
-                    }
+                ContributorsAttributionRepeater {
+                    model: opalAttributions.loadedAttributions
                 }
             }
         }
