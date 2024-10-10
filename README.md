@@ -10,7 +10,12 @@ changelogs, donations, etc. in your Sailfish app.
 
 ## Screenshots
 
-Screenshots can be found in the [doc](doc/) directory.
+| 1. | 2. | 3. |
+|-|-|-|
+| <img src="./doc/screenshot-01.webp" width="600" /> | <img src="./doc/screenshot-02.webp" width="600" /> | <img src="./doc/screenshot-03.webp" width="600" /> |
+| <img src="./doc/screenshot-04.webp" width="600" /> | <img src="./doc/screenshot-05.webp" width="600" /> | <img src="./doc/screenshot-06.webp" width="600" /> |
+| <img src="./doc/screenshot-07.webp" width="600" /> |  |  |
+
 
 ## Example code
 
