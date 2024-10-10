@@ -247,7 +247,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="33"/>
         <source>French</source>
-        <translation type="unfinished"></translation>
+        <translation>Franceză</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="34"/>
@@ -257,7 +257,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="35"/>
         <source>English</source>
-        <translation type="unfinished"></translation>
+        <translation>Engleză</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="36"/>
