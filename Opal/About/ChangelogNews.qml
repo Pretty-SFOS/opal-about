@@ -134,6 +134,12 @@ Item {
             var loadedItems = []
 
             for (var i in itemsLoader.effectiveItems) {
+                if (itemsLoader.effectiveItems[i] === null) {
+                    // Due to a bug in QmlLive, items are empty when running
+                    // with QmlLive. We skip loading to avoid warnings.
+                    continue
+                }
+
                 var v = itemsLoader.effectiveItems[i].version
 
                 if (v === __lastVersion) {
