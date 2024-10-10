@@ -1,9 +1,18 @@
 <!--
-SPDX-FileCopyrightText: 2023 Mirian Margiani
+SPDX-FileCopyrightText: 2023-2024 Mirian Margiani
 SPDX-License-Identifier: GFDL-1.3-or-later
 -->
 
 # Changelog
+
+## 2.3.0 (2024-10-10)
+
+- updated translations: Moldavian, Italian, Romanian
+- added more default translations that can be used by other apps
+- added support for automatically loading Opal attributions
+    - this feature can be enabled via the `autoAddOpalAttributions` property
+    - it is disabled by default for now but will become the default setting in a future version
+- minor tweaks here and there
 
 ## 2.2.1 (2024-08-09)
 
