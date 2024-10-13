@@ -53,5 +53,4 @@ Item {
     readonly property string l023: qsTranslate("Opal.About.Common", "Ukrainian")
     readonly property string l024: qsTranslate("Opal.About.Common", "Romanian")
     readonly property string l025: qsTranslate("Opal.About.Common", "Serbian")
-    readonly property string l026: qsTranslate("Opal.About.Common", "Moldavian")
 }
