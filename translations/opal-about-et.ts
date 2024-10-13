@@ -369,10 +369,5 @@
         <source>Serbian</source>
         <translation>serbia keel</translation>
     </message>
-    <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="56"/>
-        <source>Moldavian</source>
-        <translation>rumeenia keel (Moldova)</translation>
-    </message>
 </context>
 </TS>

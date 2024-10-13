@@ -369,10 +369,5 @@
         <source>Serbian</source>
         <translation>Serbio</translation>
     </message>
-    <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="56"/>
-        <source>Moldavian</source>
-        <translation>Moldavo</translation>
-    </message>
 </context>
 </TS>

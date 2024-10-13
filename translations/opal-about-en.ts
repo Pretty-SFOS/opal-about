@@ -355,11 +355,6 @@
         <translation>Serbian</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="56"/>
-        <source>Moldavian</source>
-        <translation>Moldavian</translation>
-    </message>
-    <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="40"/>
         <source>If you want to support my work, you can buy me a cup of coffee.</source>
         <translation>If you want to support my work, you can buy me a cup of coffee.</translation>

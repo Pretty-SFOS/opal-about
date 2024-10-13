@@ -360,11 +360,6 @@
         <translation>Сербська</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ExtraTranslations.qml" line="56"/>
-        <source>Moldavian</source>
-        <translation>Молдовська</translation>
-    </message>
-    <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="40"/>
         <source>If you want to support my work, you can buy me a cup of coffee.</source>
         <translation>Якщо ви хочете підтримати мою роботу, ви можете пригостити мене чашкою кави.</translation>
