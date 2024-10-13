@@ -35,7 +35,10 @@ FolderListModel {
         _round += 1
         var round = _round
 
-        for (var i = 0; i < count; ++i) {
+        // NOTE this must be a while loop because a for loop needs semicolons,
+        //      which break QML minification
+        var i = 0
+        while (i < count) {
             var url = root.get(i, 'fileURL')
             var name = root.get(i, 'fileBaseName')
 
@@ -59,6 +62,8 @@ FolderListModel {
                     loadedAttributions = loadedAttributions
                 }
             })
+
+            i += 1
         }
     }
 
