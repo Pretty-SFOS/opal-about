@@ -292,7 +292,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="39"/>
         <source>Norwegian Bokmål</source>
-        <translation type="unfinished"></translation>
+        <translation>Nórčina Bokmål</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="40"/>
@@ -347,7 +347,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="50"/>
         <source>Dutch (Belgium)</source>
-        <translation type="unfinished"></translation>
+        <translation>Holandčina (Belgicko)</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="51"/>
@@ -367,7 +367,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
         <source>Romanian</source>
-        <translation type="unfinished"></translation>
+        <translation>Rumunčina</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="55"/>
