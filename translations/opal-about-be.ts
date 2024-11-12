@@ -26,7 +26,7 @@
         <location filename="../Opal/About/private/ContributorsPage.qml" line="41"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="62"/>
         <source>Development</source>
-        <translation type="unfinished"></translation>
+        <translation>Распрацоўка</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="790"/>
