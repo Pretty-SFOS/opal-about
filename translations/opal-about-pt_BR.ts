@@ -6,7 +6,7 @@
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="183"/>
         <source>License text</source>
-        <translation type="unfinished"></translation>
+        <translation>Texto de licença</translation>
     </message>
 </context>
 <context>
@@ -14,24 +14,24 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="714"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Sobre</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="761"/>
         <source>Version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versão %1</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="785"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="41"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="62"/>
         <source>Development</source>
-        <translation type="unfinished"></translation>
+        <translation>Desenvolvimento</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="790"/>
         <source>show contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>exibir contribuidores</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="804"/>
@@ -39,7 +39,7 @@
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="68"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="73"/>
         <source>Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Página inicial</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="809"/>
@@ -50,25 +50,25 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="839"/>
         <source>Donations</source>
-        <translation type="unfinished"></translation>
+        <translation>Doações</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="849"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licença</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/AboutPageBase.qml" line="863"/>
         <source>show license(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>exibir licença</numerusform>
+            <numerusform>exibir licenças</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="817"/>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduções</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="822"/>
@@ -76,12 +76,12 @@
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="71"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="79"/>
         <source>Source Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Código Fonte</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="38"/>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Contribuidores</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="80"/>
@@ -91,18 +91,18 @@
     <message>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="21"/>
         <source>Thank you!</source>
-        <translation type="unfinished"></translation>
+        <translation>Obrigado!</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="36"/>
         <location filename="../Opal/About/private/LicensePage.qml" line="67"/>
         <source>Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Detalhes</translation>
     </message>
     <message>
         <location filename="../Opal/About/InfoSection.qml" line="78"/>
         <source>show details</source>
-        <translation type="unfinished"></translation>
+        <translation>exibir detalhes</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="54"/>
@@ -112,15 +112,15 @@
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="68"/>
         <source>License(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Licença</numerusform>
+            <numerusform>Licenças</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="82"/>
         <source>Note: please check the source code for most accurate information.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nota: por favor, cheque o código fonte para informações mais precisas.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="27"/>
@@ -150,7 +150,7 @@
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="214"/>
         <source>News</source>
-        <translation type="unfinished"></translation>
+        <translation>Novidades</translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="215"/>
@@ -227,22 +227,22 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="30"/>
         <source>Belarusian</source>
-        <translation type="unfinished"></translation>
+        <translation>Bielorusso</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="43"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"></translation>
+        <translation>Lituano</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="46"/>
         <source>Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>Português</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="47"/>
         <source>Brazilian Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>Português Brasileiro</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="53"/>
@@ -292,7 +292,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
         <source>Tamil</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamil</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="59"/>
@@ -377,17 +377,17 @@
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="40"/>
         <source>If you want to support my work, you can buy me a cup of coffee.</source>
-        <translation type="unfinished"></translation>
+        <translation>Se você deseja apoiar o meu trabalho, você pode me pagar um copo de café.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="53"/>
         <source>You can support this project by contributing, or by donating using any of these services.</source>
-        <translation type="unfinished"></translation>
+        <translation>Você pode apoiar este projeto contribuindo, ou doando usando um desses serviços.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="65"/>
         <source>Your contributions to translations or code would be most welcome.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sua contribuição com traduções ou códigos serão muito bem-vindas.</translation>
     </message>
 </context>
 </TS>

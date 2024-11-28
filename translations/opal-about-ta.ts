@@ -6,7 +6,7 @@
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="183"/>
         <source>License text</source>
-        <translation type="unfinished"></translation>
+        <translation>உரிம உரை</translation>
     </message>
 </context>
 <context>
@@ -14,24 +14,24 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="714"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>பற்றி</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="761"/>
         <source>Version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>பதிப்பு %1</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="785"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="41"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="62"/>
         <source>Development</source>
-        <translation type="unfinished"></translation>
+        <translation>வளர்ச்சி</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="790"/>
         <source>show contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>பங்களிப்பாளர்களைக் காட்டு</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="804"/>
@@ -39,36 +39,36 @@
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="68"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="73"/>
         <source>Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>முகப்புப்பக்கம்</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="809"/>
         <location filename="../Opal/About/private/ChangelogPage.qml" line="26"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>மாற்றபதிவு</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="839"/>
         <source>Donations</source>
-        <translation type="unfinished"></translation>
+        <translation>நன்கொடைகள்</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="849"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>உரிமம்</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/AboutPageBase.qml" line="863"/>
         <source>show license(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>உரிமத்தைக் காட்டு</numerusform>
+            <numerusform>உரிமங்களைக் காட்டு</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="817"/>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>மொழிபெயர்ப்புகள்</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="822"/>
@@ -76,86 +76,86 @@
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="71"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="79"/>
         <source>Source Code</source>
-        <translation type="unfinished"></translation>
+        <translation>மூலக் குறியீடு</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="38"/>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>பங்களிப்பாளர்கள்</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="80"/>
         <source>Acknowledgements</source>
-        <translation type="unfinished"></translation>
+        <translation>ஒப்புதல்கள்</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="21"/>
         <source>Thank you!</source>
-        <translation type="unfinished"></translation>
+        <translation>நன்றி!</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="36"/>
         <location filename="../Opal/About/private/LicensePage.qml" line="67"/>
         <source>Details</source>
-        <translation type="unfinished"></translation>
+        <translation>விவரங்கள்</translation>
     </message>
     <message>
         <location filename="../Opal/About/InfoSection.qml" line="78"/>
         <source>show details</source>
-        <translation type="unfinished"></translation>
+        <translation>விவரங்களைக் காட்டு</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="54"/>
         <source>Download license texts</source>
-        <translation type="unfinished"></translation>
+        <translation>உரிம உரைகளைப் பதிவிறக்கவும்</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="68"/>
         <source>License(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>உரிமம்</numerusform>
+            <numerusform>உரிமங்கள்</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="82"/>
         <source>Note: please check the source code for most accurate information.</source>
-        <translation type="unfinished"></translation>
+        <translation>குறிப்பு: மிகவும் துல்லியமான தகவல்களுக்கு மூலக் குறியீட்டைச் சரிபார்க்கவும்.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="27"/>
         <source>External Link</source>
-        <translation type="unfinished"></translation>
+        <translation>வெளிப்புற இணைப்பு</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="57"/>
         <source>Open in browser</source>
-        <translation type="unfinished"></translation>
+        <translation>உலாவியில் திற</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="67"/>
         <source>Copied to clipboard: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது: %1</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="76"/>
         <source>Copy to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>கிளிப்போர்டுக்கு நகலெடுக்கவும்</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="184"/>
         <source>Please refer to &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>தயவுசெய்து &lt;a href=&quot;%1&quot;&gt;%1 &lt;/a&gt; ஐப் பார்க்கவும்</translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="214"/>
         <source>News</source>
-        <translation type="unfinished"></translation>
+        <translation>செய்தி</translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="215"/>
         <source>Changes since version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>பதிப்பு %1 முதல் மாற்றங்கள்</translation>
     </message>
 </context>
 <context>
@@ -377,17 +377,17 @@
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="40"/>
         <source>If you want to support my work, you can buy me a cup of coffee.</source>
-        <translation type="unfinished"></translation>
+        <translation>நீங்கள் எனது வேலையை ஆதரிக்க விரும்பினால், நீங்கள் எனக்கு ஒரு கப் காபி வாங்கலாம்.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="53"/>
         <source>You can support this project by contributing, or by donating using any of these services.</source>
-        <translation type="unfinished"></translation>
+        <translation>இந்த திட்டத்தை பங்களிப்பதன் மூலம் அல்லது இந்த சேவைகளில் ஏதேனும் ஒன்றைப் பயன்படுத்தி நன்கொடை அளிப்பதன் மூலம் நீங்கள் ஆதரிக்கலாம்.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="65"/>
         <source>Your contributions to translations or code would be most welcome.</source>
-        <translation type="unfinished"></translation>
+        <translation>மொழிபெயர்ப்புகள் அல்லது குறியீட்டிற்கான உங்கள் பங்களிப்புகள் மிகவும் வரவேற்கப்படும்.</translation>
     </message>
 </context>
 </TS>
