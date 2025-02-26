@@ -208,12 +208,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="19"/>
         <source>Data</source>
-        <translation type="unfinished"></translation>
+        <translation>date</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="20"/>
         <source>Data License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licenta de date</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="21"/>
@@ -292,7 +292,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="44"/>
         <source>Norwegian Bokmål</source>
-        <translation type="unfinished"></translation>
+        <translation>Bokmål norvegian</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
