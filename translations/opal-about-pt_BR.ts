@@ -382,12 +382,12 @@
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="53"/>
         <source>You can support this project by contributing, or by donating using any of these services.</source>
-        <translation>Você pode apoiar este projeto contribuindo, ou doando usando um desses serviços.</translation>
+        <translation>Você pode apoiar esse projeto contribuindo ou doando por um desses serviços.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="65"/>
         <source>Your contributions to translations or code would be most welcome.</source>
-        <translation>Sua contribuição com traduções ou códigos serão muito bem-vindas.</translation>
+        <translation>Sua contribuição com traduções ou códigos serão sempre muito bem-vindas.</translation>
     </message>
 </context>
 </TS>
