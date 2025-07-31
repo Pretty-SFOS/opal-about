@@ -474,11 +474,13 @@ Page {
       For example, some Creative Commons licenses require attribution.
 
       \note GPL software like Opal.About and other Opal modules must be listed here.
+      Enable \l autoAddOpalAttributions to automatically add attributions for all
+      Opal modules used in your project.
 
       \note Use contribution sections for listing contributors.
       See \l contributionSections.
 
-      \sa Attribution, contributionSections
+      \sa Attribution, contributionSections, autoAddOpalAttributions
     */
     property list<Attribution> attributions
 
