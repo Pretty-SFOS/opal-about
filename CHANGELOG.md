@@ -5,6 +5,12 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 2.3.9 (2025-08-08)
+
+- Added translations: Arabic, Persian
+- Updated translations: Turkish
+- Added reference to `autoAddOpalAttributions` to `AboutPageBase::attributions` docs
+
 ## 2.3.8 (2025-06-11)
 
 - Updated translations: Polish, Ukrainian
