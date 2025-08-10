@@ -64,6 +64,9 @@ A.AboutPageBase {
         //                  "There is NO WARRANTY, to the extent permitted by law."
     }
     attributions: [
+        // Note: attribution for Opal modules is added automatically. See the
+        // "autoAddOpalAttributions" property for details.
+
         A.Attribution {
             name: "My.Extra.Component"
             entries: ["2020-2022 John Doe", "2022 Jane Doe"]
@@ -85,16 +88,6 @@ A.AboutPageBase {
             entries: "2000 Components Community"
             licenses: A.License { spdxId: "MIT" }
             homepage: "https://example.org/component"
-        },
-        A.Attribution {
-            // Opal modules and other GPL software must be listed here.A
-            // All Opal modules provide an Attribution section to be copy-pasted,
-            // and/or an Attribution component that can be used directly.
-            name: "Opal.MyModule"  // Use OpalAboutAttribution {} to attribute the Opal.About module.
-            entries: "2018-2023 Mirian Margiani"
-            licenses: A.License { spdxId: "GPL-3.0-or-later" }
-            sources: "https://github.com/Pretty-SFOS/opal-mymodule"
-            homepage: "https://github.com/Pretty-SFOS/opal"
         },
         A.Attribution {
             // no entries and no licenses: adds a "thank you!"
