@@ -498,13 +498,13 @@ Page {
       are properly installed to \c {qml/modules/Opal/Attributions}. If your modules
       are installed to a non-standard location, you must add attributions manually.
 
-      \note this feature will be enabled by default in an upcoming version.
+      \note this feature is enabled by default since version 3.0.0.
 
-      \defaultValue false
+      \defaultValue true
 
       \sa attributions
     */
-    property bool autoAddOpalAttributions: false
+    property bool autoAddOpalAttributions: true
 
     /*!
       This property group holds a list of possible ways to donate to the project.
