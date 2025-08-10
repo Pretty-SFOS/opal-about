@@ -242,12 +242,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="43"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"></translation>
+        <translation>立陶宛语</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="46"/>
         <source>Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>葡萄牙语</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="47"/>
@@ -307,7 +307,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="59"/>
         <source>Norwegian Nynorsk</source>
-        <translation type="unfinished"></translation>
+        <translation>挪威尼诺斯克</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="60"/>

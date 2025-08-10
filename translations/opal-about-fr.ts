@@ -247,12 +247,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="43"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"></translation>
+        <translation>Lituanien</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="46"/>
         <source>Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>Portugais</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="47"/>
@@ -307,7 +307,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
         <source>Tamil</source>
-        <translation>Tamil</translation>
+        <translation>tamoul</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="59"/>
@@ -377,7 +377,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="56"/>
         <source>Ukrainian</source>
-        <translation>Ukrainien</translation>
+        <translation>ukrainien</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="48"/>

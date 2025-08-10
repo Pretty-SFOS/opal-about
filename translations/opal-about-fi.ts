@@ -145,7 +145,7 @@
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="184"/>
         <source>Please refer to &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation>Katso lisätietoja &lt;a href=&quot;”%1”&quot;&gt;%1&lt;/a&gt;</translation>
+        <translation>Katso lisätietoja &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="214"/>

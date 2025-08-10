@@ -106,7 +106,7 @@
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="54"/>
         <source>Download license texts</source>
-        <translation type="unfinished"></translation>
+        <translation>Unduh teks lisensi</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="68"/>
@@ -143,7 +143,7 @@
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="184"/>
         <source>Please refer to &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Silakan mengacu &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="214"/>
@@ -153,7 +153,7 @@
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="215"/>
         <source>Changes since version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Perubahan sejak versi %1</translation>
     </message>
 </context>
 <context>
@@ -242,12 +242,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="43"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"></translation>
+        <translation>Lithuania</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="46"/>
         <source>Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>Bahasa Portugis</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="47"/>
@@ -302,7 +302,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
         <source>Tamil</source>
-        <translation type="unfinished"></translation>
+        <translation>Bahasa Tamil</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="59"/>
@@ -372,17 +372,17 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="56"/>
         <source>Ukrainian</source>
-        <translation type="unfinished"></translation>
+        <translation>Bahasa Ukrani</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="48"/>
         <source>Romanian</source>
-        <translation type="unfinished"></translation>
+        <translation>Bahasa Rumania</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="50"/>
         <source>Serbian</source>
-        <translation type="unfinished"></translation>
+        <translation>Bahasa Serbia</translation>
     </message>
 </context>
 </TS>

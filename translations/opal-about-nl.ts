@@ -307,7 +307,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
         <source>Tamil</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamil</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="59"/>
@@ -382,12 +382,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="48"/>
         <source>Romanian</source>
-        <translation type="unfinished"></translation>
+        <translation>Roemeen</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="50"/>
         <source>Serbian</source>
-        <translation type="unfinished"></translation>
+        <translation>Serviër</translation>
     </message>
 </context>
 </TS>

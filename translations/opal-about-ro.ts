@@ -6,7 +6,7 @@
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="183"/>
         <source>License text</source>
-        <translation>licenta textului</translation>
+        <translation>Textul licenta</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="716"/>
         <source>About</source>
-        <translation>despre</translation>
+        <translation>Despre</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="763"/>
@@ -31,7 +31,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="792"/>
         <source>show contributors</source>
-        <translation>arata contributori</translation>
+        <translation>Arata contributori</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="806"/>
@@ -50,20 +50,20 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="841"/>
         <source>Donations</source>
-        <translation>Dontatii</translation>
+        <translation>Donații</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="851"/>
         <source>License</source>
-        <translation>Licenta</translation>
+        <translation>Licență</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/AboutPageBase.qml" line="865"/>
         <source>show license(s)</source>
         <translation>
-            <numerusform>arata licenta</numerusform>
-            <numerusform>arata licente</numerusform>
-            <numerusform>arata licente</numerusform>
+            <numerusform>arată licența</numerusform>
+            <numerusform>arată licențele</numerusform>
+            <numerusform>arată licențe</numerusform>
         </translation>
     </message>
     <message>
@@ -77,12 +77,12 @@
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="71"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="79"/>
         <source>Source Code</source>
-        <translation>codul sursa</translation>
+        <translation>Codul Sursa</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="38"/>
         <source>Contributors</source>
-        <translation>contributori</translation>
+        <translation>Contributori</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="80"/>
@@ -98,25 +98,25 @@
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="36"/>
         <location filename="../Opal/About/private/LicensePage.qml" line="67"/>
         <source>Details</source>
-        <translation>Detalii</translation>
+        <translation>Datali</translation>
     </message>
     <message>
         <location filename="../Opal/About/InfoSection.qml" line="78"/>
         <source>show details</source>
-        <translation>arata detalii</translation>
+        <translation>Arata detali</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="54"/>
         <source>Download license texts</source>
-        <translation>Descarca textele pentru licenta</translation>
+        <translation>Descarca textle licentei</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="68"/>
         <source>License(s)</source>
         <translation>
-            <numerusform>licență</numerusform>
-            <numerusform>licențe</numerusform>
-            <numerusform>licențe</numerusform>
+            <numerusform>Licență</numerusform>
+            <numerusform>Licențe</numerusform>
+            <numerusform>Licențe</numerusform>
         </translation>
     </message>
     <message>
@@ -127,22 +127,22 @@
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="27"/>
         <source>External Link</source>
-        <translation>LInk extern</translation>
+        <translation>Link extern</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="57"/>
         <source>Open in browser</source>
-        <translation>Deschide in browser</translation>
+        <translation>Deschide în browser</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="67"/>
         <source>Copied to clipboard: %1</source>
-        <translation>Copiat in clipboard%1</translation>
+        <translation>Copiat în clipboard: %1</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="76"/>
         <source>Copy to clipboard</source>
-        <translation>Copiaza in clipboard</translation>
+        <translation>Copiază în clipboard</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="184"/>
@@ -152,7 +152,7 @@
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="214"/>
         <source>News</source>
-        <translation>Noutati</translation>
+        <translation>Noutăți</translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="215"/>
@@ -237,7 +237,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="43"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"></translation>
+        <translation>lituanian</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="46"/>
@@ -292,7 +292,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="44"/>
         <source>Norwegian Bokmål</source>
-        <translation>Bokmål norvegian</translation>
+        <translation>bokmål norvegian</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>

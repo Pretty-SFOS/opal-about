@@ -171,7 +171,7 @@
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="65"/>
         <source>Your contributions to translations or code would be most welcome.</source>
-        <translation>A hozzájárulásaid a fordításokhoz, vagy a kódhoz nagyon szívesen fogadjuk.</translation>
+        <translation>A hozzájárulásod a fordításokhoz, vagy a kódhoz nagy segítség lenne.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="12"/>
@@ -242,12 +242,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="43"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"></translation>
+        <translation>Litván</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="46"/>
         <source>Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>Portugál</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="47"/>
@@ -257,22 +257,22 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="53"/>
         <source>Swedish</source>
-        <translation>Svéd</translation>
+        <translation>svéd</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="45"/>
         <source>Polish</source>
-        <translation>Lengyel</translation>
+        <translation>lengyel</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="38"/>
         <source>German</source>
-        <translation>Német</translation>
+        <translation>német</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="37"/>
         <source>French</source>
-        <translation>Francia</translation>
+        <translation>francia</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="31"/>
@@ -282,27 +282,27 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="34"/>
         <source>English</source>
-        <translation>Angol</translation>
+        <translation>angol</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="42"/>
         <source>Italian</source>
-        <translation>Olasz</translation>
+        <translation>olasz</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="36"/>
         <source>Finnish</source>
-        <translation>Finn</translation>
+        <translation>finn</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="44"/>
         <source>Norwegian Bokmål</source>
-        <translation type="unfinished"></translation>
+        <translation>Norvég Bokmål</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
         <source>Tamil</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamil</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="59"/>
@@ -317,42 +317,42 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="35"/>
         <source>Estonian</source>
-        <translation>Észt</translation>
+        <translation>észt</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="32"/>
         <source>Czech</source>
-        <translation>Cseh</translation>
+        <translation>cseh</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="39"/>
         <source>Greek</source>
-        <translation>Görög</translation>
+        <translation>görög</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="52"/>
         <source>Spanish</source>
-        <translation>Spanyol</translation>
+        <translation>spanyol</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="40"/>
         <source>Hungarian</source>
-        <translation>Magyar</translation>
+        <translation>magyar</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="41"/>
         <source>Indonesian</source>
-        <translation>Indonéz</translation>
+        <translation>indonéz</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="49"/>
         <source>Russian</source>
-        <translation>Orosz</translation>
+        <translation>orosz</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="33"/>
         <source>Dutch</source>
-        <translation>Holland</translation>
+        <translation>holland</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="61"/>
@@ -362,12 +362,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="51"/>
         <source>Slovak</source>
-        <translation>Szlovák</translation>
+        <translation>szlovák</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="55"/>
         <source>Turkish</source>
-        <translation>Török</translation>
+        <translation>török</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="56"/>
@@ -377,12 +377,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="48"/>
         <source>Romanian</source>
-        <translation type="unfinished"></translation>
+        <translation>Román</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="50"/>
         <source>Serbian</source>
-        <translation type="unfinished"></translation>
+        <translation>Szerb</translation>
     </message>
 </context>
 </TS>

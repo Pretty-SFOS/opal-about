@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="el">
+<TS version="2.1" language="ug">
 <context>
     <name>LicenseListPart</name>
     <message>
@@ -19,14 +19,14 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="763"/>
         <source>Version %1</source>
-        <translation>Έκδοση %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="787"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="41"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="62"/>
         <source>Development</source>
-        <translation>Ανάπτυξη</translation>
+        <translation>ئىجاد قىلىش</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="792"/>
@@ -50,7 +50,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="841"/>
         <source>Donations</source>
-        <translation>Δωρεές</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="851"/>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="819"/>
         <source>Translations</source>
-        <translation>Μεταφράσεις</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="824"/>
@@ -125,7 +125,7 @@
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="27"/>
         <source>External Link</source>
-        <translation>Εξωτερικός σύνδεσμος</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="57"/>
@@ -140,7 +140,7 @@
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="76"/>
         <source>Copy to clipboard</source>
-        <translation>Αντιγραφή στο πρόχειρο</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="184"/>
@@ -150,7 +150,7 @@
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="214"/>
         <source>News</source>
-        <translation>Ειδήσεις</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="215"/>
@@ -189,12 +189,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="16"/>
         <source>Programming</source>
-        <translation>Προγραμματισμός</translation>
+        <translation>پىروگىرامىلار</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="17"/>
         <source>Icon Design</source>
-        <translation>Σχεδιασμός εικονιδίων</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="18"/>
@@ -232,12 +232,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="43"/>
         <source>Lithuanian</source>
-        <translation>Λιθουανικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="46"/>
         <source>Portuguese</source>
-        <translation>Πορτογαλικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="47"/>
@@ -247,7 +247,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="53"/>
         <source>Swedish</source>
-        <translation>Σουηδικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="45"/>
@@ -257,32 +257,32 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="38"/>
         <source>German</source>
-        <translation>Γερμανικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="37"/>
         <source>French</source>
-        <translation>Γαλλικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="31"/>
         <source>Chinese</source>
-        <translation>Κινεζικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="34"/>
         <source>English</source>
-        <translation>Αγγλικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="42"/>
         <source>Italian</source>
-        <translation>Ιταλικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="36"/>
         <source>Finnish</source>
-        <translation>Φινλανδικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="44"/>
@@ -292,7 +292,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
         <source>Tamil</source>
-        <translation>Ταμίλ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="59"/>
@@ -307,12 +307,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="35"/>
         <source>Estonian</source>
-        <translation>Εσθονικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="32"/>
         <source>Czech</source>
-        <translation>Τσεχικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="39"/>
@@ -322,22 +322,22 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="52"/>
         <source>Spanish</source>
-        <translation>Ισπανικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="40"/>
         <source>Hungarian</source>
-        <translation>Ουγγρικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="41"/>
         <source>Indonesian</source>
-        <translation>Ινδονησιακά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="49"/>
         <source>Russian</source>
-        <translation>Ρωσικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="33"/>
@@ -352,27 +352,27 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="51"/>
         <source>Slovak</source>
-        <translation>Σλοβακικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="55"/>
         <source>Turkish</source>
-        <translation>Τουρκικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="56"/>
         <source>Ukrainian</source>
-        <translation>Ουκρανικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="48"/>
         <source>Romanian</source>
-        <translation>Ρουμανικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="50"/>
         <source>Serbian</source>
-        <translation>Σερβικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="40"/>

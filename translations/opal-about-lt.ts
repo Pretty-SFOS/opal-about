@@ -14,12 +14,12 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="716"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Apie</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="763"/>
         <source>Version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Versija %1</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="787"/>
@@ -55,7 +55,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="851"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licencija</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/AboutPageBase.qml" line="865"/>
@@ -69,7 +69,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="819"/>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Vertimai</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="824"/>
@@ -92,7 +92,7 @@
     <message>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="21"/>
         <source>Thank you!</source>
-        <translation type="unfinished"></translation>
+        <translation>Ačiū!</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="36"/>
@@ -103,7 +103,7 @@
     <message>
         <location filename="../Opal/About/InfoSection.qml" line="78"/>
         <source>show details</source>
-        <translation type="unfinished"></translation>
+        <translation>Detaliau</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="54"/>
@@ -127,17 +127,17 @@
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="27"/>
         <source>External Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Išorinė nuoroda</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="57"/>
         <source>Open in browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Atidaryti naršyklėje</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="67"/>
         <source>Copied to clipboard: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nukopijuota: %1</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExternalUrlPage.qml" line="76"/>
@@ -152,12 +152,12 @@
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="214"/>
         <source>News</source>
-        <translation type="unfinished"></translation>
+        <translation>Naujienos</translation>
     </message>
     <message>
         <location filename="../Opal/About/ChangelogNews.qml" line="215"/>
         <source>Changes since version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokyčiai nuo %1 versijos</translation>
     </message>
 </context>
 <context>
@@ -252,7 +252,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="53"/>
         <source>Swedish</source>
-        <translation type="unfinished"></translation>
+        <translation>Švedų</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="45"/>
@@ -262,7 +262,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="38"/>
         <source>German</source>
-        <translation type="unfinished"></translation>
+        <translation>Vokiečių</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="37"/>
@@ -277,12 +277,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="34"/>
         <source>English</source>
-        <translation type="unfinished"></translation>
+        <translation>Anglų</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="42"/>
         <source>Italian</source>
-        <translation type="unfinished"></translation>
+        <translation>Italų</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="36"/>
@@ -342,7 +342,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="49"/>
         <source>Russian</source>
-        <translation type="unfinished"></translation>
+        <translation>Rusų</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="33"/>
@@ -362,7 +362,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="55"/>
         <source>Turkish</source>
-        <translation type="unfinished"></translation>
+        <translation>Turkų</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="56"/>

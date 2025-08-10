@@ -6,7 +6,7 @@
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="183"/>
         <source>License text</source>
-        <translation>Texto de licença</translation>
+        <translation>Texto da licença</translation>
     </message>
 </context>
 <context>
@@ -107,7 +107,7 @@
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="54"/>
         <source>Download license texts</source>
-        <translation>Baixar textos de licença</translation>
+        <translation>Baixar os textos de licença</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="68"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="17"/>
         <source>Icon Design</source>
-        <translation>Design de Ícones</translation>
+        <translation>Design de ícones</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="18"/>
@@ -297,7 +297,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="59"/>
         <source>Norwegian Nynorsk</source>
-        <translation>Neonorueguês</translation>
+        <translation>Novo Norueguês</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="60"/>
