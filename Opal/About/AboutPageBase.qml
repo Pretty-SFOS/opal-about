@@ -5,6 +5,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../LinkHandler" as L
 import "private/functions.js" as Func
 import "private"
 
@@ -677,11 +678,13 @@ Page {
       an external link (\a externalUrl) before either copying it to the clipboard
       or opening it externally. The \a title argument is optional.
 
+      It simply uses \c {Opal.LinkHandler}. You can also use this module
+      directly for more advanced settings.
+
       \sa Qt::openUrlExternally
     */
     function openOrCopyUrl(externalUrl, title) {
-        pageStack.push(Qt.resolvedUrl("private/ExternalUrlPage.qml"),
-            {'externalUrl': externalUrl, 'title': !!title ? title : ''})
+        L.LinkHandler.openOrCopyUrl(externalUrl, title)
     }
 
     allowedOrientations: Orientation.All

@@ -62,14 +62,16 @@ Repeater {
                                            'enableSourceHint': true
                                        })
             } else {
-                var pages = []
-                if (modelData.homepage !== '') pages.push({'page': Qt.resolvedUrl('ExternalUrlPage.qml'),
-                                                              'properties': {'externalUrl': modelData.homepage,
-                                                                  'title': qsTranslate("Opal.About", 'Homepage')}})
-                if (modelData.sources !== '') pages.push({'page': Qt.resolvedUrl('ExternalUrlPage.qml'),
-                                                             'properties': {'externalUrl': modelData.sources,
-                                                                 'title': qsTranslate("Opal.About", 'Source Code')}})
-                pageStack.push(pages)
+                var urls = []
+
+                if (modelData.homepage !== '') {
+                    urls.push({externalUrl: modelData.homepage, title: qsTranslate("Opal.About", 'Homepage')})
+                }
+                if (modelData.sources !== '') {
+                    urls.push({externalUrl: modelData.sources, title: qsTranslate("Opal.About", 'Source Code')})
+                }
+
+                L.LinkHandler.openOrCopyMultipleUrls(urls)
             }
         }
     }

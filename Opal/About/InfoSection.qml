@@ -5,6 +5,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../LinkHandler" as L
 
 /*!
     \qmltype InfoSection
@@ -40,10 +41,9 @@ Column {
     width: parent.width
     height: childrenRect.height
 
-    // Copy of AboutPageBase::openOrCopyUrl to ensure it is available.
+    // Proxy LinkHandler::openOrCopyUrl to ensure it is available.
     function openOrCopyUrl(externalUrl, title) {
-        pageStack.push(Qt.resolvedUrl("private/ExternalUrlPage.qml"),
-            {'externalUrl': externalUrl, 'title': !!title ? title : ''})
+        L.LinkHandler.openOrCopyUrl(externalUrl, title)
     }
 
     /*!
@@ -252,7 +252,7 @@ Column {
 
                 visible: modelData.name !== '' && modelData.url !== ''
                 text: modelData.name
-                onClicked: pageStack.push("private/ExternalUrlPage.qml", {'externalUrl': modelData.url})
+                onClicked: openOrCopyUrl(modelData.url)
             }
         }
     }

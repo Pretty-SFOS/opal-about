@@ -5,6 +5,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../../LinkHandler" as L
 import ".."
 
 Column {
@@ -26,12 +27,6 @@ Column {
     height: childrenRect.height
     spacing: Theme.paddingSmall
 
-    // Copy of AboutPageBase::openOrCopyUrl to ensure it is available.
-    function openOrCopyUrl(externalUrl, title) {
-        pageStack.push(Qt.resolvedUrl("ExternalUrlPage.qml"),
-            {'externalUrl': externalUrl, 'title': !!title ? title : ''})
-    }
-
     SectionHeader {
         visible: headerVisible
         text: title
@@ -47,7 +42,7 @@ Column {
         color: Theme.highlightColor
         bottomPadding: Theme.paddingSmall
         textFormat: Text.StyledText
-        onLinkActivated: openOrCopyUrl(link)
+        onLinkActivated: L.LinkHandler.openOrCopyUrl(link)
         linkColor: palette.secondaryHighlightColor
         palette.primaryColor: Theme.highlightColor
     }
@@ -61,7 +56,7 @@ Column {
         font.pixelSize: Theme.fontSizeSmall
         color: Theme.highlightColor
         linkColor: Theme.primaryColor
-        onLinkActivated: openOrCopyUrl(link)
+        onLinkActivated: L.LinkHandler.openOrCopyUrl(link)
         bottomPadding: Theme.paddingSmall
     }
 
@@ -71,13 +66,13 @@ Column {
         Button {
             visible: homepage !== ''
             text: qsTranslate("Opal.About", "Homepage")
-            onClicked: openOrCopyUrl(homepage, text)
+            onClicked: L.LinkHandler.openOrCopyUrl(homepage, text)
         }
 
         Button {
             visible: sources !== ''
             text: qsTranslate("Opal.About", "Source Code")
-            onClicked: openOrCopyUrl(sources, text)
+            onClicked: L.LinkHandler.openOrCopyUrl(sources, text)
         }
     }
 
@@ -168,7 +163,7 @@ Column {
                                 textFormat: Text.StyledText
                                 palette.primaryColor: Theme.highlightColor
                                 linkColor: Theme.primaryColor
-                                onLinkActivated: openOrCopyUrl(link)
+                                onLinkActivated: L.LinkHandler.openOrCopyUrl(link)
                             }
 
                             Label {
@@ -180,7 +175,7 @@ Column {
                                 textFormat: error ? Text.StyledText : Text.PlainText
                                 palette.primaryColor: Theme.highlightColor
                                 linkColor: Theme.primaryColor
-                                onLinkActivated: openOrCopyUrl(link, error ? qsTr("License text") : "")
+                                onLinkActivated: L.LinkHandler.openOrCopyUrl(link, error ? qsTr("License text") : "")
                                 text: error ? qsTranslate("Opal.About", 'Please refer to <a href="%1">%1</a>').arg(
                                                   "https://spdx.org/licenses/%1.html".arg(modelData.spdxId))
                                             : modelData.fullText

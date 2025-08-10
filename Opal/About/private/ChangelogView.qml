@@ -5,6 +5,7 @@
 
 import QtQuick 2.2
 import Sailfish.Silica 1.0
+import "../../LinkHandler" as L
 import ".."
 import "."
 
@@ -15,12 +16,6 @@ SilicaListView {
     property url changelogList
     property int scrollbarType: ScrollbarType.auto
     property Item _scrollbar: null
-
-    // Copy of AboutPageBase::openOrCopyUrl to ensure it is available.
-    function openOrCopyUrl(externalUrl, title) {
-        pageStack.push(Qt.resolvedUrl("ExternalUrlPage.qml"),
-            {'externalUrl': externalUrl, 'title': !!title ? title : ''})
-    }
 
     function _reloadScrollbar() {
         if (scrollbarType === ScrollbarType.plain) {
@@ -134,7 +129,7 @@ SilicaListView {
                 textFormat: item.textFormat
                 text: modelData
                 linkColor: Theme.primaryColor
-                onLinkActivated: openOrCopyUrl(link)
+                onLinkActivated: L.LinkHandler.openOrCopyUrl(link)
                 bottomPadding: Theme.paddingMedium
             }
         }
