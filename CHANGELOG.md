@@ -5,6 +5,30 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 3.0.0 (2025-08-10)
+
+- Replaced the bundled external link handler with a new dependency on the
+  [Opal.LinkHandler](https://github.com/Pretty-SFOS/opal-linkhandler) module.
+  This is a drop-in replacement: simply install the link handler module and you
+  are good to go. No QML changes are needed.
+
+- The `autoAddOpalAttributions` property is now enabled by default. This means
+  you no longer have to manually add Opal modules that you are using to the
+  `attributions` list of your About page. All attributions properly installed
+  to `qml/modules/Opal/Attributions/Opal*Attribution.qml` are loaded automatically.
+
+- Updated translations with contents from apps using this module.
+  I tried my best to always keep the most up-to-date version of all strings.
+  Hopefully nothing was overwritten - I apologize for any lost work!
+
+**Migrating to version 3.0.0:**
+
+- Install the [Opal.LinkHandler](https://github.com/Pretty-SFOS/opal-linkhandler) module
+  ([latest release](https://github.com/Pretty-SFOS/opal-linkhandler/releases/latest)).
+- Make sure `autoAddOpalAttributions` is not manually disabled in your About page.
+- Once `autoAddOpalAttributions` is enabled (new default), remove all manual
+  attributions for Opal modules from the `attributions` property in your About page.
+
 ## 2.3.9 (2025-08-08)
 
 - Added translations: Arabic, Persian
