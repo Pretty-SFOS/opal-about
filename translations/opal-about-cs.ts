@@ -4,7 +4,7 @@
 <context>
     <name>LicenseListPart</name>
     <message>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="183"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="178"/>
         <source>License text</source>
         <translation>Text licence</translation>
     </message>
@@ -12,53 +12,53 @@
 <context>
     <name>Opal.About</name>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="716"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="719"/>
         <source>About</source>
         <translation>O aplikaci</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="763"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="766"/>
         <source>Version %1</source>
         <translation>Verze %1</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="787"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="790"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="41"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="62"/>
         <source>Development</source>
         <translation>Vývoj</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="792"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="795"/>
         <source>show contributors</source>
         <translation>zobrazit přispěvatele</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="806"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="809"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="44"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="68"/>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="73"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="68"/>
         <source>Homepage</source>
         <translation>Domovská stránka</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="811"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="814"/>
         <location filename="../Opal/About/private/ChangelogPage.qml" line="26"/>
         <source>Changelog</source>
         <translation>Seznam změn</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="841"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="844"/>
         <source>Donations</source>
         <translation>Dary</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="851"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="854"/>
         <source>License</source>
         <translation>Licence</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Opal/About/AboutPageBase.qml" line="865"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="868"/>
         <source>show license(s)</source>
         <translation>
             <numerusform>zobrazit licenci</numerusform>
@@ -67,15 +67,15 @@
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="819"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="822"/>
         <source>Translations</source>
         <translation>Překlady</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="824"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="827"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="42"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="71"/>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="79"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="74"/>
         <source>Source Code</source>
         <translation>Zdrojový kód</translation>
     </message>
@@ -125,27 +125,7 @@
         <translation>Poznámka: Prosím, zkontrolujte zdrojový kód pro přesnější informace.</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ExternalUrlPage.qml" line="27"/>
-        <source>External Link</source>
-        <translation>Externí odkaz</translation>
-    </message>
-    <message>
-        <location filename="../Opal/About/private/ExternalUrlPage.qml" line="57"/>
-        <source>Open in browser</source>
-        <translation>Otevřít v prohlížeči</translation>
-    </message>
-    <message>
-        <location filename="../Opal/About/private/ExternalUrlPage.qml" line="67"/>
-        <source>Copied to clipboard: %1</source>
-        <translation>Zkopírováno do schránky: %1</translation>
-    </message>
-    <message>
-        <location filename="../Opal/About/private/ExternalUrlPage.qml" line="76"/>
-        <source>Copy to clipboard</source>
-        <translation>Zkopírovat do schránky</translation>
-    </message>
-    <message>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="184"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="179"/>
         <source>Please refer to &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
         <translation>Pro více informací se podívejte na &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</translation>
     </message>

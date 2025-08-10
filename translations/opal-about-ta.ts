@@ -4,7 +4,7 @@
 <context>
     <name>LicenseListPart</name>
     <message>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="183"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="178"/>
         <source>License text</source>
         <translation>உரிம உரை</translation>
     </message>
@@ -12,53 +12,53 @@
 <context>
     <name>Opal.About</name>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="716"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="719"/>
         <source>About</source>
         <translation>பற்றி</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="763"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="766"/>
         <source>Version %1</source>
         <translation>பதிப்பு %1</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="787"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="790"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="41"/>
         <location filename="../Opal/About/private/ContributorsPage.qml" line="62"/>
         <source>Development</source>
         <translation>வளர்ச்சி</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="792"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="795"/>
         <source>show contributors</source>
         <translation>பங்களிப்பாளர்களைக் காட்டு</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="806"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="809"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="44"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="68"/>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="73"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="68"/>
         <source>Homepage</source>
         <translation>முகப்புப்பக்கம்</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="811"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="814"/>
         <location filename="../Opal/About/private/ChangelogPage.qml" line="26"/>
         <source>Changelog</source>
         <translation>மாற்றபதிவு</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="841"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="844"/>
         <source>Donations</source>
         <translation>நன்கொடைகள்</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="851"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="854"/>
         <source>License</source>
         <translation>உரிமம்</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Opal/About/AboutPageBase.qml" line="865"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="868"/>
         <source>show license(s)</source>
         <translation>
             <numerusform>உரிமத்தைக் காட்டு</numerusform>
@@ -66,15 +66,15 @@
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="819"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="822"/>
         <source>Translations</source>
         <translation>மொழிபெயர்ப்புகள்</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="824"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="827"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="42"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="71"/>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="79"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="74"/>
         <source>Source Code</source>
         <translation>மூலக் குறியீடு</translation>
     </message>
@@ -123,27 +123,7 @@
         <translation>குறிப்பு: மிகவும் துல்லியமான தகவல்களுக்கு மூலக் குறியீட்டைச் சரிபார்க்கவும்.</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ExternalUrlPage.qml" line="27"/>
-        <source>External Link</source>
-        <translation>வெளிப்புற இணைப்பு</translation>
-    </message>
-    <message>
-        <location filename="../Opal/About/private/ExternalUrlPage.qml" line="57"/>
-        <source>Open in browser</source>
-        <translation>உலாவியில் திற</translation>
-    </message>
-    <message>
-        <location filename="../Opal/About/private/ExternalUrlPage.qml" line="67"/>
-        <source>Copied to clipboard: %1</source>
-        <translation>கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது: %1</translation>
-    </message>
-    <message>
-        <location filename="../Opal/About/private/ExternalUrlPage.qml" line="76"/>
-        <source>Copy to clipboard</source>
-        <translation>கிளிப்போர்டுக்கு நகலெடுக்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../Opal/About/private/LicenseListPart.qml" line="184"/>
+        <location filename="../Opal/About/private/LicenseListPart.qml" line="179"/>
         <source>Please refer to &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;</source>
         <translation>தயவுசெய்து &lt;a href=&quot;%1&quot;&gt;%1 &lt;/a&gt; ஐப் பார்க்கவும்</translation>
     </message>
