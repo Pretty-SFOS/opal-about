@@ -39,7 +39,7 @@
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="68"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="68"/>
         <source>Homepage</source>
-        <translation type="unfinished">Inicio</translation>
+        <translation>Página de inicio</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="814"/>
