@@ -6,7 +6,7 @@
     <message>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="178"/>
         <source>License text</source>
-        <translation>Texto de la licencia</translation>
+        <translation type="unfinished">Texto de la licencia</translation>
     </message>
 </context>
 <context>
@@ -39,7 +39,7 @@
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="68"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="68"/>
         <source>Homepage</source>
-        <translation>Página web</translation>
+        <translation type="unfinished">Inicio</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="814"/>
