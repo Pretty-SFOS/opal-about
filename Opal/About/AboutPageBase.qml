@@ -1,6 +1,6 @@
 //@ This file is part of opal-about.
 //@ https://github.com/Pretty-SFOS/opal-about
-//@ SPDX-FileCopyrightText: 2020-2023 Mirian Margiani
+//@ SPDX-FileCopyrightText: 2020-2025 Mirian Margiani
 //@ SPDX-License-Identifier: GPL-3.0-or-later
 
 import QtQuick 2.0
@@ -84,9 +84,9 @@ import "private"
 
     The code below demonstrates an app info page for a simple project.
     One-person projects without other contributors can omit setting the
-    \l contributionSections property. Opal.About must be attributed in the
-    \l attributions list. This list is meant for delcaring third-party
-    libraries and other acknowledgements.
+    \l contributionSections property. \c Opal.About is automatically added
+    to the \l attributions list. Declare third-party libraries and other
+    acknowledgements in this list.
 
     \qml
         import QtQuick 2.0
@@ -94,7 +94,7 @@ import "private"
         import Opal.About 1.0
 
         AboutPageBase {
-            id: page
+            id: root
             allowedOrientations: Orientation.All
 
             appName: qsTr("MyApp")
@@ -102,35 +102,32 @@ import "private"
             appVersion: APP_VERSION
             appRelease: APP_RELEASE
             description: qsTr("This is a short description of the app.")
-            sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
-            translationsUrl: "https://weblate.org"
+            sourcesUrl: "https://git.example.org/myapp"
+            translationsUrl: "https://hosted.weblate.org/projects/example/"
 
-            authors: "Au Thor" // either a list or a single string
+            authors: ["2020-%1 Jane Doe".arg((new Date()).getFullYear())]
             licenses: License { spdxId: "GPL-3.0-or-later" }
 
             changelogItems: [
                 // add new items at the top of the list
                 ChangelogItem {
                     version: "1.0.0-1"
-                    date: "2023-01-02"  // optional
-                    author: "Au Thor"   // optional
+                    date: "2020-01-01"   // optional
+                    author: "Jane Doe"   // optional
                     paragraphs: "A short paragraph describing this initial version."
                 }
             ]
 
             donations.text: donations.defaultTextCoffee
             donations.services: DonationService {
-                name: "LiberaPay"
-                url: "liberapay.com"
+                name: "Liberapay"
+                url: "https://liberapay.com/example"
             }
 
             attributions: [
-                OpalAboutAttribution {
-                    // provided by Opal.About
-                },
                 Attribution {
-                    name: "The Library"
-                    entries: ["1201 The Old Librarians", "2014 The Librarians"]
+                    name: "Example Library"
+                    entries: ["1950-2000 Jane Doe Sr.", "2000-2050 Jane Doe Jr."]
                     licenses: License { spdxId: "CC0-1.0" }
                 }
             ]
@@ -141,12 +138,12 @@ import "private"
                     groups: [
                         ContributionGroup {
                             title: qsTr("Programming")
-                            entries: ["Au Thor", "Jane Doe"] // it is not necessary to repeat names
-                                                             // already listed in mainAttributions/authors
+                            entries: ["Jane Doe", "John Doe"] // it is not necessary to repeat names
+                                                              // already listed in mainAttributions/authors
                         },
                         ContributionGroup {
                             title: qsTr("Icon Design")
-                            entries: ["Sailfish", "Jolla", "John Doe"]
+                            entries: ["Jim Doe"]
                         }
                     ]
                 },
@@ -155,11 +152,11 @@ import "private"
                     groups: [
                         ContributionGroup {
                             title: qsTr("English")
-                            entries: "Some Body"
+                            entries: ["Jake Doe"]
                         },
                         ContributionGroup {
                             title: qsTr("German")
-                            entries: "Max Mustermann"
+                            entries: ["Max Mustermann"]
                         }
                     ]
                 }
@@ -172,11 +169,11 @@ import "private"
     It is possible to add custom page elements to the end of the
     page by explicitly parenting them to the page's \l flickable property.
     You can, for example, add a pulley menu by setting its \c parent
-    property to \c {page.flickable}:
+    property to \c {root.flickable}:
 
     \qml
     PullDownMenu {
-        parent: page.flickable
+        parent: root.flickable
         MenuItem {
             text: qsTr("Open a page")
             onClicked: pageStack.push(Qt.resolvedUrl("Page.qml"))
@@ -609,11 +606,11 @@ Page {
       You can add custom page elements to the end of the
       page by explicitly parenting them to this property.
       You can, for example, add a pulley menu by setting its \c parent
-      property to \c {page.flickable}:
+      property to \c {root.flickable}:
 
       \qml
       PullDownMenu {
-          parent: page.flickable
+          parent: root.flickable
           MenuItem {
               text: qsTr("Open a page")
               onClicked: pageStack.push(Qt.resolvedUrl("Page.qml"))

@@ -1,7 +1,7 @@
 /*
  * This file is part of harbour-opal.
  * SPDX-License-Identifier: GPL-3.0-or-later
- * SPDX-FileCopyrightText: 2020-2023 Mirian Margiani
+ * SPDX-FileCopyrightText: 2020-2025 Mirian Margiani
  */
 
 import QtQuick 2.0
@@ -21,8 +21,8 @@ A.AboutPageBase {
     // note: don't use qsTr() for names in real applications
     authors: [qsTr("the app's maintainer"), qsTr("another important person")]
     mainAttributions: [qsTr("additional name")]
-    sourcesUrl: "https://github.com/Pretty-SFOS/opal-about"
-    translationsUrl: "https://weblate.com/"
+    sourcesUrl: "https://git.example.org/myapp"
+    translationsUrl: "https://weblate.com/example"
     homepageUrl: "https://example.org/my/forum"
 
     // changelogList: Qt.resolvedUrl("Changelog.qml")
@@ -39,7 +39,7 @@ A.AboutPageBase {
         A.ChangelogItem {
             version: "2.0.0-1"
             date: "2023-02-01"
-            // author: "ichthyosaurus" -- the author field is optional
+            // author: "Jane Doe" -- the author field is optional
             paragraphs: [
                 "A lot has changed since the last version. Unicorns learned " +
                 "to fly and penguins grew horns.",
@@ -50,7 +50,7 @@ A.AboutPageBase {
         A.ChangelogItem {
             version: "1.0.0-1"
             date: "2023-01-01"
-            author: "ichthyosaurus"
+            author: "Jane Doe"
             paragraphs: "This is the first version. Everything is new and " +
                         "shiny, so be sure to check every page of this brand new " +
                         "app."
@@ -107,12 +107,12 @@ A.AboutPageBase {
     donations.text: donations.defaultTextCoffee
     donations.services: [
         A.DonationService {
-            name: "LiberaPay"
-            url: "https://liberapay.com/"
+            name: "Liberapay"
+            url: "https://liberapay.com/example"
         },
         A.DonationService {
             name: "Other Service"
-            url: "https://example.org/"
+            url: "https://support.example.org/myapp"
         }
     ]
 
@@ -123,7 +123,7 @@ A.AboutPageBase {
             buttons: [
                 A.InfoButton {
                     text: qsTr("Forum")
-                    onClicked: page.openOrCopyUrl("https://example.org/forum")
+                    onClicked: root.openOrCopyUrl("https://example.org/forum")
                 }
             ]
         },
@@ -133,7 +133,7 @@ A.AboutPageBase {
             buttons: [
                 A.InfoButton {
                     text: qsTr("Data License")
-                    onClicked: page.openOrCopyUrl("https://example.org")
+                    onClicked: root.openOrCopyUrl("https://example.org")
                 }
             ]
         },
@@ -150,11 +150,11 @@ A.AboutPageBase {
             groups: [
                 A.ContributionGroup {
                     title: qsTr("Programming")
-                    entries: ["ichthyosaurus", "Jim Doe", "Jane Doe"]
+                    entries: ["Jane Doe", "Joanne Doe", "Jim Doe"]
                 },
                 A.ContributionGroup {
                     title: qsTr("Icon Design")
-                    entries: ["Sailfish", "Jolla", "John Doe"]
+                    entries: ["John Doe"]
                 }
             ]
         },
@@ -163,7 +163,7 @@ A.AboutPageBase {
             groups: [
                 A.ContributionGroup {
                     title: qsTr("English")
-                    entries: ["Some Body", "Sam Bodhi", "Sam B. Dy"]
+                    entries: ["Jake Doe"]
                 },
                 A.ContributionGroup {
                     title: qsTr("German")
@@ -174,7 +174,7 @@ A.AboutPageBase {
     ]
 
     S.PullDownMenu {
-        parent: page.flickable
+        parent: root.flickable
         S.MenuItem {
             text: qsTr("Open another page")
             onClicked: pageStack.push(Qt.resolvedUrl("EmptyDummyPage.qml"))

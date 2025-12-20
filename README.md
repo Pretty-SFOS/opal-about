@@ -34,9 +34,8 @@ A.AboutPageBase {
     appIcon: Qt.resolvedUrl("../images/harbour-my-app.png")
     appVersion: "1.0.0"
     description: "My App is a simple app."
-    authors: "2023 Me, Myself, and I"
+    authors: ["2023-%1 Jane Doe".arg((new Date()).getFullYear())]
     licenses: A.License { spdxId: "GPL-3.0-or-later" }
-    attributions: A.OpalAboutAttribution {}
     sourcesUrl: "https://git.example.org/my-app"
 }
 ```
