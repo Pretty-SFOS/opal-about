@@ -22,3 +22,4 @@ opal-*.cflags
 opal-*.creator
 opal-*.cxxflags
 opal-*.files
+Makefile
