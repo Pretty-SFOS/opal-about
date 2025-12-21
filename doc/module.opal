@@ -4,14 +4,14 @@
 # Lines not starting with a known keyword (i.e. 'name: ') will be ignored.
 # One line per value.
 #
-# SPDX-FileCopyrightText: 2021-2024 Mirian Margiani
+# SPDX-FileCopyrightText: 2021-2025 Mirian Margiani
 # SPDX-License-Identifier: CC0-1.0
 #
 # @@@ keep this line: based on template v1.0.0
 #
 
 # current semantic version number, cf. https://semver.org
-version: 3.0.1
+version: 3.0.2
 
 # plain name as used in the module repository URL, will be prefixed with "opal-"
 # where necessary
@@ -32,7 +32,7 @@ description: This module provides <i>AboutPageBase</i> for building customizable
 
 # attribution string for the whole module, in the same form as a SPDX
 # FileCopyrightText entry.
-attribution: 2018-2024 Mirian Margiani
+attribution: 2018-2025 Mirian Margiani
 
 # colon-separated list of this module's current maintainer(s)
 maintainers: Mirian Margiani

@@ -5,6 +5,11 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 3.0.2 (2025-12-21)
+
+- Updated, cleaned up example page and examples in documentation
+- Updated translations
+
 ## 3.0.1 (2025-11-26)
 
 - Added translations: Bengali, Chinese (Traditional Han script), Hindi, Malayalam, Thai
