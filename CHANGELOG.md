@@ -5,6 +5,10 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 3.0.3 (2025-12-21)
+
+- Fixed translation file names to be the same across all modules
+
 ## 3.0.2 (2025-12-21)
 
 - Updated, cleaned up example page and examples in documentation
