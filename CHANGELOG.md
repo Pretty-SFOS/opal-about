@@ -5,6 +5,16 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 3.0.4 (2025-12-23)
+
+- Fixed packaging to actually include `opal.pri` and `.gitignore` files for
+  easier integration into apps. Add `include(libs/opal.pri)`
+  to your `harbour-myapp.pro` file to enable Opal in your app.
+- **Note:** you *still* must modify your `yaml` or `spec` file for Harbour compliance!
+  See [here](https://github.com/Pretty-SFOS/opal/blob/main/README.md#using-opal)
+  for updated instructions.
+- Fixed documentation to exclude some unnecessary generated parts.
+
 ## 3.0.3 (2025-12-21)
 
 - Fixed translation file names to be the same across all modules
