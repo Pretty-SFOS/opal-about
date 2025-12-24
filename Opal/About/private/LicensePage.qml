@@ -42,9 +42,11 @@ Page {
     }
 
     SilicaFlickable {
+        id: flick
         anchors.fill: parent
         contentHeight: column.height + Theme.horizontalPageMargin
-        VerticalScrollDecorator { }
+
+        VerticalScrollDecorator { flickable: flick }
 
         PullDownMenu {
             visible: allowDownloadingLicenses
