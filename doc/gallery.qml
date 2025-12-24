@@ -9,7 +9,7 @@ import Sailfish.Silica 1.0 as S
 import Opal.About 1.0 as A
 
 A.AboutPageBase {
-    id: page
+    id: root
 
     appName: "Opal.About Example"
     appIcon: Qt.resolvedUrl("../../images/harbour-opal-gallery.png")
