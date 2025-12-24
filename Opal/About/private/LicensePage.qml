@@ -20,7 +20,7 @@ Page {
     property string mainSources
     property string mainHomepage
 
-    property bool includeOpal: false
+    property bool includeOpal: true
 
     function _downloadLicenses() {
         for (var lic in mainAttribution.licenses) {
