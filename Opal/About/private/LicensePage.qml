@@ -23,13 +23,16 @@ Page {
     property bool includeOpal: true
 
     function _downloadLicenses() {
-        for (var lic in mainAttribution.licenses) {
-            mainAttribution.licenses[lic].__online = true
+        for (var i = 0; i < mainAttribution.licenses.length; ++i) {
+            mainAttribution.licenses[i].__online = true
         }
 
-        for (var attr in attributions) {
-            for (var lic in attributions[attr].licenses) {
-                attributions[attr].licenses[lic].__online = true
+        for (var k = 0; k < attributions.length; ++k) {
+            for (var j = 0; j < attributions[j].licenses.length; ++j) {
+                attributions[k].licenses[j].__online = true
+            }
+        }
+
             }
         }
     }
