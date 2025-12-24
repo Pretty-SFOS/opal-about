@@ -33,6 +33,9 @@ Page {
             }
         }
 
+        for (var m = 0; m < opalAttributions.loadedAttributions.length; ++m) {
+            for (var l = 0; l < opalAttributions.loadedAttributions[m].licenses.length; ++l) {
+                opalAttributions.loadedAttributions[m].licenses[l].__online = true
             }
         }
     }
