@@ -23,8 +23,8 @@
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="813"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="40"/>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="61"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="41"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="62"/>
         <source>Development</source>
         <translation>Разработка</translation>
     </message>
@@ -34,7 +34,7 @@
         <translation>Показать участников</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="831"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="832"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="44"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="68"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="68"/>
@@ -42,23 +42,23 @@
         <translation>Домашняя страница</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="836"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="837"/>
         <location filename="../Opal/About/private/ChangelogPage.qml" line="26"/>
         <source>Changelog</source>
         <translation>Список изменений</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="866"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="867"/>
         <source>Donations</source>
         <translation>Пожертвования</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="876"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="877"/>
         <source>License</source>
         <translation>Лицензия</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Opal/About/AboutPageBase.qml" line="890"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="891"/>
         <source>show license(s)</source>
         <translation>
             <numerusform>показать лицензию</numerusform>
@@ -67,12 +67,12 @@
         </translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="844"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="845"/>
         <source>Translations</source>
         <translation>Перевод</translation>
     </message>
     <message>
-        <location filename="../Opal/About/AboutPageBase.qml" line="849"/>
+        <location filename="../Opal/About/AboutPageBase.qml" line="850"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="42"/>
         <location filename="../Opal/About/private/ContributorsAttributionRepeater.qml" line="71"/>
         <location filename="../Opal/About/private/LicenseListPart.qml" line="74"/>
@@ -85,12 +85,12 @@
         <translation>Показать детали</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="37"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="38"/>
         <source>Contributors</source>
         <translation>Участники</translation>
     </message>
     <message>
-        <location filename="../Opal/About/private/ContributorsPage.qml" line="79"/>
+        <location filename="../Opal/About/private/ContributorsPage.qml" line="80"/>
         <source>Acknowledgements</source>
         <translation>Благодарности</translation>
     </message>
