@@ -15,7 +15,6 @@ Page {
     property var mainAttributions: []
     property string appName
 
-    property bool allowDownloadingLicenses: false
     property bool autoAddOpalAttributions: false
 
     allowedOrientations: Orientation.All

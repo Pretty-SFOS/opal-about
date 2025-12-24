@@ -796,7 +796,6 @@ Page {
                                                'sections': contributionSections,
                                                'attributions': attributions,
                                                'mainAttributions': __effectiveMainAttribs,
-                                               'allowDownloadingLicenses': allowDownloadingLicenses,
                                                'autoAddOpalAttributions': autoAddOpalAttributions
                                            })
                 }
