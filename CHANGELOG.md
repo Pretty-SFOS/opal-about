@@ -5,6 +5,22 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 3.1.0 (2025-12-24)
+
+- Added support for automatically checking if network is available and letting
+  the user download license text. Network access requires explicit user interaction.
+  A warning is shown when using a mobile data connection.
+  - This feature can be disabled by setting `allowDownloadingLicenses` to `NetworkMode.disabled`
+    instead of `NetworkMode.auto`.
+  - It is recommended to check whether `allowDownloadingLicenses` is manually set
+    in your app. In that case it is either `true` or `false`, which is now interpreted
+    as `NetworkMode.enabled` or `NetworkMode.auto`.
+  - The feature is disabled if your app doesn't have the `Internet` permission.
+- Fixed downloading Opal module licenses when requested
+- Fixed wrong kind of loop to go through arrays
+- Fixed gallery page id
+- Fixed link to example Weblate project
+
 ## 3.0.4 (2025-12-23)
 
 - Fixed packaging to actually include `opal.pri` and `.gitignore` files for
