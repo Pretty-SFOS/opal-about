@@ -5,6 +5,11 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 3.1.1 (2025-12-24)
+
+- Fixed broken `qmldir`
+- Updated translations
+
 ## 3.1.0 (2025-12-24)
 
 - Added support for automatically checking if network is available and letting
