@@ -8,6 +8,7 @@ import Sailfish.Silica 1.0
 import "../LinkHandler" as L
 import "private/functions.js" as Func
 import "private"
+import "."
 
 /*!
     \qmltype AboutPageBase
@@ -447,9 +448,10 @@ Page {
     /*!
       This property defines whether to enable downloading licenses.
 
-      If this is set to \c true, users will be able to download license texts
-      automatically. If it is set to \c false, this feature will be disabled
-      and users must click on a link to open the license text in the browser.
+      By default, this setting will be enabled depending on whether network
+      access is available. If this is enabled, users can request downloading
+      licenses texts directly in the app. If it is disabled, users can open
+      the license text in the web browser.
 
       \note fetching license texts always requires manual action from the user.
 
@@ -457,12 +459,36 @@ Page {
 
       Your app must have the \c Internet permission in its Sailjail
       profile to be able to download license texts. It is generally advised to
-      use as few permissions as possible. Thus, downloading license texts is
-      disabled by default.
+      use as few permissions as possible, so do not ask for network access
+      only for this feature.
+
+      \b {Options:}
+
+      \table
+        \header
+            \li Mode
+            \li Description
+        \row
+            \li \c NetworkMode.auto (default)
+            \li Allow downloading licenses if network access is available.
+        \row
+            \li \c NetworkMode.enabled
+            \li Always allow downloading licenses, even if not currently
+                connected to a network. Use this if your app needs network
+                access anyway.
+        \row
+            \li \c NetworkMode.disabled
+            \li Always forbid downloading licenses. Use this if your app
+                does not have the \c Internet permission and never will.
+      \endtable
+
+      \defaultValue NetworkMode.auto
 
       \sa licenses, License
     */
-    property bool allowDownloadingLicenses: false
+    property var allowDownloadingLicenses: NetworkMode.auto
+    // NOTE this is var instead of int to keep backwards compatibility.
+    // It was bool before.
 
     /*!
       This property holds a list of attributions, e.g. to third-party libraries.

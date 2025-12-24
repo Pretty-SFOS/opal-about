@@ -13,7 +13,7 @@ Page {
     property list<Attribution> attributions
     property bool enableSourceHint: true
     property alias pageDescription: pageHeader.description
-    property bool allowDownloadingLicenses: false
+    property int allowDownloadingLicenses: NetworkMode.auto
 
     property list<License> licenses
     property string appName
@@ -42,6 +42,17 @@ Page {
 
     allowedOrientations: Orientation.All
 
+    Loader {
+        id: netCheck
+        active: allowDownloadingLicenses == NetworkMode.auto ||
+                allowDownloadingLicenses == NetworkMode.enabled
+        asynchronous: true
+        source: Qt.resolvedUrl("ConnectivityCheck.qml")
+
+        property bool _networkIsConnected: item ? item.networkIsConnected : false
+        property bool _networkIsWifi: item ? item.networkIsWifi : false
+    }
+
     OpalAttributionsLoader {
         id: opalAttributions
         enabled: includeOpal
@@ -55,12 +66,18 @@ Page {
         VerticalScrollDecorator { flickable: flick }
 
         PullDownMenu {
-            visible: allowDownloadingLicenses
+            visible: allowDownloadingLicenses == NetworkMode.enabled ||
+                     (allowDownloadingLicenses == NetworkMode.auto && netCheck._networkIsConnected)
             enabled: visible
 
             MenuItem {
                 text: qsTranslate("Opal.About", "Download license texts")
                 onClicked: _downloadLicenses()
+            }
+
+            MenuLabel {
+                visible: netCheck._networkIsConnected && !netCheck._networkIsWifi
+                text: qsTranslate("Opal.About", "You are using a mobile data connection.")
             }
         }
 
