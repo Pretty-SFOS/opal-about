@@ -22,7 +22,7 @@ A.AboutPageBase {
     authors: [qsTr("the app's maintainer"), qsTr("another important person")]
     mainAttributions: [qsTr("additional name")]
     sourcesUrl: "https://git.example.org/myapp"
-    translationsUrl: "https://weblate.com/example"
+    translationsUrl: "https://hosted.weblate.org/projects/example"
     homepageUrl: "https://example.org/my/forum"
 
     // changelogList: Qt.resolvedUrl("Changelog.qml")
