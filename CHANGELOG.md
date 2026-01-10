@@ -5,6 +5,11 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## 3.1.2 (2026-01-10)
+
+- Added translations: Vietnamese
+- Updated translations: Czech, Estonian, French, German, Indonesian, Norwegian Bokmål, Spanish, Swedish
+
 ## 3.1.1 (2025-12-24)
 
 - Fixed broken `qmldir`

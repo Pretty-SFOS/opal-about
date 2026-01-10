@@ -11,7 +11,7 @@
 #
 
 # current semantic version number, cf. https://semver.org
-version: 3.1.1
+version: 3.1.2
 
 # plain name as used in the module repository URL, will be prefixed with "opal-"
 # where necessary
@@ -32,7 +32,7 @@ description: This module provides <i>AboutPageBase</i> for building customizable
 
 # attribution string for the whole module, in the same form as a SPDX
 # FileCopyrightText entry.
-attribution: 2018-2025 Mirian Margiani
+attribution: 2018-2026 Mirian Margiani
 
 # colon-separated list of this module's current maintainer(s)
 maintainers: Mirian Margiani
