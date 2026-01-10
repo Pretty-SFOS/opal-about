@@ -11,6 +11,13 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 ## Translations
 
+- Anonymous
+- Đặng Hoàng Ân
+- David D.
+- Francisco Serrador
+- Frank Paul Silye
+- Om Era
+
 ### English
 
 - Mirian Margiani
