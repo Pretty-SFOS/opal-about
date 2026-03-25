@@ -697,6 +697,20 @@ Page {
     }
 
     /*!
+      Set this property to false to disable the default behavior of calling \l defaultOpenOrCopyUrl when a link is clicked. You can add your own link handler by implementing onOpenOrCopyUrl signal handler.
+
+      \sa openOrCopyUrl
+    */
+    property bool defaultLinkActions: true
+
+    /*!
+      This signal is called when a link is clicked.
+
+      \sa defaultLinkActions
+    */
+    signal openOrCopyUrl(url externalUrl,string title)
+
+    /*!
       This function shows a page that lets the user preview
       an external link (\a externalUrl) before either copying it to the clipboard
       or opening it externally. The \a title argument is optional.
@@ -706,7 +720,7 @@ Page {
 
       \sa Qt::openUrlExternally
     */
-    function openOrCopyUrl(externalUrl, title) {
+    function defaultOpenOrCopyUrl(externalUrl, title) {
         L.LinkHandler.openOrCopyUrl(externalUrl, title)
     }
 
