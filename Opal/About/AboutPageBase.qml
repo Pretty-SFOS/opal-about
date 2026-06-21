@@ -724,6 +724,10 @@ Page {
         L.LinkHandler.openOrCopyUrl(externalUrl, title)
     }
 
+    onOpenOrCopyUrl:
+        if (defaultLinkActions)
+            defaultOpenOrCopyUrl()
+
     allowedOrientations: Orientation.All
 
     SilicaFlickable {
