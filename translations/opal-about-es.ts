@@ -112,7 +112,7 @@
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="80"/>
         <source>You are using a mobile data connection.</source>
-        <translation>Está utilizando una conexión de datos móvil.</translation>
+        <translation>Está utilizando una conexión de datos al móvil.</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="93"/>
