@@ -60,13 +60,13 @@
     <message numerus="yes">
         <location filename="../Opal/About/AboutPageBase.qml" line="891"/>
         <source>show license(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>صفر</numerusform>
+            <numerusform>واحد</numerusform>
+            <numerusform>اثنين</numerusform>
+            <numerusform>بضع</numerusform>
+            <numerusform>كثير</numerusform>
+            <numerusform>أخرى</numerusform>
         </translation>
     </message>
     <message>
@@ -116,7 +116,7 @@
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="80"/>
         <source>You are using a mobile data connection.</source>
-        <translation type="unfinished"></translation>
+        <translation>أنت تستخدم بيانات الهاتف.</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="93"/>
@@ -125,9 +125,9 @@
             <numerusform>صفر</numerusform>
             <numerusform>واحد</numerusform>
             <numerusform>اثنين</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+            <numerusform>بضع</numerusform>
+            <numerusform>كثير</numerusform>
+            <numerusform>أخرى</numerusform>
         </translation>
     </message>
     <message>
@@ -156,7 +156,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="12"/>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>الكاتب</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="13"/>
@@ -173,7 +173,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="14"/>
         <source>Maintainer</source>
-        <translation type="unfinished"></translation>
+        <translation>المسؤول</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="15"/>
@@ -200,17 +200,17 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="18"/>
         <source>Third-party libraries</source>
-        <translation type="unfinished"></translation>
+        <translation>مكتبات الطرف الثالث</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="19"/>
         <source>Data</source>
-        <translation type="unfinished"></translation>
+        <translation>البيانات</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="20"/>
         <source>Data License</source>
-        <translation type="unfinished"></translation>
+        <translation>تراخيص البيانات</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="21"/>
@@ -227,7 +227,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="22"/>
         <source>Terms of Use</source>
-        <translation type="unfinished"></translation>
+        <translation>شروط الاستخدام</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="30"/>
@@ -247,7 +247,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="47"/>
         <source>Brazilian Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>البرتغالية البرازيلية</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="53"/>
@@ -302,12 +302,12 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="59"/>
         <source>Norwegian Nynorsk</source>
-        <translation type="unfinished"></translation>
+        <translation>النرويجية نينورسك</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="60"/>
         <source>Latvian</source>
-        <translation type="unfinished"></translation>
+        <translation>اللاتفية</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="35"/>
@@ -382,7 +382,7 @@
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="40"/>
         <source>If you want to support my work, you can buy me a cup of coffee.</source>
-        <translation>إذا أحببت دعم عملي، يمكنك شراء فنجان قهوة لي</translation>
+        <translation>إذا أحببت دعم عملي، يمكنك شراء فنجان قهوة لي.</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/DonationsGroup.qml" line="53"/>
