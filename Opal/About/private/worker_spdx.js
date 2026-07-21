@@ -8,7 +8,9 @@ var LOG_SCOPE = '[Opal.About]'
 function getShortText(origShortText, spdxId) {
     // This function provides standard short texts for a few common licenses,
     // unless a short text is already provided by the user.
-    if (!!origShortText) return origShortText
+    if (!!origShortText) {
+        return origShortText
+    }
 
     if (/^[AL]?GPL-/.test(spdxId)) {
         return "This is free software: you are welcome to redistribute it under certain conditions. " +
@@ -40,7 +42,9 @@ function sendSuccess(spdxId, name, fullText, shortText) {
 
 function request(type, url, onSuccess, onFailure, postData) {
     var xhr = new XMLHttpRequest
+
     xhr.open(type, url)
+
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             var response = xhr.responseText
@@ -64,7 +68,9 @@ function loadRemote(spdxId, localUrl, remoteUrl, origShortText) {
     request("GET", remoteUrl, function(xhr) {
         try {
             var o = JSON.parse(xhr.responseText)
+
             if (!o || typeof o !== "object") throw 1
+
             console.log(LOG_SCOPE, "license loaded remotely from", remoteUrl)
             sendSuccess(spdxId, o['name'], o['licenseText'],
                         getShortText(origShortText, spdxId))
@@ -92,7 +98,9 @@ WorkerScript.onMessage = function(message) {
     request("GET", message.localUrl, function(xhr) {
         try {
             var o = JSON.parse(xhr.responseText)
+
             if (!o || typeof o !== "object") throw 1
+
             console.log(LOG_SCOPE, "license loaded locally from", message.localUrl)
             sendSuccess(message.spdxId, o['name'], o['licenseText'],
                         getShortText(message.shortText, message.spdxId))

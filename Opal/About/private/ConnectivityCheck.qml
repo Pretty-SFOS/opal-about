@@ -8,6 +8,7 @@ import org.freedesktop.contextkit 1.0
 
 Item {
     id: root
+
     property bool networkIsConnected: false
     property bool networkIsWifi: false
 
