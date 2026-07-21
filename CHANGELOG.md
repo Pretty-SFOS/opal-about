@@ -5,6 +5,12 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 
 # Changelog
 
+## Upcoming
+
+- License texts are now cached per application and no longer shared between apps
+  to improve Sailjail compliance. Downloaded license texts will persist over
+  reboots. Downloading is only available if network access is allowed.
+
 ## 3.1.2 (2026-01-10)
 
 - Added translations: Vietnamese

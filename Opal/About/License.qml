@@ -1,6 +1,6 @@
 //@ This file is part of opal-about.
 //@ https://github.com/Pretty-SFOS/opal-about
-//@ SPDX-FileCopyrightText: 2020-2022 Mirian Margiani
+//@ SPDX-FileCopyrightText: 2020-2026 Mirian Margiani
 //@ SPDX-License-Identifier: GPL-3.0-or-later
 
 import QtQuick 2.0
@@ -46,7 +46,10 @@ QtObject {
       codes.
 
       License texts will be downloaded automatically. They will be cached
-      to reduce bandwidth usage, generally until the device is restarted.
+      to reduce bandwidth usage.
+
+      Since 3.2.0, license texts are cached per application to improve Sailjail
+      compliance, and are no longer shared between applications.
 
       \required
     */
@@ -104,7 +107,7 @@ QtObject {
     */
     property bool __online: false
 
-    property string __localUrl: "%1/%2.json".arg(StandardPaths.temporary).arg(spdxId)
+    property string __localUrl: "%1/%2.json".arg(StandardPaths.cache).arg(spdxId)
     property string __remoteUrl: "https://spdx.org/licenses/%1.json".arg(spdxId)
     property string __name: ""
     property string __fullText: ""
