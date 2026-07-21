@@ -1,0 +1,21 @@
+version = 1
+SPDX-PackageName = "Opal.About"
+SPDX-PackageSupplier = "Mirian Margiani <mixosaurus+ichthyo@pm.me>"
+SPDX-PackageDownloadLocation = "https://github.com/Pretty-SFOS/opal-about"
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-License-Identifier = "LicenseRef-NO-AI-1.0"
+
+[[annotations]]
+path = "translations/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Opal.About translations contributors"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = "doc/screenshot-**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Mirian Margiani"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
