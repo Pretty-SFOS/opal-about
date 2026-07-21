@@ -14,7 +14,7 @@
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="742"/>
         <source>About</source>
-        <translation>In riguardo</translation>
+        <translation>Informazioni</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="789"/>
@@ -45,7 +45,7 @@
         <location filename="../Opal/About/AboutPageBase.qml" line="837"/>
         <location filename="../Opal/About/private/ChangelogPage.qml" line="26"/>
         <source>Changelog</source>
-        <translation>Registro delle modifiche</translation>
+        <translation>Rapporto delle modifiche</translation>
     </message>
     <message>
         <location filename="../Opal/About/AboutPageBase.qml" line="867"/>
@@ -107,12 +107,12 @@
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="74"/>
         <source>Download license texts</source>
-        <translation>Scarica i testi delle licenze</translation>
+        <translation>Scarica testi delle licenze</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/LicensePage.qml" line="80"/>
         <source>You are using a mobile data connection.</source>
-        <translation type="unfinished"></translation>
+        <translation>Stai utilizzando una connessione dati mobile.</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/LicensePage.qml" line="93"/>
@@ -176,14 +176,14 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="14"/>
         <source>Maintainer</source>
-        <translation>Mantenitore</translation>
+        <translation>Manutentore</translation>
     </message>
     <message numerus="yes">
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="15"/>
         <source>Maintainer(s)</source>
         <translation>
-            <numerusform>Mantenitore</numerusform>
-            <numerusform>Mantenitori</numerusform>
+            <numerusform>Manutentore</numerusform>
+            <numerusform>Manutentori</numerusform>
         </translation>
     </message>
     <message>
@@ -242,7 +242,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="47"/>
         <source>Brazilian Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>Portoghese brasiliano</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="53"/>
@@ -292,7 +292,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="54"/>
         <source>Tamil</source>
-        <translation>tamil</translation>
+        <translation>Tamil</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="59"/>
@@ -322,7 +322,7 @@
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="52"/>
         <source>Spanish</source>
-        <translation>spagnolo</translation>
+        <translation>Spagnolo</translation>
     </message>
     <message>
         <location filename="../Opal/About/private/ExtraTranslations.qml" line="40"/>
